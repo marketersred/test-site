@@ -152,6 +152,7 @@ form {
     display: none;
 }
 
-.slide_answers  {
+.slide_answers, #home img  {
+    box-sizing: border-box;
     padding: 0 16px;
 }
