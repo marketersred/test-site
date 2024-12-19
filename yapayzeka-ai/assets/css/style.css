@@ -93,13 +93,13 @@ form {
 }
 
 .container-ps {
-    /* margin-left: -30px; */
     max-height: 500px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     width: 100%;
     padding: 0 10px;
+    /* margin-left: -30px; */
     /* margin: 0 auto; */
 }
 
@@ -118,7 +118,19 @@ form {
 
 @media (max-width: 768px) {
     .container-ps {
-        grid-template-columns: repeat(1, 100%);
+        grid-template-columns: repeat(1, 80%);
+    }
+}
+
+@media (max-width: 450px) {
+    .container-ps {
+        grid-template-columns: repeat(1, 120px);
+    }
+    .answer_wrap {
+        height: 120px!important;
+    }
+    .step-any-slide .slide_body { 
+        overflow: hidden;
     }
 }
 
@@ -156,3 +168,4 @@ form {
     box-sizing: border-box;
     padding: 0 16px;
 }
+
