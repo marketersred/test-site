@@ -169,3 +169,12 @@ form {
     padding: 0 16px;
 }
 
+
+
+#dropdown-menu {
+    display: none!important;
+}
+
+#dropdown-menu.visible {
+    display: block!important;
+}
