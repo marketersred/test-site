@@ -3,7 +3,7 @@ const translations = {
     flag: 'gb.png',
     name: 'English',
     'home-title': 'Short Quiz About Artificial Intelligence',
-    'home-terms': 'Terms of Use and Privacy Policy',
+    'home-terms': `<a  href="./terms/terms-en.html">Terms of Use and Privacy Policy</a>`,
     'q1-title': '1. In which field is artificial intelligence used?',
     'q1-A': 'A) Medicine',
     'q1-B': 'B) Sports',
@@ -37,7 +37,7 @@ const translations = {
     'cf-title': 'How can we contact you?',
     'cf-description': 'Please fill out the form below',
     'cf-terms':
-      'I have read and accept the <a href="./terms.html" target="_blank"><u>terms and conditions</u></a> and the <a href="./privacy.html" target="_blank"><u>privacy policy</u></a>.',
+      'I have read and accept the <a href="./terms/terms-en.html" target="_blank"><u>terms and conditions</u></a> and the <a href="./privacy/privacy-en.html" target="_blank"><u>privacy policy</u></a>.',
     'cf-button': 'Done!',
     firstName: 'First Name',
     lastName: 'Last Name',
@@ -48,7 +48,7 @@ const translations = {
     flag: 'es.png',
     name: 'Español',
     'home-title': 'Breve cuestionario sobre Inteligencia Artificial',
-    'home-terms': 'Términos de uso y política de privacidad',
+    'home-terms': `<a  href="./terms/terms-es.html">Términos de uso y política de privacidad</a>`,
     'q1-title': '1. ¿En qué campo se utiliza la inteligencia artificial?',
     'q1-A': 'A) Medicina',
     'q1-B': 'B) Deportes',
@@ -83,7 +83,7 @@ const translations = {
     'cf-title': '¿Cómo podemos contactarte?',
     'cf-description': 'Por favor completa el siguiente formulario',
     'cf-terms':
-      'He leído y acepto los <a href="./terms.html" target="_blank"><u>términos y condiciones</u></a> y la <a href="./privacy.html" target="_blank"><u>política de privacidad</u></a>.',
+      'He leído y acepto los <a href="./terms/terms-es.html" target="_blank"><u>términos y condiciones</u></a> y la <a href="./privacy/privacy-es.html" target="_blank"><u>política de privacidad</u></a>.',
     'cf-button': '¡Hecho!',
     firstName: 'Nombre',
     lastName: 'Apellido',
@@ -94,7 +94,7 @@ const translations = {
     flag: 'it.png',
     name: 'Italiano',
     'home-title': "Breve quiz sull'intelligenza artificiale",
-    'home-terms': 'Termini di utilizzo e Informativa sulla privacy',
+    'home-terms':  `<a  href="./terms/terms-it.html">Termini di utilizzo e Informativa sulla privacy</a>`,
     'q1-title': "1. In quale campo si utilizza l'intelligenza artificiale?",
     'q1-A': 'A) Medicina',
     'q1-B': 'B) Sport',
@@ -129,7 +129,7 @@ const translations = {
     'cf-title': 'Come possiamo contattarti?',
     'cf-description': 'Compila il modulo qui sotto',
     'cf-terms':
-      'Ho letto e accetto i <a href="./terms.html" target="_blank"><u>termini e condizioni</u></a> e l’<a href="./privacy.html" target="_blank"><u>informativa sulla privacy</u></a>.',
+      'Ho letto e accetto i <a href="./terms/terms-it.html" target="_blank"><u>termini e condizioni</u></a> e l’<a href="./privacy/privacy-it.html" target="_blank"><u>informativa sulla privacy</u></a>.',
     'cf-button': 'Fatto!',
     firstName: 'Nome',
     lastName: 'Cognome',
@@ -140,7 +140,7 @@ const translations = {
     flag: 'fr.png',
     name: 'Français',
     'home-title': "Petit quiz sur l'intelligence artificielle",
-    'home-terms': "Conditions d'utilisation et Politique de confidentialité",
+    'home-terms':  `<a  href="./terms/terms-fr.html">Conditions d'utilisation et Politique de confidentialité</a>`,
     'q1-title':
       "1. Dans quel domaine l'intelligence artificielle est-elle utilisée?",
     'q1-A': 'A) Médecine',
@@ -176,7 +176,7 @@ const translations = {
     'cf-title': 'Comment pouvons-nous vous contacter?',
     'cf-description': 'Veuillez remplir le formulaire ci-dessous',
     'cf-terms':
-      'J’ai lu et j’accepte les <a href="./terms.html" target="_blank"><u>conditions générales</u></a> et la <a href="./privacy.html" target="_blank"><u>politique de confidentialité</u></a>.',
+      'J’ai lu et j’accepte les <a href="./terms/terms-fr.html" target="_blank"><u>conditions générales</u></a> et la <a href="./privacy/privacy-fr.html" target="_blank"><u>politique de confidentialité</u></a>.',
     'cf-button': 'Terminé!',
     firstName: 'Prénom',
     lastName: 'Nom',
@@ -187,7 +187,7 @@ const translations = {
     flag: 'tr.png',
     name: 'Türkçe',
     'home-title': 'Yapay Zekâ Hakkında Kısa Test',
-    'home-terms': 'Kullanım Şartları ve Gizlilik Politikası',
+    'home-terms': `<a  href="./terms/terms-tr.html">Kullanım Şartları ve Gizlilik Politikası</a>`,
     'q1-title': '1. Yapay zekâ hangi alanda kullanılır?',
     'q1-A': 'A) Tıp',
     'q1-B': 'B) Spor',
@@ -221,7 +221,7 @@ const translations = {
     'cf-title': 'Sizinle nasıl iletişim kurabiliriz?',
     'cf-description': 'Lütfen aşağıdaki formu doldurun',
     'cf-terms':
-      'Başvuru <a href="./terms.html" target="_blank"><u>şartlar ve koşullarını</u></a> ve <a href="./privacy.html" target="_blank"><u>gizlilik politikasını</u></a> okudum ve kabul ediyorum.',
+      'Başvuru <a href="./terms/terms-tr.html" target="_blank"><u>şartlar ve koşullarını</u></a> ve <a href="./privacy/privacy-tr.html" target="_blank"><u>gizlilik politikasını</u></a> okudum ve kabul ediyorum.',
     'cf-button': 'Tamam!',
     firstName: 'Ad',
     lastName: 'Soyad',
@@ -231,9 +231,8 @@ const translations = {
   ms: {
     flag: 'my.png',
     name: 'Melayu',
-
     'home-title': 'Kuiz Ringkas Tentang Kecerdasan Buatan',
-    'home-terms': 'Syarat Penggunaan dan Dasar Privasi',
+    'home-terms': `<a  href="./terms/terms-ms.html">Syarat Penggunaan dan Dasar Privasi</a>`,
     'q1-title': '1. Dalam bidang apa kecerdasan buatan digunakan?',
     'q1-A': 'A) Perubatan',
     'q1-B': 'B) Sukan',
@@ -267,13 +266,17 @@ const translations = {
     'cf-title': 'Bagaimana kami boleh menghubungi anda?',
     'cf-description': 'Sila isi borang di bawah',
     'cf-terms':
-      'Saya telah membaca dan menerima <a href="./terms.html" target="_blank"><u>syarat dan ketentuan</u></a> dan <a href="./privacy.html" target="_blank"><u>dasar privasi</u></a>.',
+      'Saya telah membaca dan menerima <a href="./terms/terms-ms.html" target="_blank"><u>syarat dan ketentuan</u></a> dan <a href="./privacy/privacy-ms.html" target="_blank"><u>dasar privasi</u></a>.',
     'cf-button': 'Selesai!',
     firstName: 'Nama Pertama',
     lastName: 'Nama Keluarga',
     email: 'E-mel',
     phone: 'Telefon'
   }
+}
+
+function sanitizeHTML(html) {
+  return DOMPurify.sanitize(html);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -285,10 +288,10 @@ document.addEventListener('DOMContentLoaded', () => {
     Object.keys(translations).forEach(lang => {
       const option = document.createElement('a');
       option.href = `?lang=${lang}`;
-      option.innerHTML = `
+      option.innerHTML = sanitizeHTML(`
         <img src="../assets/img/${translations[lang].flag}" alt="${translations[lang].name}" class="flag" />
         ${translations[lang].name}
-      `;
+      `);
       dropdownMenu.appendChild(option);
     });
   };

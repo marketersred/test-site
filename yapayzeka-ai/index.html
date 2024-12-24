@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/modal-loading.css"> <!-- Modal -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css">
     <!-- Flags -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
@@ -46,16 +46,23 @@
                             langdirection="ltr" customdesign="[object Object]" theme="1_white">
                             <div class="quiz-body_blur"></div>
                             <div class="step-first-slide_wrap">
-                                <div class="block_img hide_in_start opacity-visible" style="opacity: 1;"><img
-                                        src="./assets/img/WuDDPrVVc5xbMiJSNbvBZ2ofd23EmVZA3XsUOZ8V.jpg" alt=""
-                                        class="d-fit_cover m-fit_cover d-pos_50-50 m-pos_50-50"></div>
-                                <div class="block_info hide_in_start opacity-visible" style="opacity: 1;">
+                                <div class="block_img hide_in_start opacity-visible" style="opacity: 1;">
+                                    <img class="mobile-image" style="height: 0;">
+                                    <img id="desktop-img" src="./assets/img/ai-image.jpg" alt=""
+                                        class="d-fit_cover m-fit_cover d-pos_50-50 m-pos_50-50">
+
+                                </div>
+                                <div class="block_info hide_in_start opacity-visible"
+                                    style="opacity: 1; margin-top: 40px;">
                                     <div id="block_info_body_start" class="block_info_body">
                                         <h1 id="home-title">Yapay Zekâ Hakkında Kısa Test</h1>
                                         <p></p>
                                     </div>
                                     <div id="language-selector">
-                                        <button id="dropdown-button" style="display: flex; align-items: center; gap: 10px;"><img id="current_lang-img" style="width: 30px; padding: 0;" src="./assets/img/tr.png" alt="current_lang"> Language</button>
+                                        <button id="dropdown-button"
+                                            style="display: flex; align-items: center; gap: 10px;"><img
+                                                id="current_lang-img" style="width: 30px; padding: 0;"
+                                                src="./assets/img/tr.png" alt="current_lang"> Language</button>
                                         <div id="dropdown-menu" style="display: none;">
                                         </div>
                                     </div>
@@ -67,9 +74,8 @@
                                     <div class="footer-links">
                                         <div class="footer_company-contacts"></div>
                                         <div class="footer_terms_and_made-by">
-                                            <p class="terms-and-policy"><a id="home-terms" href="./terms.html">Kullanım
-                                                    Şartları ve
-                                                    Gizlilik Politikası</a>
+                                            <p id="home-terms" class="terms-and-policy">
+                                                <a  href="./terms/terms-tr.html">Kullanım Şartları ve Gizlilik Politikası</a>
                                                 <!-- </p><a class="made-by"<span>adsquiz</span></a> -->
                                         </div>
                                     </div>
@@ -868,9 +874,9 @@
                                         <div class="form-group input-wrapper">
                                             <div class="terms-div">
                                                 <input type="checkbox" id="termsCheckbox" checked required />
-                                                <p id="cf-terms">Başvuru <a href="./terms.html"
+                                                <p id="cf-terms">Başvuru <a href="./terms/terms-tr.html"
                                                         target="_blank"><u>şartlar ve koşullarını</u></a>
-                                                    ve <a href="./privacy.html" target="_blank"><u>gizlilik
+                                                    ve <a href="./privacy/privacy-tr.html" target="_blank"><u>gizlilik
                                                             politikasını</u></a>
                                                     okudum ve kabul ediyorum.</p>
                                             </div>

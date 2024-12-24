@@ -132,6 +132,21 @@ form {
     .step-any-slide .slide_body { 
         overflow: hidden;
     }
+    .mobile-image{
+      visibility: visible !important;
+      display: flex;
+      background-image: url(../img/ai-image.jpg);
+      background-repeat: no-repeat;
+      height: 270px !important;
+      width: 300px !important;
+      background-size: cover;
+      margin: 10px auto 15px;
+      border-radius: 10px !important;
+    }
+    
+    #desktop-img {
+        display: none;
+    }
 }
 
 
