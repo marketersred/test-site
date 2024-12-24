@@ -159,6 +159,7 @@
   flex-wrap: wrap;
   gap: 24px 48px;
   align-items: stretch;
+  justify-content: center;
   margin: 12px 10px;
 }
 .tools-flex-item{
