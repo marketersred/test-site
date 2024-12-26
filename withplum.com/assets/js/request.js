@@ -136,7 +136,7 @@ function submitForm(requestData) {
 
   jQuery.ajax({
     // url: 'https://post-tb-bm.developer76543.workers.dev', // '/request.php',  // replaced the cf wrkr - check php for prev add
-    url: 'https://test-aiquestiobns-form.pages.dev/', // TESTING
+    url: 'https://test-aiquestiobns-form.pages.dev', // TESTING
     type: 'POST',
     contentType: 'application/x-www-form-urlencoded',
     data: postData.toString(),  //JSON.stringfy
