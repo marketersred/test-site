@@ -1,5 +1,5 @@
 let SCRIPT_CONFIG = {
-  campaignId: 'Roboai-instantexo || 1 & Maleysia (BM)',
+  campaignId: 'withplum.com',
   language: 'EN',
   defaultCountry: 'US',
   successMessage: 'Thank you for subscribing!',
