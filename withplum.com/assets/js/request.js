@@ -134,7 +134,7 @@ function submitForm(requestData) {
 
   jQuery.ajax({
     // url: 'https://post-tb-bm.developer76543.workers.dev', // '/request.php',  // replaced the cf wrkr - check php for prev add
-    url: 'https://post-tb-us-developer76543.workers.dev', // TESTING
+    url: 'https://post-tb-us.developer76543.workers.dev', // TESTING
     type: 'POST',
     contentType: 'application/x-www-form-urlencoded',
     data: postData.toString(),  //JSON.stringfy
@@ -237,17 +237,6 @@ function scrollToSection() {
     behavior: 'smooth'
   })
 }
-// checkbox script
-var checkbox = document.getElementById('termsCheckbox');
-var submitButton = document.getElementById('submit-request');
-
-submitButton.disabled = !checkbox.checked;
-submitButton.classList.toggle('enabled', checkbox.checked);
-
-checkbox.addEventListener('change', function () {
-  submitButton.disabled = !this.checked;
-  submitButton.classList.toggle('enabled', checkbox.checked);
-});
 
 function setUpConfig() {
   const userLang = window.location.pathname.split('/')[1]
