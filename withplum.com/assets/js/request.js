@@ -132,11 +132,9 @@ function submitForm(requestData) {
     /*     subAffiliate: requestData.subAffiliate, //document.getElementById('answersQuiz').value, */
   });
 
-  /*   console.log(postData.toString()); */
-
   jQuery.ajax({
     // url: 'https://post-tb-bm.developer76543.workers.dev', // '/request.php',  // replaced the cf wrkr - check php for prev add
-    url: 'https://test-aiquestiobns-form.pages.dev', // TESTING
+    url: 'https://post-tb-us-developer76543.workers.dev', // TESTING
     type: 'POST',
     contentType: 'application/x-www-form-urlencoded',
     data: postData.toString(),  //JSON.stringfy
