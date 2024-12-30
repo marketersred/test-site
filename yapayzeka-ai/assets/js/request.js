@@ -106,7 +106,7 @@ function getFormData() {
     phone: phone, // jQuery('#phone').val(),
     country: document.querySelector('.iti__selected-flag .iti__flag').classList[1].toUpperCase().slice(-2),
     campaign: SCRIPT_CONFIG.campaignId,
-    language: SCRIPT_CONFIG.language,
+    language: new URLSearchParams(window.location.search).get('lang') || 'en',
     tag: utm_p1,
     tag1: utm_p2,
     affiliateTransactionId: adclid,
