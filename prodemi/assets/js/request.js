@@ -1,5 +1,5 @@
 let SCRIPT_CONFIG = {
-  campaignId: 'TESTING CAMPAIGN ID | CHANGE IT',
+  campaignId: 'prodemi',
   language: 'EN',
   defaultCountry: 'US',
   successMessage: 'Thank you for subscribing!',
