@@ -149,8 +149,8 @@ function submitForm (requestData) {
     language: requestData.language,
     tag: requestData.tag,
     tag1: requestData.tag1,
-    affiliateTransactionId: requestData.affiliateTransactionId
-        subAffiliate: requestData.subAffiliate, //document.getElementById('answersQuiz').value,
+    affiliateTransactionId: requestData.affiliateTransactionId,
+    subAffiliate: requestData.subAffiliate, //document.getElementById('answersQuiz').value,
   })
 
     console.log(postData.toString());
