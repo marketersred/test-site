@@ -20,7 +20,7 @@ jQuery.noConflict()
 jQuery(document).ready(function () {
   setupIntlTelInput()
   setUpConfig()
-  validateTerms()
+  // validateTerms()
   initializeForm()
 })
 
