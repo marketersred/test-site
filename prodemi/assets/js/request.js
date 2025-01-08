@@ -101,6 +101,7 @@ function initializeForm () {
 function getFormData () {
   let phone = iti.isValidNumber() ? iti.getNumber() : ''
   if (!phone) {
+    setLoadingModal(false)
     alert('Please enter a valid phone number.')
     return false
   }
@@ -131,8 +132,8 @@ function getFormData () {
     language: SCRIPT_CONFIG.language,
     tag: utm_p1,
     tag1: utm_p2,
-    affiliateTransactionId: jQuery('#message').val(),
-    // subAffiliate: subAffiliate
+    affiliateTransactionId: adclid,
+    subAffiliate: jQuery('#message').val(),
   }
 }
 
@@ -173,15 +174,20 @@ function submitForm (requestData) {
 
         if (redirectUrl) {
             console.log('Passing redirect URL via query parameter:', redirectUrl);
-          window.location.href = `${defaultUrl}?redirect=${encodeURIComponent(
-            redirectUrl
-          )}`
+            window.location.href = 
+            `${defaultUrl}?redirect=${encodeURIComponent(redirectUrl)}`
         } else {
           window.location.href = defaultUrl
         }
       } else {
         finalMessage(response.result)
       }
+      setLoadingModal(false)
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+      console.error('API Error:', textStatus, errorThrown);
+      console.error('Response:', jqXHR.responseText);
+      setLoadingModal(false);
     }
   })
 }
