@@ -1,12 +1,12 @@
 let SCRIPT_CONFIG = {
-  campaignId: 'TradeGPT || 1',
-  language: 'TR',
-  defaultCountry: 'TR',
-  successMessage: 'Abonelik için teşekkür ederiz!',
-  loadingMessage: 'Yükleniyor...',
-  existingAccountMessage: 'Kayıt engellendi - hesap zaten mevcut.',
-  errorMessage: 'Beklenmeyen bir hata oluştu, lütfen verilerinizi kaydedip daha sonra tekrar deneyin.',
-  emptyFormMessage: 'Eksik form, lütfen boş alanları doldurun.'  
+  campaignId: 'TradeGPT IT || 1',
+  language: 'IT',
+  defaultCountry: 'IT',
+  successMessage: 'Grazie per esserti iscritto!',
+  loadingMessage: 'Caricamento...',
+  existingAccountMessage: "Registrazione bloccata - l'account esiste già.",
+  errorMessage: 'Si è verificato un errore imprevisto, per favore salva i tuoi dati e riprova più tardi.',
+  emptyFormMessage: 'Modulo incompleto, per favore riempi i campi vuoti.' 
 }
 
 const redirectMap = {
@@ -281,20 +281,20 @@ function setUpConfig() {
     emptyFormMessage: 'Formulaire incomplet, veuillez remplir les champs vides.'
   }
 
-  const IT = {
-    language: 'IT',
-    defaultCountry: 'IT',
-    successMessage: 'Grazie per esserti iscritto!',
-    loadingMessage: 'Caricamento...',
-    existingAccountMessage: "Registrazione bloccata - l'account esiste già.",
-    errorMessage: 'Si è verificato un errore imprevisto, per favore salva i tuoi dati e riprova più tardi.',
-    emptyFormMessage: 'Modulo incompleto, per favore riempi i campi vuoti.'
+  const TR = {
+    language: 'TR',
+    defaultCountry: 'TR',
+    successMessage: 'Abonelik için teşekkür ederiz!',
+    loadingMessage: 'Yükleniyor...',
+    existingAccountMessage: 'Kayıt engellendi - hesap zaten mevcut.',
+    errorMessage: 'Beklenmeyen bir hata oluştu, lütfen verilerinizi kaydedip daha sonra tekrar deneyin.',
+    emptyFormMessage: 'Eksik form, lütfen boş alanları doldurun.'  
   }
 
   const languageLabels = {
     'en': EN,
     'fr': FR,
-    'it': IT
+    'tr': TR
   }
 
   SCRIPT_CONFIG = { ...SCRIPT_CONFIG, ...languageLabels[userLang] }
