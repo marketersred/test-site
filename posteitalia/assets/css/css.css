@@ -1749,5 +1749,6 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
 }
 
 button:disabled {
-   opacity: 0.4;
+  opacity: .3;
+  cursor: not-allowed;
 }
