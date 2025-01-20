@@ -1,0 +1,166 @@
+.iti__hide {
+  display: none;
+}
+
+pre {
+  margin: 0 !important;
+  display: inline-block;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  background: none;
+}
+
+input,
+button {
+  margin: 0;
+  padding: 15px 12px;
+  font-size: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+input[disabled],
+button[disabled] {
+  background-color: #eee;
+}
+
+input,
+select {
+  border: 1px solid #ccc;
+}
+
+::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #bbb;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #bbb;
+}
+
+button {
+  color: #fff;
+  background-color: #428bca;
+  border: 1px solid #357ebd;
+}
+button:hover {
+  background-color: #3276b1;
+  border-color: #285e8e;
+  cursor: pointer;
+}
+
+#result {
+  margin-bottom: 100px;
+}
+
+/* REQUEST CSS */
+
+form {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iti.iti--allow-dropdown > * {
+  width: 100%;
+}
+
+#fadeable {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  z-index: 999;
+}
+
+#load,
+#finalMessage {
+  display: none;
+  color: white !important;
+}
+
+#load *,
+#finalMessage * {
+  color: white !important;
+}
+
+#buttonSubmit:disabled {
+  cursor: not-allowed !important;
+  background-color: #08513f !important;
+}
+.form-group.input-wrapper .terms-div {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  text-align: left;
+  user-select: none;
+}
+
+.form-group input {
+  margin: 7px 5px 0 0;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.form-group p {
+  font-size: 16px;
+}
+
+.form-group p u {
+  color: #19a280b6!important;
+}
+.form-group p u:hover {
+  color: #19a280!important;
+}
+
+#submit-request {
+  background: #19a280b6;
+  border-color: #19a280b6;
+  width: 100%;
+}
+
+#submit-request:hover {
+  background: #19a280;
+  border-color: #19a280;
+}
+
+#form-container {
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 350px;
+  margin: 50px 0;
+  border: 1px solid #d3d3d3;
+  background: rgba(228, 228, 228, 0.749);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.iti__selected-flag {
+  width: fit-content;
+}
+
