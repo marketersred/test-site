@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request form</title>
+  
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./assets/css/form.css"> <!-- Form -->
+  <link rel="stylesheet" href="./assets/css/modal-loading.css"> <!-- Modal -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css"> <!-- Flags -->
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> <!-- Flags -->
+  <script src="./assets/js/request.js"></script> <!-- Request -->
+	<script src="./assets/js/takingparams.js"></script> <!-- Params -->
+</head>
+
+<body>
+  <!-- <div id="modal" class="modal">
+    <p id="modal-message">...</p>
+    <video autoplay loop muted width="70px">
+      <source src="./assets/img/loading.gif.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div> -->
+  <div id="modal" class="modal">
+    <p id="modal-message">...</p>
+  </div>
+  <div id="modal2" class="modal">
+    <p id="modal2-message">...</p>
+  </div>
+
+  <form id="form-request">
+    <input class="input" required type="text" id="firstName" placeholder="Isim" />
+    <input class="input" required type="text" id="lastName" placeholder="Soyad" />
+    <input class="input" required type="email" id="email" placeholder="E-posta" />
+    <input class="input" required type="tel" id="phone" placeholder="Posta" />
+    <div class="form-group input-wrapper">
+      <div class="terms-div">
+      <input type="checkbox" id="termsCheckbox" checked required />
+        <p>Application <a href="./terms.html" target="_blank"><u>terms and conditions</u></a> 
+        and <a href="./privacy.html" target="_blank"><u>privacy policy</u></a> 
+        ave been read and accepted by me.</p>
+      </div>
+    </div>
+    <button type="submit" id="submit-request">Submit</button>
+  </form>
+</body>
+</html>

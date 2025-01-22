@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://nextvolumetechniques.com/tr?offer=ImmApex -->
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Study Investor Pro | Register</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" id="wp-block-library-css" href="./assets/css/style.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sb-styles-css" href="./assets/css/styles.d.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sb-styles-css" href="./assets/css/wpda_public.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sb-styles-css" href="./assets/css/app.css" type="text/css" media="all">
+  <link href="./assets/css/css2" rel="stylesheet">
+
+  <script src="./assets/js/tabs.js"></script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./assets/css/modal-loading.css"> <!-- Modal -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css"> <!-- Flags -->
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> <!-- Flags -->
+  <script src="./assets/js/request.js"></script> <!-- Request -->
+	<script src="./assets/js/takingparams.js"></script> <!-- Params -->
+</head>
+
+<body id="hero">
+  <div id="modal" class="modal">
+    <p id="modal-message">...</p>
+  </div>
+  <div id="modal2" class="modal">
+    <p id="modal2-message">...</p>
+  </div>
+
+  <div class="relative flex flex-col min-h-screen antialiased">
+    <img src="./assets/img/metatron.webp" class="absolute left-[-50px] top-[-50px] z-[-2]"
+      style="opacity: 7 0%;">
+    <section class="relative bg-center py-7 lg:py-20 bg-gradient-to-bl from-[#95e8ff1e] to-[#fff]">
+      <div class="container px-4 mx-auto max-w-7xl">
+        <div class="flex flex-wrap items-center -mx-4 cols_box_banner lg:justify-between">
+          <div class="w-full px-4 text-center lg:w-10/24 lg:pl-14 lg:order-2 lg:text-left">
+            <!-- Registration form -->
+            <div class="p-5 2xl:p-8 lg:rounded-b-lg+ bg-white shadow-lg rounded-lg">
+              <div class="px-4 mb-4 text-lg font-bold leading-snug text-center lg:text-2xl lg:font-xl-nm lg:px-6"
+                style="color: #31177f;">
+                <p>Yapay Zeka ile Daha Akıllı Yatırım Yapmaya Başlayın</p>
+
+              </div>
+              <div>
+                <form id="form-request" data-funnel="immediate-edge" x-data="signUpForm()" @submit.prevent="submitData">
+                  <div class="hidden alert alert-danger" role="alert"></div>
+
+                  <div x-show="showAlertMessage" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform scale-90"
+                    x-transition:enter-end="opacity-100 transform scale-100"
+                    x-transition:leave="transition ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform scale-100"
+                    x-transition:leave-end="opacity-0 transform scale-90" style="display: none;">
+                    <div class="p-4 mb-4 text-white bg-red-500" role="alert">
+                      <p class="mb-0">Please fix the error given below!</p>
+                    </div>
+                  </div>
+
+                  <div x-show="failure" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform scale-90"
+                    x-transition:enter-end="opacity-100 transform scale-100"
+                    x-transition:leave="transition ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform scale-100"
+                    x-transition:leave-end="opacity-0 transform scale-90" style="display: none;">
+                    <div class="p-4 my-4 text-red-500 bg-red-100 border-l-4 border-red-500" role="alert">
+                      <p class="mb-0" x-text="message"></p>
+                    </div>
+                  </div>
+
+                  <div x-show="success" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform scale-90"
+                    x-transition:enter-end="opacity-100 transform scale-100"
+                    x-transition:leave="transition ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform scale-100"
+                    x-transition:leave-end="opacity-0 transform scale-90" style="display: none;">
+                    <div class="p-4 my-4 text-green-700 bg-green-100 border-l-4 border-green-500" role="alert">
+                      <p class="mb-0" x-text="message"></p>
+                    </div>
+                  </div>
+
+                  <div class="form-inputs">
+                    <div class="relative mb-4">
+                      <input id="firstName" name="firstName"
+                        class="block w-full px-4 py-3 font-medium leading-tight text-gray-900 bg-white border border-gray-400 rounded-lg shadow-none appearance-none focus:outline-none"
+                        placeholder="İlk isim" type="text" x-model="formData.firstName"
+                        x-on:keydown="delete errors[&#39;firstName&#39;]"
+                        x-bind:class="{ &#39;border-red-500 text-red-500&#39;: errors[&#39;firstName&#39;] }">
+                      <template x-if="errors[&#39;firstName&#39;]"></template>
+                    </div>
+                    <div class="relative mb-4">
+                      <input id="lastName" name="lastName"
+                        class="block w-full px-4 py-3 font-medium leading-tight text-gray-900 bg-white border border-gray-400 rounded-lg shadow-none appearance-none focus:outline-none"
+                        placeholder="Soyadı" type="text" x-model="formData.lastName"
+                        x-on:keydown="delete errors[&#39;lastName&#39;]"
+                        x-bind:class="{ &#39;border-red-500 text-red-500&#39;: errors[&#39;lastName&#39;] }">
+                      <template x-if="errors[&#39;lastName&#39;]"></template>
+                    </div>
+                    <div class="relative mb-4">
+                      <input id="email" name="email"
+                        class="block w-full px-4 py-3 font-medium leading-tight text-gray-900 bg-white border border-gray-400 rounded-lg shadow-none appearance-none focus:outline-none"
+                        placeholder="E-posta" type="text" x-model="formData.email"
+                        x-on:keydown="delete errors[&#39;email&#39;]"
+                        x-bind:class="{ &#39;border-red-500 text-red-500&#39;: errors[&#39;email&#39;] }">
+                      <template x-if="errors[&#39;email&#39;]"></template>
+                    </div>
+                    <div class="relative mb-4">
+                      <input id="phone" name="phone"
+                        class="block w-full px-4 py-3 font-medium leading-tight text-gray-900 bg-white border border-gray-400 rounded-lg shadow-none appearance-none focus:outline-none"
+                        placeholder="Telefon" type="text" x-model="formData.phone"
+                        x-on:keydown="delete errors[&#39;phone&#39;]"
+                        x-bind:class="{ &#39;border-red-500 text-red-500&#39;: errors[&#39;email&#39;] }">
+                      <template x-if="errors[&#39;phone&#39;]"></template>
+                    </div>
+                  </div>
+
+                  <div class="form-group form-actions">
+                    <button type="submit"
+                      class="w-full px-4 py-4 font-bold text-white uppercase rounded shadow bg-blazeorange so-4-cta js-form-cta hover:bg-opacity-75 focus:outline-none"
+                      style="background: rgb(33, 17, 84); color: rgb(255, 255, 255);" :disabled="loading">
+                      <span x-show="loading" class="flex items-center justify-center" style="display: none;">
+                        Lütfen bekleyin...
+                        <img src="./assets/img/spinner.svg" width="50" height="50"
+                          style="margin-left: 10px;">
+                      </span>
+                      <span x-show="!loading">Yatirima başla</span>
+                    </button>
+                  </div>
+                  <div class="form-actions">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 mt-6 lg:w-1/2 lg:mb-4 lg:order-1">
+            <div
+              class="text-[#3a556a] text-[45px] pb-[1.5rem] lg:text-[70px] font-bold font-[&#39;Sen&#39;] leading-[71px] relative">
+              <span class="changing-name">Immediate Apex</span>
+              <img src="./assets/img/decore.webp" class="absolute bottom-[-10px] hidden lg:block">
+            </div>
+            <p class="hidden text-2xl leading-normal tracking-wider text-[#3a556a] lg:block"></p>
+            <ul class="flex flex-col items-center justify-center list-none lg:block lg:text-left lg:mt-10">
+              <li class="relative flex items-start w-full mb-4 text-lg leading-tight tracking-wider lg:text-2xl">
+                <div class="bg-[#4FD9FF] p-1 rounded-[3px] mt-1">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon" clip-path="url(#clip0_2034_5933)">
+                      <path id="Vector"
+                        d="M9.99976 0.727539L12.98 6.87654L19.7498 7.81173L14.8228 12.547L16.0253 19.2737L9.99976 16.0505L3.97344 19.2737L5.17676 12.547L0.249756 7.81173L7.01951 6.87654L9.99976 0.727539Z"
+                        fill="white"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2034_5933">
+                        <rect width="19.5" height="19.5" fill="white" transform="translate(0.249878 0.250244)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="ml-3 lg:ml-8">Gerçek Zamanlı Piyasa Bilgileri</div>
+              </li>
+              <li class="relative flex items-start w-full mb-4 text-lg leading-tight tracking-wider lg:text-2xl">
+                <div class="bg-[#4FD9FF] p-1 rounded-[3px] mt-1">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon" clip-path="url(#clip0_2034_5933)">
+                      <path id="Vector"
+                        d="M9.99976 0.727539L12.98 6.87654L19.7498 7.81173L14.8228 12.547L16.0253 19.2737L9.99976 16.0505L3.97344 19.2737L5.17676 12.547L0.249756 7.81173L7.01951 6.87654L9.99976 0.727539Z"
+                        fill="white"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2034_5933">
+                        <rect width="19.5" height="19.5" fill="white" transform="translate(0.249878 0.250244)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="ml-3 lg:ml-8">Kullanıcı Dostu 5* Platform</div>
+              </li>
+              <li class="relative flex items-start w-full mb-4 text-lg leading-tight tracking-wider lg:text-2xl">
+                <div class="bg-[#4FD9FF] p-1 rounded-[3px] mt-1">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon" clip-path="url(#clip0_2034_5933)">
+                      <path id="Vector"
+                        d="M9.99976 0.727539L12.98 6.87654L19.7498 7.81173L14.8228 12.547L16.0253 19.2737L9.99976 16.0505L3.97344 19.2737L5.17676 12.547L0.249756 7.81173L7.01951 6.87654L9.99976 0.727539Z"
+                        fill="white"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2034_5933">
+                        <rect width="19.5" height="19.5" fill="white" transform="translate(0.249878 0.250244)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="ml-3 lg:ml-8">En Son Teknoloji Algoritmalar</div>
+              </li>
+              <li class="relative flex items-start w-full mb-4 text-lg leading-tight tracking-wider lg:text-2xl">
+                <div class="bg-[#4FD9FF] p-1 rounded-[3px] mt-1">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon" clip-path="url(#clip0_2034_5933)">
+                      <path id="Vector"
+                        d="M9.99976 0.727539L12.98 6.87654L19.7498 7.81173L14.8228 12.547L16.0253 19.2737L9.99976 16.0505L3.97344 19.2737L5.17676 12.547L0.249756 7.81173L7.01951 6.87654L9.99976 0.727539Z"
+                        fill="white"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2034_5933">
+                        <rect width="19.5" height="19.5" fill="white" transform="translate(0.249878 0.250244)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="ml-3 lg:ml-8">Gizli Ücret Yok</div>
+              </li>
+              <li class="relative flex items-start w-full mb-4 text-lg leading-tight tracking-wider lg:text-2xl">
+                <div class="bg-[#4FD9FF] p-1 rounded-[3px] mt-1">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon" clip-path="url(#clip0_2034_5933)">
+                      <path id="Vector"
+                        d="M9.99976 0.727539L12.98 6.87654L19.7498 7.81173L14.8228 12.547L16.0253 19.2737L9.99976 16.0505L3.97344 19.2737L5.17676 12.547L0.249756 7.81173L7.01951 6.87654L9.99976 0.727539Z"
+                        fill="white"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2034_5933">
+                        <rect width="19.5" height="19.5" fill="white" transform="translate(0.249878 0.250244)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="ml-3 lg:ml-8">7/24 Destek</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="./assets/img/bubble.svg" class="absolute right-0 bottom-0 z-[-1]">
+      </div>
+    </section>
+
+    <section class="explained relative bg-gradient-to-l from-[#95e8ff2c] to[#95e8ff2c] bg-opacity-25">
+      <img src="./assets/img/metatron.webp"
+        class="absolute right-[-50px] bottom-[-50px] z-[-2] hidden lg:block" style="opacity: 40%;">
+      <div class="py-6 lg:py-12 cs-explained">
+        <div class="container px-4 mx-auto text-white max-w-7xl cs-container">
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="w-full px-4 lg:order-2 cs-col-one-two">
+              <img class="block mx-auto" relative="true" src="./assets/img/phone.webp" width="450" height="480"
+                loading="lazy">
+            </div>
+            <div class="w-full px-4 text-center lg:order-1 cs-col-one-third lg:pr-12 lg:text-left">
+              <div
+                class="text-[#3a556a] text-[35px] leading-[45px]  lg:text-6xl font-bold font-[&#39;Sen&#39;] lg:leading-[71px] py-6 relative">
+                Neden <span class="changing-name">Immediate Apex</span> ile yatırım yapmalısınız?
+                <img src="./assets/img/decore.webp" class="absolute z-[-1] bottom-5 hidden lg:block"
+                  loading="lazy">
+              </div>
+              <div class="prose prose-lg max-w-none lg:mb-8 lg:pt-14">
+                <p>Gelişmiş stratejiler: İhtiyaçlarınıza göre özelleştirilebilir algoritmalar. Azaltılmış risk: İmpulsif
+                  kararları önlemek için kural tabanlı otomasyon. Veri odaklı eylemler: Daha akıllı hamleler için güçlü
+                  istatistiksel analiz.</p>
+              </div>
+              <a onclick="scrollToSection()" style="cursor: pointer"
+                class="inline-block py-4 mt-4 mb-6 text-base font-bold text-center text-white uppercase bg-blue-500 rounded shadow btn-theme-clr arrow-add px-7 lg:py-4 lg:mb-8 lg:text-lg lg:px-10 hover:bg-blue-700 hover:opacity-75 focus:outline-none"
+                style="border-radius: 33.2px; background: #1570ef">
+                <div class="flex items-center">
+                  KAYIT OL
+                  <i class="inline-block w-5 h-5 ml-2">
+                    <svg transform="rotate(90)" class="w-full h-full" viewBox="0,0,97,97">
+                      <path fill="currentColor"
+                        d="M83.952 34.479L50.056.585a2 2 0 00-2.828 0L13.333 34.479a2 2 0 000 2.828l9.03 9.031a1.999 1.999 0 002.828 0l14.534-14.532v63.478a2 2 0 002 2H55.56a2 2 0 002-2V31.807l14.532 14.532c.75.75 2.078.75 2.828 0l9.031-9.031a2 2 0 00.001-2.829z">
+                      </path>
+                    </svg>
+                  </i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative lg:bg-center lg:mb-10">
+      <div class="py-10 lg:py-28">
+        <div class="container px-4 mx-auto text-white max-w-7xl cs-container">
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="relative w-full px-4 cs-col-one-two">
+              <img class="block" relative="true" src="./assets/img/phone2.webp" width="500" height="520"
+                loading="lazy">
+            </div>
+            <div class="w-full px-4 text-center cs-col-one-third lg:pl-12 lg:text-left">
+              <div
+                class="text-[#3a556a] text-[35px] lg:text-6xl font-bold font-[&#39;Sen&#39;] leading-[45px] lg:leading-[71px] relative">
+                <span class="changing-name">Immediate Apex</span> ne yapar?
+                <img src="./assets/img/decore.webp" class="absolute bottom-[-10px] hidden lg:block"
+                  loading="lazy">
+              </div>
+              <div class="prose prose-lg text-[#3A556A] max-w-none py-16">
+                <p>Piyasa trendlerini tahmin edin: Daha akıllı yatırımlar için gerçek zamanlı verileri kullanın.
+                  Yatırımları otomatikleştirin: AI’nin stratejileri sizin için optimize etmesine izin verin.
+                  Portföyünüzü çeşitlendirin: Küresel piyasalara erişimle riski azaltın. Getirileri maksimize edin:
+                  Verimliliği artırın ve finansal hedeflerinize daha hızlı ulaşın.</p>
+              </div>
+              <a onclick="scrollToSection()" style="cursor: pointer"
+                class="inline-block py-4 text-base text-center font-bold  text-white uppercase bg-blue-500 rounded shadow btn-theme-clr arrow-add px-7 lg:py-4 lg:mb-8 lg:text-lg lg:px-10 hover:bg-blue-700 hover:opacity-75 focus:outline-none"
+                style="border-radius: 33.2px; background: #1570ef">
+                <div class="flex items-center">
+                  KAYIT OL
+                  <i class="inline-block w-5 h-5 ml-2">
+                    <svg transform="rotate(90)" class="w-full h-full" viewBox="0,0,97,97">
+                      <path fill="currentColor"
+                        d="M83.952 34.479L50.056.585a2 2 0 00-2.828 0L13.333 34.479a2 2 0 000 2.828l9.03 9.031a1.999 1.999 0 002.828 0l14.534-14.532v63.478a2 2 0 002 2H55.56a2 2 0 002-2V31.807l14.532 14.532c.75.75 2.078.75 2.828 0l9.031-9.031a2 2 0 00.001-2.829z">
+                      </path>
+                    </svg>
+                  </i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden pb-20 bg-gradient-to-br from-[#95e8ff13] to[#fff] relative">
+      <div class="absolute top-0 left-0 w-[400px] h-[100px] bg-[#a3e8fb] rounded-br-[50px] opacity-20 hidden lg:block">
+      </div>
+      <div class="py-[40px] lg:py-32">
+        <div class="container px-4 mx-auto max-w-7xl cs-container">
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="w-full px-4 text-center lg:text-left cs-col-one-third lg:pr-12 pb-14 lg:pb-0">
+              <div
+                class="text-[#3a556a] text-[35px] lg:text-6xl font-bold font-[&#39;Sen&#39;] leading-[45px] lg:leading-[71px] relative">
+                Şansını bir daha asla kaçırma
+                <img src="./assets/img/decore.webp" class="absolute bottom-[-13px] hidden lg:block"
+                  loading="lazy">
+              </div>
+              <div class="mb-3 prose prose-lg max-w-none text-[#3A556A] pt-24 pb-10">
+                <p>Yararlanın yıldırım hızında veri işleme ve piyasa trend analizi. Bilgili, duygusuz kararlar alın ve
+                  7/24 ücretsiz destek alın. Yatırım maliyetlerinizi düşürün ve AI kullanarak riski en aza indirin.
+                  Süreçleri otomatikleştirin ve karı maksimize edin. Geride kalmayın. AI devrimine katılın ve bugün
+                  profesyonel gibi yatırım yapmaya başlayın.</p>
+
+              </div>
+              <div>
+                <a onclick="scrollToSection()" style="cursor: pointer"
+                  class="inline-block py-4 mt-12 text-base text-center  font-bold  text-white uppercase bg-blue-500 rounded shadow btn-theme-clr arrow-add px-7 lg:py-4 lg:mb-8 lg:text-lg lg:px-10 hover:bg-blue-700 hover:opacity-75 focus:outline-none"
+                  style="border-radius: 33.2px; background: #1570ef">
+                  <div class="flex items-center">
+                    KAYIT OL
+                    <i class="inline-block w-5 h-5 ml-2">
+                      <svg transform="rotate(90)" class="w-full h-full" viewBox="0,0,97,97">
+                        <path fill="currentColor"
+                          d="M83.952 34.479L50.056.585a2 2 0 00-2.828 0L13.333 34.479a2 2 0 000 2.828l9.03 9.031a1.999 1.999 0 002.828 0l14.534-14.532v63.478a2 2 0 002 2H55.56a2 2 0 002-2V31.807l14.532 14.532c.75.75 2.078.75 2.828 0l9.031-9.031a2 2 0 00.001-2.829z">
+                        </path>
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="relative w-full px-4 cs-col-one-two padding-nil-mbl">
+              <img class="relative block mx-auto" relative="true" src="./assets/img/phone3.webp" width="420"
+                height="420" loading="lazy">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-container mx-auto bg-[#a3e8fb] rounded-[50px] w-full">
+      <div class="relative py-12 pt-14 border-center">
+        <div class="px-4 mx-auto text-white max-w-7xl">
+          <div
+            class="text-[#314859] text-[35px] lg:text-6xl font-bold font-[&#39;Sen&#39;] leading-[45px] lg:leading-[71px] pb-[55px] lg:pb-20 text-center">
+            Başarınızı en üst düzeye çıkarın <span class="changing-name">Immediate Apex</span>
+          </div>
+          <section class="flex flex-col gap-20 justify-center items-center">
+            <!-- 1 -->
+            <div class="flex flex-col md:flex-row gap-x-10 relative">
+              <div class="lg:w-[568px] lg:h-[197px] bg-white rounded-[31px] shadow p-8">
+                <img src="./assets/img/num1.webp" class="absolute left-[-30px] top-[68px]" loading="lazy">
+                <div class="lg:w-[534px] lg:h-[244px]">
+                  <div class="text-[#3a556a] text-[26px] font-semibold leading-[34px]"> Hedeflerini belirle</div>
+                  <div class="text-[#3a556a] text-base font-light leading-[34px] tip-text">
+                    <p>Belirgin ve spesifik hedefler belirleyerek <span class="changing-name">Immediate Apex</span>’in istediğiniz sonuçlara ulaşmadaki
+                      etkinliğini en üst düzeye çıkarın. Odaklanmış bir hedef, optimum sonuçlar sağlar.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[316px] h-[197px] bg-[#b0edff] rounded-[31px]">
+                <img class="w-[240px] h-[240px] p-2.5 mx-auto" src="./assets/img/robot1.webp" loading="lazy">
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex flex-col md:flex-row gap-x-10 relative">
+              <div class="w-[316px] h-[197px]">
+                <img class="w-[240px] h-[240px] p-2.5 mx-auto" src="./assets/img/robot2.webp" loading="lazy">
+              </div>
+              <div class="lg:w-[568px] lg:h-[197px] bg-white rounded-[31px] shadow p-8">
+                <img src="./assets/img/num2.webp" class="absolute left-[-30px] top-[68px]" loading="lazy">
+                <div class="lg:w-[534px] lg:h-[244px]">
+                  <div class="text-[#3a556a] text-[26px] font-semibold leading-[34px]"> İzle ve öğren</div>
+                  <div class="text-[#3a556a] text-base font-light leading-[34px] tip-text">
+                    <p><span class="changing-name">Immediate Apex</span> pazar analizini yaparken, platformu gözlemlemek ve piyasa trendlerini anlamak
+                      yatırım becerilerinizi geliştirmenize yardımcı olacaktır. Ustalık, deneyimle gelir.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="flex flex-col md:flex-row gap-x-10 relative">
+              <div class="lg:w-[568px] lg:h-[197px] bg-white rounded-[31px] shadow p-8">
+                <img src="./assets/img/num3.webp" class="absolute left-[-30px] top-[68px]" loading="lazy">
+                <div class="lg:w-[534px] lg:h-[244px]">
+                  <div class="text-[#3a556a] text-[26px] font-semibold leading-[34px]">Portföyünü çeşitlendir</div>
+                  <div class="text-[#3a556a] text-base font-light leading-[34px] tip-text">
+                    <p>Çeşitlendirme, uzun vadeli başarı için kritik öneme sahiptir ve <span class="changing-name">Immediate Apex</span>, bir dengeli
+                      portföy oluştururken birden fazla piyasayı ve varlığı analiz ederek riskleri en aza indirir.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[316px] h-[197px] bg-[#b0edff] rounded-[31px]">
+                <img class="w-[240px] h-[240px] p-2.5 mx-auto ml-6" src="./assets/img/robot3.webp">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="py-28 cs-explained">
+        <div class="container px-4 mx-auto text-white max-w-7xl cs-container">
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="relative w-full bg-[#a3e8fb] cs-col-one-two bg-opacity-20 rounded-l-[50px] p-8">
+              <img class="mx-auto" relative="true" src="./assets/img/phone4.webp" width="360" height="360"
+                loading="lazy">
+            </div>
+            <div class="w-full px-4 text-center cs-col-one-third lg:pl-12 lg:text-left">
+              <div class="text-[#3a556a] text-6xl font-bold font-[&#39;Sen&#39;] leading-[71px] pb-10 relative">
+                <span class="changing-name">Immediate Apex</span> nasıl çalışır?
+                <img src="./assets/img/decore.webp" class="absolute bottom-6 hidden lg:block" loading="lazy">
+              </div>
+              <div class="mb-4 prose prose-lg max-w-none pt-12">
+                <p>AI gücünü <span class="changing-name">Immediate Apex</span> ile açığa çıkarın. Eski yöntemlere elveda deyin ve zahmetsiz kazançlara
+                  merhaba deyin. <span class="changing-name">Immediate Apex</span>’nin gelişmiş algoritmaları, en iyi yatırım fırsatlarını gerçek zamanlı
+                  olarak hızla belirler. Platformu yatırım tarzınıza göre kişiselleştirerek kontrolü ele alın. İster
+                  deneyimli ister yeni olun, <span class="changing-name">Immediate Apex</span> getirilerinizi maksimize etmenize yardımcı olur. Şimdi uzman
+                  danışmanlarımızdan biriyle ücretsiz görüşme için kaydolun ve sonuçları görmeye başlamak için kişisel
+                  rehberlik alın. Bugün finansal özgürlük yolculuğunuza başlayın.</p>
+
+              </div>
+              <div>
+                <a onclick="scrollToSection()" style="cursor: pointer"
+                  class="inline-block py-4 mt-8 mb-6 text-base text-center font-bold  text-white uppercase bg-blue-500 rounded shadow btn-theme-clr arrow-add px-7 lg:py-4 lg:mb-8 lg:text-lg lg:px-10 hover:bg-blue-700 hover:opacity-75 focus:outline-none"
+                  style="border-radius: 33.2px; background: #1570ef">
+                  <div class="flex items-center">
+                    <div>
+                      <p>KAYIT OL</p>
+                    </div>
+                    <i class="inline-block w-5 h-5 ml-2"><svg transform="rotate(90)" class="w-full h-full"
+                        viewBox="0,0,97,97">
+                        <path fill="currentColor"
+                          d="M83.952 34.479L50.056.585a2 2 0 00-2.828 0L13.333 34.479a2 2 0 000 2.828l9.03 9.031a1.999 1.999 0 002.828 0l14.534-14.532v63.478a2 2 0 002 2H55.56a2 2 0 002-2V31.807l14.532 14.532c.75.75 2.078.75 2.828 0l9.031-9.031a2 2 0 00.001-2.829z">
+                        </path>
+                      </svg></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative bg-gradient-to-tl from-[#95e8ff1e] to-[#fff]">
+      <div class="py-12 cs-explained pt-14 border-center">
+        <div class="container px-4 mx-auto text-white max-w-7xl cs-container lg:text-center">
+          <div
+            class="text-[#344054] text-[35px] lg:text-6xl font-bold font-[&#39;Sen&#39;] leading-[35px] lg:leading-[71px] relative">
+            Nasıl başlarım?
+            <img src="./assets/img/decore.webp"
+              class="absolute bottom-[-16px] left-1/2 transform -translate-x-1/2 hidden lg:block" loading="lazy">
+          </div>
+          <div class="mb-8 text-base leading-normal tracking-wider text-center text-white lg:text-xl lg:text-center">
+          </div>
+          <div class="flex flex-wrap -mx-4 steps_follow mt-20">
+            <!-- 1 -->
+            <div class="px-4 my-3 lg:w-1/3 relative">
+              <img src="./assets/img/num1.webp"
+                class="absolute z-10 top-[-10px] left-1/2 transform -translate-x-1/2" loading="lazy">
+              <div
+                class="relative py-10 text-center bg-white rounded-[31px] shadow-lg drop-shadow-lg px-2 h-[360px] flex flex-col gap-y-6">
+                <span class="flex items-center justify-between step-im">
+                  <img src="./assets/img/user-profile-circle.svg" class="pt-6 mx-auto" loading="lazy">
+                </span>
+                <div>
+                  <div class="leading-[34px] tracking-wider font-semibold text-[#4FD9FF] lg:text-[26px]">
+                    Kayıt ol
+                  </div>
+                </div>
+                <div class="text-base text-[#3a556a] font-light leading-[34px]">
+                  <div>
+                    <p>Yukarıdaki formu doldurarak hesabınızı oluşturun – hızlı ve kolay.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="px-4 my-3 lg:w-1/3 relative">
+              <img src="./assets/img/num2.webp"
+                class="absolute z-10 top-[-10px] left-1/2 transform -translate-x-1/2" loading="lazy">
+              <div
+                class="relative py-10 text-center bg-white rounded-[31px] shadow-lg drop-shadow-lg px-2 h-[360px] flex flex-col gap-y-6">
+                <span class="flex items-center justify-between step-im">
+                  <img src="./assets/img/coin-hand.svg" class="pt-6 mx-auto" loading="lazy">
+                </span>
+                <div>
+                  <div class="leading-[34px] tracking-wider font-semibold text-[#4FD9FF] lg:text-[26px]">
+                    Para Yatırma
+                  </div>
+                  <div class="text-base text-[#3a556a] font-light leading-[34px] mt-6">
+                    <div>
+                      <p>Birden fazla ödeme seçeneği, kredi kartları ve banka havaleleri dahil.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="px-4 my-3 lg:w-1/3 relative">
+              <img src="./assets/img/num3.webp"
+                class="absolute z-10 top-[-10px] left-1/2 transform -translate-x-1/2" loading="lazy">
+              <div
+                class="relative py-10 text-center bg-white rounded-[31px] shadow-lg drop-shadow-lg px-2 h-[360px] flex flex-col gap-y-6">
+                <span class="flex items-center justify-between step-im"><img
+                    src="./assets/img/bar-chart-square-up-01.svg" class="pt-6 mx-auto">
+                </span>
+                <div>
+                  <div class="leading-[34px] tracking-wider font-semibold text-[#4FD9FF] lg:text-[26px]">
+                    Yatırıma Başla</div>
+                </div>
+                <div class="text-base text-[#3a556a] font-light leading-[34px]">
+                  <div>
+                    <p>Yatırım yapmaya hazırsınız! Özel bir danışman kısa süre içinde sizinle iletişime geçecek.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq relative bg-gradient-to-bl from-[#95e8ff1e] to-[#fff]">
+      <img src="./assets/img/metatron.webp" class="absolute right-[-50px] top-[-50px] z-[-2] hidden lg:block"
+        style="opacity: 40%;" loading="lazy">
+      <div class="py-32 cs-explained">
+        <div class="container px-4 mx-auto text-white max-w-7xl cs-container border-center">
+          <div
+            class="text-[#344054] text-[35px] lg:text-6xl font-bold font-[&#39;Sen&#39;] leading-[45px] lg:leading-[71px] text-center relative">
+            Sıkça Sorulan Sorular
+            <img src="./assets/img/decore.webp"
+              class="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 hidden lg:block" loading="lazy">
+          </div>
+          <div class="text-center text-[#3a556a] text-base font-light leading-[34px] py-10">
+            <div>
+              <p>Yatırıma yeni misiniz? <span class="changing-name">Immediate Apex</span>’nin nasıl çalıştığını öğrenmek için SSS’lerimize göz atın.</p>
+
+            </div>
+          </div>
+          <section class="flex flex-wrap items-center">
+            <div class="flex flex-wrap justify-center w-full mt-4 accordion lg:mt-6">
+              <div class="relative flex flex-col w-full px-4 mt-4 lg:mb-4 lg:my-6">
+                <input type="checkbox" name="faqpane" id="faqpane-0" class="hidden">
+                <label for="faqpane-0"
+                  class="relative w-full px-4 rounded-t-[12px] text-lg font-semibold text-[#fff] bg-[#4FD9FF] cursor-pointer py-6 shadow-md">
+                  <span class="changing-name">Immediate Apex</span> yeni başlayanlar için uygun mu?
+                  <div class="transform rotate-180 w-7 faq__item-icon" style="color: #fff">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-down"
+                      role="img" viewBox="0 0 512 512" class="w-full h-full">
+                      <path fill="currentColor"
+                        d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zM273 369.9l135.5-135.5c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L256 285.1 154.4 183.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L239 369.9c9.4 9.4 24.6 9.4 34 0z"
+                        ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="overflow-hidden faq-content bg-[#fff] accordion__body drop-shadow rounded-b-md ">
+                  <div class="w-full px-6 py-6 text-[#3a556a]">
+                    <p>Evet. <span class="changing-name">Immediate Apex</span> ile yatırım yapmak, AI motoru ile gerçek zamanlı grafik analizleri ve
+                      hesaplamaları yaparak yeni başlayanlar için kolaydır. Deneyimli yatırımcılar da stratejilerini
+                      otomatikleştirmek ve ekran başında geçirilen zamanı azaltmak için <span class="changing-name">Immediate Apex</span>’i
+                      kullanabilirler.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col w-full px-4 mt-4 lg:mb-4 lg:my-6">
+                <input type="checkbox" name="faqpane" id="faqpane-1" class="hidden">
+                <label for="faqpane-1"
+                  class="relative w-full px-4 rounded-t-[12px] text-lg font-semibold text-[#fff] bg-[#4FD9FF] cursor-pointer py-6 shadow-md">
+                  <span class="changing-name">Immediate Apex</span> pahalı mı?
+                  <div class="transform rotate-180 w-7 faq__item-icon" style="color: #fff">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-down"
+                      role="img" viewBox="0 0 512 512" class="w-full h-full">
+                      <path fill="currentColor"
+                        d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zM273 369.9l135.5-135.5c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L256 285.1 154.4 183.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L239 369.9c9.4 9.4 24.6 9.4 34 0z"
+                        ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="overflow-hidden faq-content bg-[#fff] accordion__body drop-shadow rounded-b-md ">
+                  <div class="w-full px-6 py-6 text-[#3a556a]">
+                    <p><span class="changing-name">Immediate Apex</span> kullanımı için herhangi bir ücret yok – para yatırma, para çekme, işlemler ve
+                      transferler tamamen ücretsizdir. Finansal özgürlüğü erişilebilir kılmak için tasarlanmıştır, bu
+                      yüzden platformumuzu herkese ücretsiz sunuyoruz.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col w-full px-4 mt-4 lg:mb-4 lg:my-6">
+                <input type="checkbox" name="faqpane" id="faqpane-2" class="hidden">
+                <label for="faqpane-2"
+                  class="relative w-full px-4 rounded-t-[12px] text-lg font-semibold text-[#fff] bg-[#4FD9FF] cursor-pointer py-6 shadow-md">
+                  <span class="changing-name">Immediate Apex</span> ile yatırım yapmak için birden fazla seçenek var mı?
+                  <div class="transform rotate-180 w-7 faq__item-icon" style="color: #fff">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-down"
+                      role="img" viewBox="0 0 512 512" class="w-full h-full">
+                      <path fill="currentColor"
+                        d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zM273 369.9l135.5-135.5c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L256 285.1 154.4 183.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L239 369.9c9.4 9.4 24.6 9.4 34 0z"
+                        ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="overflow-hidden faq-content bg-[#fff] accordion__body drop-shadow rounded-b-md ">
+                  <div class="w-full px-6 py-6 text-[#3a556a]">
+                    <p>Evet, <span class="changing-name">Immediate Apex</span> ile hisse senetleri, paylar, emtialar, ETF’ler ve daha fazlası dahil olmak
+                      üzere çok çeşitli varlıklara yatırım yapabilirsiniz.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col w-full px-4 mt-4 lg:mb-4 lg:my-6">
+                <input type="checkbox" name="faqpane" id="faqpane-3" class="hidden">
+                <label for="faqpane-3"
+                  class="relative w-full px-4 rounded-t-[12px] text-lg font-semibold text-[#fff] bg-[#4FD9FF] cursor-pointer py-6 shadow-md">
+                  <span class="changing-name">Immediate Apex</span> güvenli ve güvenilir mi?
+                  <div class="transform rotate-180 w-7 faq__item-icon" style="color: #fff">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-down"
+                      role="img" viewBox="0 0 512 512" class="w-full h-full">
+                      <path fill="currentColor"
+                        d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zM273 369.9l135.5-135.5c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L256 285.1 154.4 183.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L239 369.9c9.4 9.4 24.6 9.4 34 0z"
+                        ></path>
+                    </svg>
+                  </div>
+                </label>
+                <div class="overflow-hidden faq-content bg-[#fff] accordion__body drop-shadow rounded-b-md ">
+                  <div class="w-full px-6 py-6 text-[#3a556a]">
+                    <p>Evet, <span class="changing-name">Immediate Apex</span> SSL şifrelemesi kullanarak bağlantınızın özel olmasını sağlar, böylece
+                      verilerinizin korunduğunu bilerek sistemi gezinebilir ve kullanabilirsiniz.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <footer class="pt-8 pb-8">
+      <div class="container mx-auto text-white max-w-7xl cs-container lg:px-28">
+        <div class="flex flex-wrap items-center justify-between pt-4 pb-4 text-white general-footer-disclaimer">
+          <img class="block object-contain object-left w-40"
+            src="./assets/img/77c760ff-a3eb-505e-b73a-202601bda93c.png" relative="true" width="160" height="32"
+            loading="lazy">
+        </div>
+        <div class="text-[#3a556a] text-base font-light leading-[34px] p-4 bg-white rounded-[31px] shadow">
+          <p>Terms of Use: Welcome to nextvolumetechniques.com (“the Site”). Your use of the Site and services
+            constitutes acceptance of these Terms. If you disagree, please refrain from using our services. Agreement:
+            Using the Site means you agree to these Terms and any posted policies, forming a binding agreement.
+            Information: Our Site provides info and ads for third-party services, for informational purposes only; it’s
+            not advice. Eligibility: You must be 18 or older to use our services, agreeing to a binding contract.
+            Third-Party Ads: We display ads for third-party services, but we don’t endorse or guarantee their accuracy
+            or legality. Liability: We don’t endorse specific services, and any use of third-party services is at your
+            risk. We’re not liable for related losses or damages. Intellectual Property: Content on our Site is our
+            property or licensed, protected by copyright. You can’t use it without our consent. Governing Law: These
+            Terms follow English and Welsh law. Changes: We can modify these Terms anytime, effective upon posting.
+            Continued use means acceptance of changes. Contact: Questions? Reach us at hello@nextvolumetechniques.com By
+            using our Site, you agree to these Terms.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="./assets/js/param.js"></script>
+</body>
+</html>

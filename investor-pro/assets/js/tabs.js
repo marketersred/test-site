@@ -1,27 +1,31 @@
-// Controls the FAQ accordion
-document.querySelectorAll('[id^="question"]').forEach(function (button, index) {
-  button.addEventListener('click', function () {
-    var answer = document.getElementById('answer' + (index + 1))
-    var arrow = document.getElementById('arrow' + (index + 1))
+document.addEventListener("DOMContentLoaded", function () {
+  const questions = document.querySelectorAll("button[id^='question']");
 
-    if (answer.style.display === 'none' || answer.style.display === '') {
-      // Hide all other answers
-      document.querySelectorAll('[id^="answer"]').forEach(function (a) {
-        a.style.display = 'none'
-      })
+  questions.forEach((question) => {
+    question.addEventListener("click", function () {
+      const questionId = this.id;
+      const answerId = `answer${questionId.replace('question', '')}`;
+      const arrowId = `arrow${questionId.replace('question', '')}`;
 
-      // Reset all arrows
-      document.querySelectorAll('[id^="arrow"]').forEach(function (a) {
-        a.style.transform = 'rotate(-180deg)'
-      })
+      const answerElement = document.getElementById(answerId);
+      const arrowElement = document.getElementById(arrowId);
 
-      // Show the clicked answer and rotate the corresponding arrow
-      answer.style.display = 'block'
-      arrow.style.transform = 'rotate(0deg)'
-    } else {
-      // Hide the answer and reset the arrow
-      answer.style.display = 'none'
-      arrow.style.transform = 'rotate(-180deg)'
-    }
-  })
-})
+      const isClosed = this.getAttribute("data-state") === "closed";
+
+      questions.forEach((q) => {
+        const currentAnswerId = `answer${q.id.replace('question', '')}`;
+        const currentArrowId = `arrow${q.id.replace('question', '')}`;
+
+        document.getElementById(currentAnswerId).style.display = "none";
+        document.getElementById(currentArrowId).style.transform = "rotate(0deg)";
+        q.setAttribute("data-state", "closed");
+      });
+
+      if (isClosed) {
+        answerElement.style.display = "block";
+        arrowElement.style.transform = "rotate(180deg)";
+        this.setAttribute("data-state", "open");
+      }
+    });
+  });
+});
