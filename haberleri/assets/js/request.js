@@ -1,5 +1,5 @@
 let SCRIPT_CONFIG = {
-  campaignId: 'HABERLERI TR || 1',
+  campaignId: 'HABERLERI TR || drc-mediatr 1',
   language: 'TR',
   defaultCountry: 'TR',
   successMessage: 'Abonelik için teşekkür ederiz!',
@@ -105,12 +105,11 @@ function getFormData() {
     phone: phone, // jQuery('#phone').val(),
     country: document.querySelector('.iti__selected-flag .iti__flag').classList[1].toUpperCase().slice(-2),
     campaign: SCRIPT_CONFIG.campaignId,
-    /* language: new URLSearchParams(window.location.search).get('lang') || 'en', */
     tag: utm_p1,
     tag1: utm_p2,
     affiliateTransactionId: adclid,
     tag2: widget_id,
-    subAffiliate: localStorage.getItem('answers'),
+    // subAffiliate: localStorage.getItem('answers'),
     language: SCRIPT_CONFIG.language
   };
 }
@@ -130,7 +129,7 @@ function submitForm(requestData) {
     tag1: requestData.tag1,
     affiliateTransactionId: requestData.affiliateTransactionId,
     tag2: requestData.tag2,
-    subAffiliate: requestData.subAffiliate,
+    // subAffiliate: requestData.subAffiliate,
   });
 
   console.log(postData.toString());
