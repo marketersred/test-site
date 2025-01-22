@@ -141,7 +141,7 @@ function submitForm(requestData) {
  
 
   jQuery.ajax({
-    url:  'https://post-tb-ownggl.devmaltay01.workers.dev', //'https://post-tb-ownggl.devmaltay01.workers.dev', '/request.php', 
+    url:  'https://post-tb-ownggl.developer76543.worker.dev', //'https://post-tb-us.developer76543.workers.dev', '/request.php', 
     type: 'POST',
     contentType: 'application/x-www-form-urlencoded charset=UTF-8',
     data: postData.toString(),
