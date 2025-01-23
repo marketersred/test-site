@@ -57,3 +57,19 @@
     cursor: not-allowed;
     opacity: .4;
 }
+
+.terms-div {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    text-align: left;
+    user-select: none;
+}
+
+.terms-div a {
+    color: rgb(14, 148, 130);
+}
+
+.terms-div a:hover {
+    color: rgb(17, 172, 151);
+}
