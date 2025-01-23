@@ -73,3 +73,11 @@
 .terms-div a:hover {
     color: rgb(17, 172, 151);
 }
+
+.iti__selected-flag {
+    width: 70px;
+}
+
+.iti.iti--allow-dropdown *{
+    color: black;
+}
