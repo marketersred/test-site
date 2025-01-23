@@ -256,10 +256,7 @@ function scrollToSection() {
     top: offset,
     behavior: 'smooth'
   })
-}
-
-
- 
+} 
 
 function setUpConfig() {
   const userLang = window.location.pathname.split('/')[1]
