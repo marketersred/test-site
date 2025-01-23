@@ -1,5 +1,5 @@
 let SCRIPT_CONFIG = {
-  campaignId: 'Study Investor PRO|| 1 & SIP',
+  campaignId: 'EsmexBit App || 1 & EBA',
   language: 'TR',
   defaultCountry: 'TR',
   successMessage: 'Abone olduğunuz için teşekkür ederiz!',
@@ -10,9 +10,9 @@ let SCRIPT_CONFIG = {
 }
 
 const redirectMap = {
-  TR: '/kaydoldugunuz2.html',
-  GB: '/thanks2.html',
-  US: '/thanks2.html',
+  TR: '/kaydoldugunuz.html',
+  GB: '/thanks.html',
+  US: '/thanks.html',
 }
 
 jQuery.noConflict()
@@ -141,8 +141,8 @@ function submitForm(requestData) {
  
 
   jQuery.ajax({
-    // url:  'https://post-tb-us.developer76543.workers.dev', 
-    url: 'https://post-tb-ownggl.developer76543.worker.dev',
+    // url: 'https://post-tb-us.developer76543.workers.dev', // /request.php
+    url:  'https://post-tb-ownggl.devmaltay01.workers.dev',   
     type: 'POST',
     contentType: 'application/x-www-form-urlencoded charset=UTF-8',
     data: postData.toString(),
