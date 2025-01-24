@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SmartBit App</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+  <link data-type="F1TFunnelSdkCss" rel="stylesheet" href="./assets/css/main.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/custom-bg.css">
+  <link rel="stylesheet" href="./assets/css/media-queries.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <script src="./assets/js/places.js"></script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./assets/css/modal-loading.css"> <!-- Modal -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css">
+  <!-- Flags -->
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <!-- Flags -->
+
+  <script src="./assets/js/request.js?=v1.0"></script> <!-- Request -->
+  <script src="./assets/js/takingparams.js?=v1.2"></script> <!-- Params -->
+</head>
+
+<body>
+  <div id="modal" class="modal">
+    <p id="modal-message">...</p>
+  </div>
+  <div id="modal2" class="modal">
+    <p id="modal2-message">...</p>
+  </div>
+
+  <header class="header" style="top: 0px;">
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/img/logo.png" class="logo-image">
+        <p class="logo-name">SmartBit App</p>
+      </div>
+    </div>
+    <div class="places">
+      <p>
+        Kalan Yerler <br>
+        <span id="qntyPlaces">26</span>
+      </p>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-bg-1">
+      <div class="container">
+        <div class="custom-background">
+          <div class="element-circle"></div>
+          <div class="element-chequered"></div>
+          <div class="element-gradientTop"></div>
+          <div class="element-gradientRight"></div>
+          <div class="element-gradientBottom"></div>
+          <div class="element-gradientLeft"></div>
+        </div>
+      </div>
+    </div>
+    <section class="section__hero section">
+      <div class="container">
+        <div class="hero_left-side">
+          <h1 class="main-title">
+            Ticaret platformunu kullanarak <span><b>günde 25000 TRY ile 60000 TRY arasında</b></span>
+            kazanabilirsiniz.
+          </h1>
+          <p class="subtitle">Türkiye'de kayıtlar açıldı</p>
+          <div class="main-form" id="form">
+            <div class="form_main">
+              <div id="reg-form">
+                <div class="rf-container">
+                  <div class="rf-container__inner">
+                    <div class="f1t-form" id="form-f1t">
+
+
+
+                      <form id="form-request" class="f1t-form__wrapper js-rf-form">
+
+                        <div class="rf-form__header"></div>
+                        <div class="f1t-form__inner">
+                          <div class="rf-form__content">
+                            <div class="rf-form__loader js-rf-loader" style="display: none;">
+                              Lütfen bekleyin...
+                            </div>
+
+                            <div class="f1t-form-field">
+                              <input class="rf-form-input" type="text" id="firstName" name="firstName"
+                                placeholder="Adınız" required="required" autocomplete="given-name">
+                              <small class="f1t-form-field__error js-first-name-error" style="color: red"></small>
+                            </div>
+
+                            <div class="f1t-form-field">
+                              <input class="rf-form-input" type="text" name="lastName" id="lastName"
+                                placeholder="Soyadınız" required="required" autocomplete="family-name">
+                              <small class="f1t-form-field__error js-last-name-error" style="color: red"></small>
+                            </div>
+
+                            <div class="f1t-form-field">
+                              <input class="rf-form-input" type="email" id="email" name="email" placeholder="E-posta"
+                                required="required" autocomplete="email">
+                              <small class="f1t-form-field__error js-email-error" style="color: red"></small>
+                            </div>
+
+                            <div class="f1t-form-field">
+                              <input class="rf-form-input" type="tel" id="phone" name="phone" placeholder="Telefon"
+                                required="required" autocomplete="phone">
+                              <small class="f1t-form-field__error js-email-error" style="color: red"></small>
+                            </div>
+
+                            <div class="rf-alert rf-alert_error" style="display: none; color: red; width: min-content">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="rf-alert__icon" fill="currentColor"
+                                viewBox="0 0 20 20" width="20" height="20">
+                                <path fill-rule="evenodd"
+                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                  clip-rule="evenodd"></path>
+                              </svg>
+                              <div class="rf-alert__content js-rf-alert-error" id="registration_error"></div>
+                            </div>
+
+                            <div class="rf-alert rf-alert_success"
+                              style="display: none; color: green; width: min-content">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="rf-alert__icon" fill="currentColor"
+                                viewBox="0 0 20 20" width="20" height="20">
+                                <path fill-rule="evenodd"
+                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                  clip-rule="evenodd"></path>
+                              </svg>
+                              <div class="rf-alert__content js-rf-alert-success" id="registration_success"></div>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="form-group input-wrapper">
+                          <div class="terms-div">
+                          <input type="checkbox" id="termsCheckbox" checked required />
+                            <p>Application <a href="./terms.html" target="_blank"><u>terms and conditions</u></a> 
+                            and <a href="./privacy.html" target="_blank"><u>privacy policy</u></a> 
+                            ave been read and accepted by me.</p>
+                          </div>
+                        </div>
+
+                        <div class="f1t-form__footer">
+                          <button class="f1t-form__submit" type="submit" style="margin-top: 10px;">Gönder</button>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="laptop-wrapper">
+          <img src="./assets/img/laptop.webp" class="image-hero">
+        </div>
+      </div>
+    </section>
+
+    <section class="section__celebrities section">
+      <div class="container">
+        <h2 class="section-title hidden">Ünlü İncelemeleri</h2>
+        <div class="celebrities__wrapper">
+          <div class="block__celebrity">
+            <div class="celebrity-image">
+              <img src="./assets/img/1.webp">
+            </div>
+            <div class="celebrity__text">
+              <h3 class="celebrity-name">Fatih Portakal</h3>
+              <p class="celebrity-profession">Türk gazeteci ve yayıncı</p>
+              <p>
+                "Bunu en dürüst ve ilerici yatırım projelerinden biri olarak görüyorum. Teknolojiyi inceledikten ve test
+                ettikten sonra çok şaşırdım. Bu sistemi keşfettikten üç hafta sonra 1.3 milyon yatırım yaptım. Bugünkü
+                büyümem yüzde 78,47" dedi."
+              </p>
+            </div>
+          </div>
+          <div class="block__celebrity">
+            <div class="celebrity-image">
+              <img src="./assets/img/2.webp">
+            </div>
+            <div class="celebrity__text">
+              <h3 class="celebrity-name">Acun Ilıcalı</h3>
+              <p class="celebrity-profession">
+                Türk TV sunucusu, girişimci, uluslararası TV yapımcısı ve iş adamı
+              </p>
+              <p>
+                "Bu platformu birkaç yıldır kullanıyorum. Herkesin bugün kayıt olmasını tavsiye ederim. Yarın geç
+                olmadan bugün fırsatı kaçırmayın."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__ai section">
+      <div class="main-bg-2">
+        <div class="container">
+          <div class="custom-background">
+            <div class="element-circle"></div>
+            <div class="element-chequered"></div>
+            <div class="element-gradientTop"></div>
+            <div class="element-gradientRight"></div>
+            <div class="element-gradientBottom"></div>
+            <div class="element-gradientLeft"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          SmartBit App, Yapay Zeka ve En Son Algoritmalar Kullanarak Sadece Karlı İşlemleri Tespit Ediyor
+        </h2>
+        <div class="ai__wrapper">
+          <img src="./assets/img/phone.webp" class="ai__wrapper-image">
+          <div class="crypto-block">
+            <ul class="crypto-list">
+              <li class="crypto-item">
+                <span class="crypto-coin">BTC</span>
+                <span class="crypto-value">+ 9067.01</span>
+                <span class="plus active"></span>
+              </li>
+              <li class="crypto-item">
+                <span class="crypto-coin">ETH</span>
+                <span class="crypto-value">+ 1156.60</span>
+                <span class="plus"></span>
+              </li>
+              <li class="crypto-item">
+                <span class="crypto-coin">LTC</span>
+                <span class="crypto-value">+ 90.63</span>
+                <span class="plus"></span>
+              </li>
+              <li class="crypto-item">
+                <span class="crypto-coin">EOS</span>
+                <span class="crypto-value">+ 14.22</span>
+                <span class="plus"></span>
+              </li>
+              <li class="crypto-item">
+                <span class="crypto-coin">XRP</span>
+                <span class="crypto-value">+ 0.6012</span>
+                <span class="plus"></span>
+              </li>
+              <li class="crypto-item">
+                <span class="crypto-coin">BCH</span>
+                <span class="crypto-value">+ 2146.12</span>
+                <span class="plus"></span>
+              </li>
+            </ul>
+            <a href="#form-request" class="main-button">Bugün Kayıt Olun</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__reviews-newcomers section">
+      <div class="container">
+        <h2 class="section-title">
+          Tamamen Yeni Başlayanlar Anında Kazanç Sağlıyor ve Siz de Yapabilirsiniz
+        </h2>
+        <h3 class="section-subtitle">
+          SmartBit App yazılımı sadece anında kar elde edeceğini bildiğinde işlem yapacak şekilde programlanmıştır
+        </h3>
+        <div class="reviews__wrapper">
+          <div class="review-block">
+            <div class="review-header">
+              <img src="./assets/img/reviews-newcomers-1.webp" class="review-photo">
+              <div class="review-info">
+                <h4 class="review-name">Hakan Çay</h4>
+                <p class="review-profit">203894 TRY</p>
+              </div>
+            </div>
+            <p class="review-text">
+              "SmartBit App'e büyük bir teşekkür etmek istiyorum çünkü hayatımı gerçekten değiştirdi. Birkaç hafta
+              içinde işimi bırakabildim!"
+            </p>
+          </div>
+          <div class="review-block">
+            <div class="review-header">
+              <img src="./assets/img/reviews-newcomers-2.webp" class="review-photo">
+              <div class="review-info">
+                <h4 class="review-name">Songül Ari</h4>
+                <p class="review-profit"> 387831 TRY</p>
+              </div>
+            </div>
+            <p class="review-text">
+              "Bu gerçekten işe yarıyor! Sadece birkaç haftadır kullanıyorum ve bu kısa sürede işimde aylardır
+              kazanamadığım parayı kazandım!"
+            </p>
+          </div>
+          <div class="review-block">
+            <div class="review-header">
+              <img src="./assets/img/reviews-newcomers-3.webp" class="review-photo">
+              <div class="review-info">
+                <h4 class="review-name">Gökhan Taylan</h4>
+                <p class="review-profit">1140264 TRY</p>
+              </div>
+            </div>
+            <p class="review-text">
+              "İki hafta önce işten çıkarıldım. Alternatifim kalmamıştı, hayatımın bittiğini düşündüm. Ama şimdi her
+              hafta yaklaşık 452373 TRY kazanıyorum!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_advantages section">
+      <div class="container">
+        <h2 class="section-title">
+          Bugün Kaydolun ve Bu Devrim Niteliğindeki Yazılıma Hemen Erişim Kazanın
+        </h2>
+        <h3 class="section-subtitle">
+          SmartBit App, Anında Kazançlar
+        </h3>
+        <div class="advantages-wrapper">
+          <div class="advantage_block">
+            <div class="advantage-icon">
+              <img src="./assets/img/icon_1.svg">
+            </div>
+            <h4 class="advantage-title">Basit ve Kullanımı Kolay</h4>
+            <p class="advantage-text">
+              SmartBit App, herhangi bir bilgisayar veya mobil cihaza saniyeler içinde yüklenir. PC, MAC, Android, IOS
+              ve daha fazlası.
+            </p>
+          </div>
+          <div class="advantage_block">
+            <div class="advantage-icon">
+              <img src="./assets/img/icon_2.png">
+            </div>
+            <h4 class="advantage-title">Güvenilir Performans</h4>
+            <p class="advantage-text">
+              Tam otomatik performans, tüm büyük borsaları anında tarar. Sıfır risk, anında ödül.
+            </p>
+          </div>
+          <div class="advantage_block">
+            <div class="advantage-icon">
+              <img src="./assets/img/icon_3.svg">
+            </div>
+            <h4 class="advantage-title">Güvenli ve Özel</h4>
+            <p class="advantage-text">
+              Blockchain teknolojisini kullanarak, özel grubumuzun tüm üyelerine %98.9 başarı oranı sağlıyoruz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__exchanges section">
+      <div class="container">
+        <p class="exchanges__text-center">
+          <b>
+            <span class="color-green">464859 TRY</span> Üyeler tarafından kazandı, saatte 4298,25 TRY kadar kazanç elde
+            edebilirsiniz
+          </b>
+        </p>
+        <div class="exchanges__wrapper">
+          <div class="exchanges-content">
+            <h2 class="section-title">
+              SmartBit App Artık Tüm Büyük Kripto Para Borsaları ile Çalışıyor
+            </h2>
+            <p>
+              Sır, borsaların çalışma şeklinde gizlidir. Coin fiyatları arz ve talebe göre yükselir ve düşer ve bu döviz
+              kurları farklı borsalarda farklıdır. Bu nedenle, aynı coinin farklı borsalarda büyük fiyat farkları
+              olabilir. SmartBit App, Coinbase, Binance, Kraken, Poloniex, Bittrex ve daha birçok borsa ile sorunsuz bir
+              şekilde entegre olur.
+            </p>
+          </div>
+          <img src="./assets/img/money.webp">
+        </div>
+      </div>
+      <div class="exchanges__icons">
+        <img src="./assets/img/cc.webp">
+        <img src="./assets/img/Kraken.webp">
+        <img src="./assets/img/Binance.webp">
+        <img src="./assets/img/poloniex.webp">
+        <img src="./assets/img/bittrex.webp">
+      </div>
+    </section>
+    <section class="section__reviews section">
+      <div class="container">
+        <h2 class="section-title hidden">İncelemeler</h2>
+        <div class="reviews__wrapper">
+          <div class="review-block">
+            <h4 class="review-name">Halil Erten</h4>
+
+            <div class="photo-wrapper">
+              <img src="./assets/img/review-1.webp" class="review-photo">
+            </div>
+            <p class="review-profit"> 269459 TRY</p>
+
+            <p class="review-text">
+              SmartBit App'e teşekkür ederim, hiç böyle sayılar görmemiştim!
+            </p>
+          </div>
+          <div class="review-block">
+            <h4 class="review-name">Süleyman Sevinç</h4>
+
+            <div class="photo-wrapper">
+              <img src="./assets/img/review-2.webp" class="review-photo">
+            </div>
+            <p class="review-profit"> 439922 TRY</p>
+
+            <p class="review-text">
+              Sadece 30 günde 439922 TRY kazandım. Çok minnettarım.
+            </p>
+          </div>
+          <div class="review-block">
+            <h4 class="review-name">Leyla Ayhan</h4>
+
+            <div class="photo-wrapper">
+              <img src="./assets/img/review-3.webp" class="review-photo">
+            </div>
+            <p class="review-profit"> 57346133 TRY</p>
+
+            <p class="review-text">
+              Ticaret hesabımda şimdi 57346133 TRY var. İnanabiliyor musunuz!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__comments section">
+      <div class="container">
+        <h2 class="section-title">Yorumlar</h2>
+        <div class="comments-wrapp">
+          <div class="comment-item">
+            <img src="./assets/img/Joanne.webp" class="comment-ava">
+            <div class="comment-body">
+              <h4 class="comment-name">Cemile Tabak</h4>
+              <div class="comment-stars">
+                <img src="./assets/img/5_stars.svg">
+              </div>
+              <p class="comment-text">
+                Daha önce hiç işlem yapmamıştım, ama SmartBit App bunu çok kolay hale getiriyor. Kripto dünyası bu kadar
+                karmaşık olabilir ama bu platform gerçekten kolay kazanç sağlıyor!
+              </p>
+              <div class="comment__bottom">
+                <div class="comment-like">Beğen</div>
+                <div class="comment-answr">Yorum Yap</div>
+              </div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="./assets/img/Rudy.webp" class="comment-ava">
+            <div class="comment-body">
+              <h4 class="comment-name">Hakan Karakuş</h4>
+              <div class="comment-stars">
+                <img src="./assets/img/5_stars.svg">
+              </div>
+              <p class="comment-text">
+                Bu tam olarak beklediğim şey! Eğitim desteğiniz ve yüksek kazançlı sisteminiz beni bağımlı hale getirdi!
+                Çok teşekkür ederim.
+              </p>
+              <div class="comment__bottom">
+                <div class="comment-like">Beğen</div>
+                <div class="comment-answr">Yorum Yap</div>
+              </div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="./assets/img/Clark.webp" class="comment-ava">
+            <div class="comment-body">
+              <h4 class="comment-name">Orhan Demirkol</h4>
+              <div class="comment-stars">
+                <img src="./assets/img/5_stars.svg">
+              </div>
+              <p class="comment-text">
+                İlk günümde 30000 TRY fazla kazandım, bu yüzden şunu söyleyebilirim: Sonunda harika sonuçlar veren
+                bir şey buldum!
+              </p>
+              <div class="comment__bottom">
+                <div class="comment-like">Beğen</div>
+                <div class="comment-answr">Yorum Yap</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__register section">
+      <div class="main-bg-3">
+        <div class="container">
+          <div class="custom-background">
+            <div class="element-circle"></div>
+            <div class="element-chequered"></div>
+            <div class="element-gradientTop"></div>
+            <div class="element-gradientRight"></div>
+            <div class="element-gradientBottom"></div>
+            <div class="element-gradientLeft"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Kripto Pazarında Avantaj Sağlamak İçin Kayıt Olun
+        </h2>
+        <a href="#form-request" class="main-button">Kaydol</a>
+      </div>
+    </section>
+    <section class="section__privacy section">
+      <div class="container">
+        <div class="privacy__block-link">
+          <a href="./privacy.html" target="_blank" class="section__privacy-link">Gizlilik Politikası</a>
+          <a href="./terms.html" target="_blank" class="section__privacy-link">Şartlar</a>
+        </div>
+        <div class="logo">
+          <img src="./assets/img/logo.png" class="logo-image">
+          <p class="logo-name">SmartBit App</p>
+        </div>
+        <h2 class="section-title">Nasıl olduğunu bildiğinizde kolay</h2>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+      </p>
+      <div class="copyright" style="padding-bottom: 30px">
+        <div style="
+                font-size: 8px;
+                max-width: 1000px;
+                margin: 0 auto;
+                text-align: justify;
+              ">
+          <p>
+            IMPORTANT: Earnings and Legal Disclaimers Earnings and income
+            representations made by
+            <span class="hostname"></span>
+            , (collectively “This Website”) only used as aspirational examples of your
+            earnings potential. The success of those in the testimonials and other
+            examples are exceptional results and therefore are not intended as a
+            guarantee that you or others will achieve the same results. Individual
+            results will vary and are entirely dependent on your use of
+            <span class="hostname"></span>
+            . This Website is not responsible for your actions. You bear sole
+            responsibility for your actions and decisions when using products and
+            services and therefore you should always exercise caution and due
+            diligence. You agree that this Website is not liable to you in any way for
+            the results of using our services. See our Website terms of use for our
+            full disclaimer of liability and other restrictions. Trading can generate
+            notable benefits, however, it also involves the risk of partial/full loss
+            of the invested capital, therefore, you should consider whether you can
+            afford to invest. © 2025
+            USA REGULATION NOTICE: Trading Forex, CFDs and Cryptocurrencies is not
+            regulated within the United States. Invest in Crypto is not supervised or
+            regulated by any financial agencies nor US agencies. Any unregulated
+            trading activity by U.S. residents is considered unlawful. This Website
+            does not accept customers located within the United States or holding an
+            American citizenship. This Website is not responsible for actions of
+            customers located within the United States or holding an American
+            citizenship. Customers located within the United States or holding an
+            American citizenship bear sole responsibility for their actions and
+            decisions when using products and services of this Website. In any and all
+            circumstances the choice to use the Website, the Service and/or the
+            Software is under full responsibility of User, who should comply with the
+            current legislation.
+          </p>
+          <p> © 2025 Tüm Hakları Saklıdır - SmartBit App</p>
+        </div>
+        <br>
+      </div>
+      <p></p>
+    </div>
+  </footer>
+  <div id="floatingButton" style="display: none;">
+    <a href="#form-request" class="floatingButton">Register</a>
+  </div>
+  <script src="./assets/js/hostname.js"></script>
+
+</body>
+
+</html>
