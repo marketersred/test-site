@@ -55,8 +55,37 @@ a.hiddenajaxlink {
 
 #menu li a.selected {
   text-decoration: underline;
+  color: #56acdd!important;
 }
 
 header {
-  height: 150px;
+  height: 100px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+#content-wrapper.bg {
+  background-image: url(../img/3.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#form-request {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+p, a, form label, form input, form button, form textarea {
+  font-size: 17px!important;
 }

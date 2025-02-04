@@ -42,8 +42,8 @@ header {
 
 #logo {
     width: 173px;
-    margin: 50px 0px 0px 20px;
     position: relative;
+    top: 25px;
     z-index: 900;
     float: left;
 }
@@ -70,6 +70,8 @@ aside {
 #frontslogan-wrapper .row {
     margin-top: -157px;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 28px 0px 38px 0px;
     text-align: center;
     border-bottom: 1px solid #dcdcdc;
@@ -130,7 +132,7 @@ aside {
 
 .front-logo p {
     margin: 17px 0px 1px 0px;
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: bold;
     font-size: 12px;
     color: #b2b2b2;
@@ -215,7 +217,7 @@ ul.latest-list li .date-news {
     background-image: url(../img/news-dot.png);
     background-position: right;
     background-repeat: repeat-y;
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
@@ -248,18 +250,18 @@ ul.latest-list li a:hover {
     width: auto;
     margin: 0px;
     position: relative;
-    top: 55px;
+    top: 32px;
+    right: 30px;
     z-index: 900;
     float: right;
 }
 
 #mainmenu ul {
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: 700;
     font-size: 15px;
     letter-spacing: -1px;
     line-height: 18px;
-    padding: 0px 80px 0px 12px;
     background: url(../img/bg-tranparent.png) repeat;
     -webkit-border-top-left-radius: 14px;
     -webkit-border-bottom-left-radius: 14px;
@@ -273,7 +275,7 @@ ul.latest-list li a:hover {
 #mainmenu ul li {
     float: left;
     color: #fff;
-    text-shadow: 0px 1px 0px #040404;
+    /* text-shadow: 0px 1px 0px #040404; */
     list-style: none;
     position: relative;
     margin-bottom: 0px;
@@ -289,7 +291,7 @@ ul.latest-list li a:hover {
 #mainmenu ul li a,
 #mainmenu ul li a:visited {
     color: #fff;
-    text-shadow: 0px 1px 0px #040404;
+    /* text-shadow: 0px 1px 0px #040404; */
     text-decoration: none;
 }
 
@@ -363,7 +365,7 @@ ul.latest-list li a:hover {
 #menu li ul a,
 #menu li ul a:visited {
     width: 145px;
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     color: #fff;
     font-size: 13px;
     line-height: 24px;
@@ -386,12 +388,11 @@ ul.latest-list li a:hover {
 
 @media screen and (max-width: 768px) {
     .tinynav {
-        width: 70%;
+        width: 170px;
         display: block !important;
         position: absolute;
-        top: 200px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 45px;
+        right: 30px;
         background: #fff;
         font-size: 14px;
         border: 1px solid #eaeaea;
@@ -646,7 +647,7 @@ ul.whatwedo-list li img {
 }
 
 ul.whatwedo-list li p {
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: bold;
     font-size: 18px;
     color: #ffffff;
@@ -675,7 +676,7 @@ ul.testimonials-list li {
 
 ul.testimonials-list li p {
     color: #828282;
-    font-family: Verdana, Arial, Georgia;
+    /* font-family: Verdana, Arial, Georgia; */
     font-size: 12px;
     font-style: italic;
     margin-bottom: -6px;
@@ -778,7 +779,7 @@ ul.pricing-payment li {
 
 #pf-filter ul li {
     font-size: 12px;
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: bold;
     letter-spacing: -1px;
     color: #fff;
@@ -1293,7 +1294,7 @@ a:visited.reply {
 }
 
 #search .sub-button {
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: bold;
     letter-spacing: -1px;
     color: #fff;
@@ -1366,7 +1367,7 @@ form#comment-form textarea {
 form#comment-form .buttoncontact {
     width: 90px;
     font-size: 14px;
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: bold;
     letter-spacing: -1px;
     color: #fff;
@@ -1465,7 +1466,7 @@ ul.address-list li {
 #contactFormArea .buttoncontact {
     width: 90px;
     font-size: 14px;
-    font-family: 'Ubuntu', Arial, Tahoma, Verdana;
+    /* font-family: 'Ubuntu', Arial, Tahoma, Verdana; */
     font-weight: bold;
     letter-spacing: -1px;
     color: #fff;
@@ -1534,7 +1535,7 @@ ul.address-list li {
 
 .twitted ul#twitter_update_list li {
     width: 100%;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
     font-style: italic;
     font-size: 16px;
     line-height: 28px;
@@ -1590,6 +1591,11 @@ footer {
     padding: 22px 0 0;
     background-color: #d9d9d9;
     border-top: 4px solid #cacaca;
+}
+
+
+#content-wrapper.bg {    
+    max-width: 1090px;
 }
 
 ul.footer-social {
@@ -1660,6 +1666,7 @@ ul.footer-social li span {
         top: 83px;
     }
 
+    #content-wrapper.bg,
     footer {
         max-width: 880px;
     }
@@ -1903,6 +1910,7 @@ ul.footer-social li span {
         top: 54px;
     }
 
+    #content-wrapper.bg,
     footer {
         max-width: 780px;
     }
@@ -2180,6 +2188,7 @@ ul.footer-social li span {
         top: 60px;
     }
 
+    #content-wrapper.bg,
     footer {
         max-width: 680px;
     }
@@ -2512,6 +2521,7 @@ ul.footer-social li span {
         top: 84px;
     }
 
+    #content-wrapper.bg,
     footer {
         max-width: 560px;
     }
@@ -2799,6 +2809,7 @@ ul.footer-social li span {
         top: 40px;
     }
 
+    #content-wrapper.bg,
     footer {
         max-width: 420px;
     }
@@ -3127,6 +3138,7 @@ ul.footer-social li span {
         top: 5px;
     }
 
+    #content-wrapper.bg,
     footer {
         max-width: 320px;
     }
@@ -3517,6 +3529,7 @@ ul.footer-social li span {
         top: 0px;
     }
 
+    #content-wrapper.bg,
     footer {
         max-width: 250px;
     }
@@ -3841,3 +3854,5 @@ ul.footer-social li span {
         font-size: 11px;
     }
 }
+
+

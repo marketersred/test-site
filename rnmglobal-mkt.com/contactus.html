@@ -14,6 +14,13 @@
   <link rel="stylesheet" href="./assets/css/index-a9b4110996ce191cf79c3c3d4591a5bb3ada6179f9cdd9de9e89ba0bd13823e0.css" media="all">
   <link rel="stylesheet" href="./assets/css/index-457550c0311c719db250e79989e7462091be593549fb6bcb3801c9182189d1e5.css" media="all">
 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/dropdown.js"></script>
 </head>
@@ -51,73 +58,72 @@
     </div>
   </header>
 
-  <section id="slideshow-wrapper">
-    <img src="./assets/img/3.jpg" alt="" style="width: 100%;">
-  </section>
 
-  <section id="frontslogan-wrapper" class="dif">
-    <div class="row dif">
-      <h3>About Us - RNM Global</h3>
-    </div>
-  </section>
+  <!-- <h2 class="section-title contactUs">WRITE US</h2> -->
 
-  <section id="content-wrapper" style="text-align: center;">
-    <div>
-      <h1 style="margin-bottom: 30px;">
-        We're a <strong>specialized marketing agency</strong> focused on <strong>digital experiences</strong>.
-      </h1>
-      <p>As a <strong>specialized marketing agency</strong> deeply engaged in the <strong>digital realm</strong>,
-        we excel in crafting <strong>digital experiences</strong>, connecting creators, and driving conversions.
-        Our expertise in <strong>affiliate marketing</strong> ensures the delivery of top-notch strategies.
-        Through collaborative efforts, we embrace industry best practices and share valuable insights to achieve
-        results that exceed expectations.</p>
+  <section id="content-wrapper" class="bg" style="text-align: center; margin-bottom: 50px;">
+    <section name="main-aboutUs" class="main-aboutUs">
+      <article class="contact-section">
+        <div class="form-container">
+          <form id="form-request" class="contact-form">
+            <h2 class="company-name contactUs">RNM Global Market</h2>
+            <h3 class="form-description">Let us know how we can help you.</h3>
+            <hr class="divider">
+            <div class="form-fields">
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="name">Name<span></span></label>
+                  <input type="text" id="firstName" name="name" placeholder="Name" required="">
+                </div>
+                <div class="form-control">
+                  <label for="lastName">Last Name<span></span></label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required="">
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="email">Email<span></span></label>
+                <input type="email" id="email" name="email" placeholder="Email" required="">
+              </div>
+              <div class="form-control">
+                <label for="phone">Phone<span></span></label>
+                <input type="text" id="phone" name="phone" placeholder="Phone" required="">
+              </div>
+              <div class="form-control">
+                <label for="message">Message<span></span></label>
+                <textarea id="message" name="message" placeholder="Message" rows="5" required=""></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="submit-button">Send message!</button>
+            </div>
+          </form>
 
-      <p>Furthermore, our commitment goes beyond traditional <strong>client-agency relationships</strong>. We take
-        pride in being an extension of your team, working closely with our experts to ensure every aspect aligns
-        with your company's vision. This <strong>collaborative approach</strong> not only enhances our services
-        but also ensures optimal outcomes tailored to the specific needs of your business.</p>
-    </div>
+          <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <script>
+            emailjs.init("a3X6rggayM0ukJUMV");
 
-    <div>
-      <h2>Our Approach</h2>
-      <p>Our approach to <strong>digital marketing</strong> is centered around <strong>innovation</strong> and
-        <strong>creativity</strong>. We leverage <strong>cutting-edge technologies</strong> and trends to create
-        impactful campaigns that resonate with your <strong>target audience</strong>. From <strong>social media
-          strategies</strong> to <strong>SEO optimization</strong>, we craft bespoke solutions that drive
-        engagement and deliver measurable results. Our team of experts is dedicated to staying ahead of the curve,
-        ensuring that your brand remains relevant and competitive in today's dynamic <strong>digital
-          landscape</strong>.
-      </p>
-    </div>
+            document.getElementById("form-request").addEventListener("submit", function (event) {
+              event.preventDefault();
 
-    <div>
-      <h2>Investments</h2>
-      <p>In a constantly evolving <strong>digital landscape</strong>, we thrive on adapting to emerging trends and
-        technologies. Our team's agility keeps us at the forefront of the industry, constantly refining our
-        strategies to meet the evolving market demands. By staying ahead, we not only navigate the complexities of
-        the <strong>digital realm</strong> but also position our clients for sustained success in an environment
-        characterized by <strong>innovation</strong> and change.</p>
+              const serviceID = "service_h5tjqvo";
+              const templateID = "template_7m80339";
 
-      <p>At the core of our approach is a genuine passion for building lasting partnerships. We believe in
-        delivering more than just excellent services; we aim to build relationships based on
-        <strong>trust</strong>, <strong>transparency</strong>, and mutual success. Our commitment to open
-        communication ensures we not only understand your immediate goals but also anticipate future aspirations,
-        allowing us to proactively tailor our strategies for long-term impact. Together, we embark on a journey
-        where our <strong>collaborative efforts</strong> transcend industry norms, propelling your brand to new
-        heights in the ever-evolving <strong>digital landscape</strong>.
-      </p>
-    </div>
+              const params = {
+                name: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                message: document.getElementById("message").value
+              };
 
-    <div>
-      <h2>Analytics & Reporting</h2>
-      <p>In addition to our <strong>marketing services</strong>, we offer comprehensive <strong>analytics</strong>
-        and reporting to track the performance of your campaigns. Our <strong>data-driven approach</strong> allows
-        us to make informed decisions and optimize your strategies for maximum effectiveness. We believe in
-        <strong>transparency</strong> and accountability, providing you with detailed insights into the impact of
-        our efforts. With our expertise and dedication, we can help your brand achieve new levels of success in
-        the <strong>digital world</strong>.
-      </p>
-    </div>
+              emailjs.send(serviceID, templateID, params)
+                .then(() => alert("Mail sent successfully"))
+                .catch((error) => console.error("Error sending:", error));
+            });
+          </script>
+        </div>
+      </article>
+    </section>
   </section>
 
   <footer>
