@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="./assets/css/base.css" id="camera-css">
   <link rel="stylesheet" href="./assets/css/framework.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/index-a9b4110996ce191cf79c3c3d4591a5bb3ada6179f9cdd9de9e89ba0bd13823e0.css" media="all">
-  <link rel="stylesheet" href="./assets/css/index-457550c0311c719db250e79989e7462091be593549fb6bcb3801c9182189d1e5.css" media="all">
+  <link rel="stylesheet" href="./assets/css/index-a9b4110996ce191cf79c3c3d4591a5bb3ada6179f9cdd9de9e89ba0bd13823e0.css"
+    media="all">
+  <link rel="stylesheet" href="./assets/css/index-457550c0311c719db250e79989e7462091be593549fb6bcb3801c9182189d1e5.css"
+    media="all">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -97,41 +99,27 @@
               <button type="submit" class="submit-button">Send message!</button>
             </div>
           </form>
-
-          <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-          <script>
-            emailjs.init("a3X6rggayM0ukJUMV");
-
-            document.getElementById("form-request").addEventListener("submit", function (event) {
-              event.preventDefault();
-
-              const serviceID = "service_h5tjqvo";
-              const templateID = "template_7m80339";
-
-              const params = {
-                name: document.getElementById("firstName").value,
-                lastName: document.getElementById("lastName").value,
-                email: document.getElementById("email").value,
-                phone: document.getElementById("phone").value,
-                message: document.getElementById("message").value
-              };
-
-              emailjs.send(serviceID, templateID, params)
-                .then(() => alert("Mail sent successfully"))
-                .catch((error) => console.error("Error sending:", error));
-            });
-          </script>
         </div>
       </article>
     </section>
   </section>
 
+  <!-- Modal -->
+  <div id="contact-modal" class="contact-modal">
+    <div class="modal-content">
+      <p id="modal-text">Sending...</p>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="./assets/css/modal.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./assets/js/email.js"></script>
+
   <footer>
     <div class="row">
       <div class="ten columns centered">
         <div class="copyright-text">
-          <p>Copyright © 2025 RNM Global - All rights reserved.<span class="footer-img"><img src="./footer-logo.png"
-               ></span>
+          <p>Copyright © 2025 RNM Global - All rights reserved.<span class="footer-img"></span>
         </div>
       </div>
     </div>

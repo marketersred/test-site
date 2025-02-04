@@ -93,3 +93,7 @@ p, a, form label, form input, form button, form textarea {
 #content-wrapper.about img{
   margin: 30px 0!important;
 }
+
+textarea {
+  resize: none!important;
+}
