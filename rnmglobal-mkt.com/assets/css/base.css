@@ -425,10 +425,10 @@ background: -o-linear-gradient(top, #23c0fb, #00ADEE) !important;
 }
 
 .button.green {
-background-color:#a2c437;
-background: -moz-linear-gradient(top, #b0d342, #a2c437) !important;
-background: -webkit-linear-gradient(top, #b0d342, #a2c437) !important;
-background: -o-linear-gradient(top, #b0d342, #a2c437) !important; 
+background-color:#6dbae6;
+background: -moz-linear-gradient(top, #b0d342, #6dbae6) !important;
+background: -webkit-linear-gradient(top, #b0d342, #6dbae6) !important;
+background: -o-linear-gradient(top, #b0d342, #6dbae6) !important; 
 }
 
 /***** Tables  *****/

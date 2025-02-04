@@ -52,3 +52,11 @@ a.hiddenajaxlink {
 .dropdown ul li:hover{
   background-color: rgb(236, 236, 236);
 }
+
+#menu li a.selected {
+  text-decoration: underline;
+}
+
+header {
+  height: 150px;
+}
