@@ -1,4 +1,5 @@
-﻿/* HistoryBack - Berker Yüceer - 24.06.2021 */
+﻿
+/* HistoryBack - Berker Yüceer - 24.06.2021 */
 function historyBack() {
     // history.back();
     // $.cookie("previousUrl", window.location.href, {path:"/"});

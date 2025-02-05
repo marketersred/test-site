@@ -6254,6 +6254,7 @@ align-items: center;*/
 
 .rightSide,
 .vioprightSide {
+    margin-bottom: ;
     height: 100%;
     float: left;
     width: 530px;
@@ -6755,7 +6756,7 @@ align-items: center;*/
         border-radius: 5px;
         display: block;
         border: none;
-        margin-top: 25px;
+        /* margin-top: 25px; */
         width: 100%;
     }
 

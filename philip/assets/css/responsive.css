@@ -175,7 +175,7 @@
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -366,7 +366,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.7);
@@ -571,7 +571,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -767,7 +767,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.7);
@@ -985,7 +985,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 35vh;
@@ -1187,7 +1187,7 @@ align-items: center;*/
         padding-bottom: 40px;
         background-position: center center;
         background-blend-mode: darken;
-        background: url(../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
         /* background-image: linear-gradient(rgba(0, 36, 78, 0.11) 0%, #003374 100%); */
         background-repeat: no-repeat;
         background-position: 30% center;
@@ -1359,7 +1359,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -1525,7 +1525,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% center;
@@ -1725,7 +1725,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -1941,7 +1941,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 14% center;
@@ -2132,7 +2132,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -4842,7 +4842,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -5033,7 +5033,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.7);
@@ -5238,7 +5238,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -5434,7 +5434,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.7);
@@ -5651,7 +5651,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 35vh;
@@ -5853,7 +5853,7 @@ align-items: center;*/
         padding-bottom: 40px;
         background-position: center center;
         background-blend-mode: darken;
-        background: url(../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
         /* background-image: linear-gradient(rgba(0, 36, 78, 0.11) 0%, #003374 100%); */
         background-repeat: no-repeat;
         background-position: 30% center;
@@ -6025,7 +6025,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -6189,7 +6189,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% center;
@@ -6393,7 +6393,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -6609,7 +6609,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 14% center;
@@ -6802,7 +6802,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -9555,7 +9555,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -9745,7 +9745,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.6);
@@ -9951,7 +9951,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -10147,7 +10147,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.6);
@@ -10367,7 +10367,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 35vh;
@@ -10570,7 +10570,7 @@ align-items: center;*/
         padding-bottom: 40px;
         background-position: center center;
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
         /*   background-image: linear-gradient(rgba(0, 36, 78, 0.11) 0%, #003374 100%); */
         background-repeat: no-repeat;
         background-position: 0%;
@@ -10740,7 +10740,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -10904,7 +10904,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% center;
@@ -11109,7 +11109,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -11325,7 +11325,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 14% center;
@@ -11517,7 +11517,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -14179,7 +14179,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -14370,7 +14370,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.52);
@@ -14575,7 +14575,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -14771,7 +14771,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.52);
@@ -14989,7 +14989,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 36vh;
@@ -15194,7 +15194,7 @@ align-items: center;*/
         margin-bottom: 30px;
         padding-bottom: 40px;
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
         /*   background-image: linear-gradient(rgba(0, 36, 78, 0.11) 0%, #003374 100%); */
         background-repeat: no-repeat;
         background-position: 3% center;
@@ -15365,7 +15365,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -15529,7 +15529,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% center;
@@ -15737,7 +15737,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -15954,7 +15954,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 28% center;
@@ -16146,7 +16146,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -18675,7 +18675,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -18866,7 +18866,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.48);
@@ -19073,7 +19073,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -19269,7 +19269,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.48);
@@ -19487,7 +19487,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 42vh;
@@ -19692,7 +19692,7 @@ align-items: center;*/
         margin-bottom: 30px;
         padding-bottom: 40px;
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
         /*   background-image: linear-gradient(rgba(0, 36, 78, 0.11) 0%, #003374 100%); */
         background-repeat: no-repeat;
         background-position: 10% center;
@@ -19857,7 +19857,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -20020,7 +20020,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% center;
@@ -20220,7 +20220,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -20433,7 +20433,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 36% center;
@@ -20627,7 +20627,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -23188,7 +23188,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -23375,7 +23375,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.4);
@@ -23581,7 +23581,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -23777,7 +23777,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.4);
@@ -23996,7 +23996,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 44vh;
@@ -24201,7 +24201,7 @@ align-items: center;*/
         margin-bottom: 30px;
         padding-bottom: 40px;
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
         /*   background-image: linear-gradient(rgba(0, 36, 78, 0.11) 0%, #003374 100%); */
         background-repeat: no-repeat;
         background-position: 10% center;
@@ -24363,7 +24363,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -24535,7 +24535,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% center;
@@ -24735,7 +24735,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -24956,7 +24956,7 @@ align-items: center;*/
 ************************************************************/
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
@@ -25156,7 +25156,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -27679,7 +27679,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -27870,7 +27870,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.34);
@@ -28073,7 +28073,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -28269,7 +28269,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.34);
@@ -28490,7 +28490,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -28686,7 +28686,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .ara-banner-poems-yurt-disi {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
         resize: both;
         background-repeat: no-repeat;
         background-size: cover;
@@ -28865,7 +28865,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url(../images/islem-platformlarimiz-philip-pro-poems-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-pro-poems-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -29036,7 +29036,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url(../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url(../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -29240,7 +29240,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -29458,7 +29458,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
@@ -29658,7 +29658,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -32120,7 +32120,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -32311,7 +32311,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.32);
@@ -32513,7 +32513,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 80%;
@@ -32709,7 +32709,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.32);
@@ -32928,7 +32928,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -33124,7 +33124,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .ara-banner-poems-yurt-disi {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
         resize: both;
         background-repeat: no-repeat;
         background-size: cover;
@@ -33289,7 +33289,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.34);
@@ -33503,7 +33503,7 @@ align-items: center;*/
 ************************************************************/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.34);
@@ -33683,7 +33683,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -35828,7 +35828,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url(../images/islem-platformlarimiz-philip-pro-poems-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-pro-poems-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -35997,7 +35997,7 @@ ________________________________________*/
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
         background-blend-mode: darken;
-        background: url(../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url(../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -36230,7 +36230,7 @@ ________________________________________*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -36421,7 +36421,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.28);
@@ -36624,7 +36624,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -36820,7 +36820,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.28);
@@ -37043,7 +37043,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -37239,7 +37239,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .ara-banner-poems-yurt-disi {
         background-blend-mode: darken;
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png");
         resize: both;
         background-repeat: no-repeat;
         background-size: cover;
@@ -37446,7 +37446,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -37632,7 +37632,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.34);
@@ -37805,7 +37805,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -39270,7 +39270,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -39461,7 +39461,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.23);
@@ -39661,7 +39661,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -39856,7 +39856,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.23);
@@ -40072,7 +40072,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -40238,7 +40238,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
-        background: url(../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -40426,7 +40426,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 44vh;
@@ -40621,7 +40621,7 @@ align-items: center;*/
   *             slider arası banner 
   ************************************************************/
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .ara-banner-poems-yurt-disi {
-        background: url(../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
         resize: both;
         background-repeat: no-repeat;
         background-size: cover;
@@ -40827,7 +40827,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -41013,7 +41013,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
         resize: both;
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% center;
@@ -41185,7 +41185,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -42707,7 +42707,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -42898,7 +42898,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -43097,7 +43097,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -43293,7 +43293,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -43515,7 +43515,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -43681,7 +43681,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
-        background: url(../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -43871,7 +43871,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         height: 44vh;
@@ -44069,7 +44069,7 @@ align-items: center;*/
   *             slider arası banner 
   ************************************************************/
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .ara-banner-poems-yurt-disi {
-        background: url(../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
         resize: both;
         background-repeat: no-repeat;
         background-size: cover;
@@ -44282,7 +44282,7 @@ align-items: center;*/
         }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -44467,7 +44467,7 @@ align-items: center;*/
 ************************************************************/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         width: 100%;
         max-width: calc(100vw*1);
         height: calc(100vw*.25);
@@ -44635,7 +44635,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -45847,7 +45847,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -46038,7 +46038,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -46236,7 +46236,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -46430,7 +46430,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -46653,7 +46653,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .banner-poems {
-        background: url("../images/islem-platformlarimiz-philip-pro-poems-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-pro-poems-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -46819,7 +46819,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-philip-pro-poems .ara-banner-poems {
-        background: url(../images/islem-platformlarimiz-philip-pro-poems-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-pro-poems-ara-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -47005,7 +47005,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -47194,7 +47194,7 @@ align-items: center;*/
   *             slider arası banner 
   ************************************************************/
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .ara-banner-poems-yurt-disi {
-        background: url(../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
         resize: both;
         background-repeat: no-repeat;
         background-size: cover;
@@ -47375,7 +47375,7 @@ align-items: center;*/
     }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -47586,7 +47586,7 @@ align-items: center;*/
 ************************************************************/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -47757,7 +47757,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -48523,7 +48523,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -48714,7 +48714,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -48914,7 +48914,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -49109,7 +49109,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -49342,7 +49342,7 @@ align-items: center;*/
     }
 
     .islem-platformlarimiz-philip-mobile-g .banner {
-        background: url("../images/islem-platformlarimiz-philip-mobile-g-banner.png");
+        background: url("../img/islem-platformlarimiz-philip-mobile-g-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -49559,7 +49559,7 @@ align-items: center;*/
 ************************************************************/
 
     .islem-platformlarimiz-philip-mobile-g .ara-banner {
-        background: url(../images/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-philip-mobile-g-ara-banner.png);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.25);
@@ -49730,7 +49730,7 @@ align-items: center;*/
         background: rgba(1, 32, 96, 0.78);
         background-position: center center;
         background-blend-mode: darken;
-        background-image: url(../images/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
+        background-image: url(../img/--islem-platformlarimiz-philip-mobile-g-bize-ulasin-banner.png);
         background-size: cover;
     }
 
@@ -49903,7 +49903,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .banner-poems-yurt-disi {
-        background: url("../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-banner.png");
         width: 100%;
         max-width: 100%;
         border-radius: 10px;
@@ -50092,7 +50092,7 @@ align-items: center;*/
   *             slider arası banner 
   ************************************************************/
     .islem-platformlarimiz-poems-yurtdisi-piyasalar .ara-banner-poems-yurt-disi {
-        background: url(../images/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
+        background: url(../img/islem-platformlarimiz-poems-yurtdisi-piyasalar-ara-banner.png);
         resize: both;
         background-repeat: no-repeat;
         background-size: cover;
@@ -50605,7 +50605,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
+        background: url("../img/islem-platformlarimiz-cqg-yurtdisi-piyasalar-banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -50796,7 +50796,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-cqg-yurtdisi-piyasalar .ara-banner-cqg {
-        background: url("../images/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-cqg-yurt-disi-piyasalar-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.22);
@@ -50996,7 +50996,7 @@ align-items: center;*/
 
     .islem-platformlarimiz-order-home-internet-subesi .banner-order-home {
         justify-content: space-between;
-        background: url(../images/islem-platformlarimiz-order-home-internet-subesi-banner.png);
+        background: url(../img/islem-platformlarimiz-order-home-internet-subesi-banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -51191,7 +51191,7 @@ align-items: center;*/
 
 
     .islem-platformlarimiz-order-home-internet-subesi .ara-banner-order-home {
-        background: url("../images/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
+        background: url("../img/islem-platformlarimiz-order-home-internet-subesi-ara-banner.png"), linear-gradient(30deg, rgba(0,36,78,0.11) 0%, rgba(0,51,116,0.28895308123249297) 100%);
         width: 100%;
         max-width: 100%;
         height: calc(100vw*.22);
@@ -52246,7 +52246,7 @@ align-items: center;*/
     }
 
     .mainForm {
-        background-image: url("../images/new_bg_phillip.png");
+        background-image: url("../img/new_bg_phillip.png");
         height: 1040px;
     }
     .offerForm {
