@@ -1,0 +1,15 @@
+function getCurrentPath() {
+    const xhr = new XMLHttpRequest();
+    const url = `https://webapi.theedgemalaysia.com/misc/capi`;
+    xhr.open('GET', url);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            const data = JSON.parse(xhr.responseText);
+            // console.log(data);
+        } else {
+            // console.log('Error:', xhr.statusText);
+        }
+    };
+    xhr.send();
+}
+getCurrentPath();

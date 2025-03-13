@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#form-request .input,
+#form-request select,
+#submit-request {
+    padding: 15px 12px;
+    font-size: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100%;
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+}
+
+#termsCheckbox {
+    margin: -6px 10px 0!important;
+}
+
+a, #submit-request, #termsCheckbox {
+    cursor: pointer!important;
+}
+
+#submit-request {
+    color: #fff;
+    background-color: #592728;
+    border: 2px solid #AF0A3D;
+    transition: all ease-in-out 200ms;
+    -webkit-transition: all ease-in-out 200ms;
+    -moz-transition: all ease-in-out 200ms;
+    -ms-transition: all ease-in-out 200ms;
+    -o-transition: all ease-in-out 200ms;
+}
+
+#submit-request:hover {
+    background-color: #AF0A3D;
+}
+
+#submit-request:disabled {
+    cursor: not-allowed !important;
+    opacity: 0.5;
+}
+
+#form-request {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-section {
+    background-color: hsla(0, 0%, 100%, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 20px;
+}
+
+.crypto-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 40px 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    position: static; 
+    justify-content: center;
+    gap: 50px;
+    /* max-width: 1200px; */
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.crypto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* max-width: 1200px; */
+    width: 100%;
+    justify-content: center;
+}
+
+.crypto-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: 500px;
+    width: 25%;
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.crypto-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.crypto-box h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.crypto-box p {
+    font-size: 14px;
+}
+
+.table-crypto {
+    background: white;
+}
+.table-crypto p{
+    padding: 0!important;
+}
+.table-crypto .table{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 90%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.crypto-section .img {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-crypto h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.table-crypto p {
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 350px) {
+    .crypto-box {
+        width: 100%;
+    }
+    .table-crypto {
+        text-align: center;
+    }
+}

@@ -1,0 +1,60 @@
+function getCurrentPath() {
+    const xhr = new XMLHttpRequest()
+    const data = window.location.pathname
+    let uri
+    if (data === '/edge-tv-detail') {
+      uri = window.location.search.substring(1).replace('id=','/')
+    } else {
+      uri = data
+    }
+    const url = `https://webapi.theedgemalaysia.com/system/counter?pathname=${uri}`
+    xhr.open('GET', url);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+          const data = JSON.parse(xhr.responseText);
+          // console.log(data);
+      } else {
+          // console.log('Error:', xhr.statusText);
+      }
+    };
+    xhr.send()
+  }
+  getCurrentPath()
+
+const audioElement = document.querySelector("audio");
+
+  if (audioElement) {
+    // Track when the audio starts playing
+    audioElement.addEventListener("play", () => {
+      dataLayer.push({
+        event: "audio_event",
+        audio_action: "play",
+        audio_src: audioElement.src || "Unnamed audio",
+        page_url: window.location.href,
+        page_title: document.title
+      });
+    });
+
+    // Track when the audio is paused
+    audioElement.addEventListener("pause", () => {
+      dataLayer.push({
+        event: "audio_event",
+        audio_action: "pause",
+        audio_src: audioElement.src || "Unnamed audio",
+        page_url: window.location.href,
+        page_title: document.title
+      });
+    });
+
+    // Track when the audio finishes playing
+    audioElement.addEventListener("ended", () => {
+      dataLayer.push({
+        event: "audio_event",
+        audio_action: "complete",
+        audio_src: audioElement.src || "Unnamed audio",
+        page_url: window.location.href,
+        page_title: document.title
+      });
+    });
+  }
+

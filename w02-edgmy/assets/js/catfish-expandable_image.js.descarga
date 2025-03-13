@@ -1,0 +1,22 @@
+jQuery(document).ready(function () {
+	autoExpand = setTimeout(function() {
+		jQuery("#catfish_expanded").slideDown('slow');
+	}, 2000);
+
+	var interval = null;
+	autoCollapsed = function(time){
+		interval = setTimeout(function() {
+			jQuery("#catfish_expanded,#catfish_collapsed").slideToggle("slow");
+		}, time);
+	}
+	autoCollapsed(12000);
+		
+	jQuery("#catfish_collapsed").on("click", function () {
+		jQuery("#catfish_expanded,#catfish_collapsed").slideToggle("slow");
+		autoCollapsed(10000);
+	});
+	jQuery(".close_txt").on("click", function () {
+		jQuery("#catfish_expanded,#catfish_collapsed").slideToggle("slow");
+		clearTimeout(interval);
+	});
+});

@@ -1,0 +1,175 @@
+(function() {
+/* ============ Get Article Data ============ */
+const currentScript = document.currentScript;
+
+// Extract the query parameters from the script's source URL
+const urlParams = new URLSearchParams(currentScript.src.split("?")[1]);
+const nodeId = urlParams.get("node"); // Get the 'node' parameter
+const modeId = urlParams.get("mode");
+const flashName = urlParams.get("flash");
+var configMode = 0;
+
+// Div id for all ad unit
+const brandedThumbId = "branded-thumb";
+const brandedTitleId = "branded-title";
+const brandedSummaryId = "branded-summary";
+const brandedDateId = "branded-date";
+const brandedFlashId = "branded-flash";
+const brandedURLId = "branded-url";
+const brandedAuthorId = "branded-author";
+const brandedSourceId = "branded-source";
+
+const brandedIds = {
+  url: "branded-url",
+  title: "branded-title",
+  date: "branded-date",
+  thumb: "branded-thumb",
+  summary: "branded-summary",
+  flash: "branded-flash",
+  author: "branded-author",
+  source: "branded-source",
+};
+
+function dateConversion(data) {
+  const last_updated = new Date(data.updated);
+  const formattedDay = last_updated.getDate().toString().padStart(2, "0");
+  var datetemp = data.updated;
+  // Create a Date object from the string
+  var date = new Date(datetemp);
+  const options = {
+    day: "2-digit", // Use '2-digit' to ensure leading zeros for single-digit days
+    month: "short", // Use 'short' for abbreviated month name
+    year: "numeric",
+    hour: "2-digit", // Use '2-digit' for leading zeros in hours
+    minute: "2-digit", // Use '2-digit' for leading zeros in minutes
+    hour12: true, // Use 12-hour clock
+    timeZone: "Asia/Singapore",
+  };
+  const formattedDate = date.toLocaleString("en-MY", options);
+
+  return formattedDate;
+}
+
+// Mode represent the ad unit to let the api data append the info
+function matchPattern(str) {
+  if (/^FB.*/.test(str)) {
+    console.log(`${str} - Matches pattern FB*`);
+  } else if (/^FS.*/.test(str)) {
+    console.log(`${str} - Matches pattern FS*`);
+  } else if (/^INR.*/.test(str)) {
+    console.log(`${str} - Matches pattern INR*`);
+  } else if (/^LN.B$/.test(str)) {
+    console.log(`${str} - Matches pattern LN*B`);
+  } else {
+  }
+}
+
+const modeFieldMap = {
+  "LN.B": [0, 1, 2, 3, 5], // Fields needed for LN*B
+  INR: [0, 1, 3, 4, 5], // Fields needed for INR*
+  FB: [0, 1, 2, 3, 4, 5, 6, 7], // Adjust or add as needed
+  FS: [0, 1, 2, 3, 5], // Adjust or add as needed
+  "LN.S": [0, 1, 2, 5], // Fields needed for LN*S
+};
+
+// Function to filter data by mode pattern
+function filterDataByMode(articleData, modeId) {
+  // Determine the mode pattern based on the modeId
+  let patternKey = Object.keys(modeFieldMap).find((pattern) =>
+    new RegExp(`^${pattern}`).test(modeId)
+  );
+
+  if (patternKey) {
+    // Use the pattern's indices to filter the data
+    const indices = modeFieldMap[patternKey];
+    return indices.map((index) => Object.values(articleData)[index]);
+  } else {
+    console.log(`${modeId} - No matching pattern`);
+    return []; // No fields if there's no match
+  }
+}
+
+function filterDivByData(brandedIds, modeId) {
+  // Determine the mode pattern based on the modeId
+  // console.log(brandedIds);
+  let divPatternKey = Object.keys(modeFieldMap).find((pattern) =>
+    new RegExp(`^${pattern}`).test(modeId)
+  );
+
+  if (divPatternKey) {
+    // Use the pattern's indices to filter the data
+    const indices = modeFieldMap[divPatternKey];
+    return indices.map((index) => Object.values(brandedIds)[index]);
+  } else {
+    console.log(`${modeId} - No matching pattern`);
+    return []; // No fields if there's no match
+  }
+}
+
+fetch(
+  `https://webapi.theedgemalaysia.com/cmb/content?year=XXXX&issue=0001&section=Branded&page=1&nid=${nodeId}&datetime=3`,
+  {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+    },
+  }
+)
+  .then((response) => response.json())
+  .then((data) => {
+    const articleData = {
+      alias: data.results[0].alias,
+      title: data.results[0].title,
+      date: dateConversion(data.results[0]),
+      thumb: data.results[0].img,
+      summary: data.results[0].summary,
+      flash: flashName,
+      author: data.results[0].author,
+      source: data.results[0].source,
+    };
+
+    // Filter data based on modeId and pattern
+    const filteredData = filterDataByMode(articleData, modeId);
+    const filterDiv = filterDivByData(brandedIds, modeId);
+
+    filterDiv.forEach((id, index) => {
+      // Only update elements with indices present in filteredDataByMode
+      if (filteredData[index] !== undefined) {
+        // const element = document.querySelector(`#${modeId} #${id}`);
+
+        if (id === "branded-thumb") {
+          const imgPlaceholder = document.querySelectorAll(`#${modeId} img[id^="${id}"]`);
+          imgPlaceholder.forEach((img) => {
+            img.src = filteredData[index];            
+          })
+        } else if (id === "branded-url") {
+          const anchorTag = document.querySelectorAll(`#${modeId} a[class^="${id}"]`);
+          anchorTag.forEach((tag) => {
+            tag.href = tag.href.replace( "DYNAMICURL", `https://theedgemalaysia.com/${filteredData[index]}`);
+          })
+        } else if (id === "branded-flash") {
+          const flashDiv = document.querySelectorAll(`#${modeId} [id^="${id}"]`);
+          flashDiv.forEach((flashTag) => {
+            if (flashTag.children.length > 0) {
+              const spanTag = flashTag.querySelector('span');
+              flashTag.href = flashTag.href.replace("branded",`${filteredData[index]}`);
+              spanTag.textContent = filteredData[index];
+            } else {
+              flashTag.href = flashTag.href.replace("branded",`${filteredData[index]}`);
+              flashTag.textContent = filteredData[index];
+            }
+          })
+        } else if (id === "branded-author" || id === "branded-source") {
+          const tag = document.querySelector(`#${modeId} a[id^="${id}"]`);
+            tag.href = tag.href.replace("DYNAMIC",`${filteredData[index]}`);
+            tag.textContent = filteredData[index];
+        }  else {
+          const allDiv = document.querySelectorAll(`#${modeId} [id^="${id}"]`);
+          allDiv.forEach((element) => {
+            element.textContent = filteredData[index];
+          })
+        }
+      }
+    });
+  });
+})();

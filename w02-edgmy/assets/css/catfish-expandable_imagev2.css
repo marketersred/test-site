@@ -1,0 +1,107 @@
+.catfish_wrapper a img {
+    border: none;
+    border-width: 0;
+}
+.catfish_wrapper {
+    background-color: #FFF;
+    bottom:0;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    z-index: 998;
+    transition: transform 700ms ease-out 0s;
+}
+.catfish {
+    width: 1200px;
+    margin: 0 auto 
+}
+#catfish_collapsed {
+    background: transparent !important;
+    cursor: pointer;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+}
+#catfish_expanded {
+    bottom: 0;
+    position:relative;
+/*    display: none;*/
+}
+.close_txt, .open_txt {
+    color: #666;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    z-index: 1000 
+}
+.close_txt > span, .open_txt > span {
+    font: normal 11px 'Montserrat', sans-serif;
+    position: relative;
+    top: -8px 
+}
+
+#catfish_collapsed, .catfish_mobile, .catfish_tablet, .catfish_expand_desktop, .catfish_collapsed_desktop, .catfish_expand_laptop, .catfish_collapsed_laptop {
+    display: none
+}
+
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .catfish_mobile {
+        display: block !important;
+   }
+    .catfish_tablet, .catfish_wrapper #catfish_collapsed, .catfish_wrapper #catfish_expanded, .catfish_wrapper .catfish {
+        display: none;
+   }
+}
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 821px) {
+    .catfish_tablet {
+        display: block !important;
+   }
+    .catfish_mobile .catfish_wrapper #catfish_collapsed, .catfish_wrapper #catfish_expanded, .catfish_wrapper .catfish {
+        display: none;
+   }
+}
+
+/* LAPTOP */
+@media (min-width: 820px) and (max-width: 1027px) {
+    #catfish_expanded, #catfish_collapsed, .catfish {
+        width: 800px;
+        margin: 0 auto;
+   }
+/*    .catfish_mobile,.catfish_tablet, .catfish_expand_desktop, .catfish_collapsed_desktop, .catfish_expand_wide, .catfish_collapsed_wide {
+        display: none !important 
+   }*/
+    .catfish_expand_laptop, .catfish_collapsed_laptop {
+        display: block !important;
+   }
+}
+
+/* DESKTOP */
+@media (min-width: 1028px) and (max-width: 1199px) {
+    #catfish_expanded, #catfish_collapsed, .catfish {
+        width: 1024px;
+        margin: 0 auto;
+   }
+/*    .catfish_mobile,.catfish_tablet, .catfish_expand_wide, .catfish_collapsed_wide {
+        display: none !important 
+   }*/
+    .catfish_expand_desktop, .catfish_collapsed_desktop {
+        display: block !important;
+   }
+}
+
+@media (min-width: 1200px) {
+    .catfish_mobile,.catfish_tablet, .catfish_expand_desktop, .catfish_collapsed_desktop {
+        display: none !important 
+   }
+
+    .catfish_expand_wide, .catfish_collapsed_wide {
+            display: block !important 
+    }
+}

@@ -1,0 +1,158 @@
+// document.addEventListener("DOMContentLoaded", function () {
+//   var elements = document.body.querySelector(".news-detail_newsImgWrap__wlXlR");
+//   var ceonothumb = document.body.querySelector(".ceonothumb") !== null ? true : false;
+
+//   if (ceonothumb) {
+//     elements.forEach((item) => {
+//       item.style.display = "none";
+//     });
+//   } else {
+//     elements.forEach((item) => {
+//       item.style.display = "block";
+//     });
+//   }
+// });
+
+  var elements = window.parent.document.querySelector(".news-detail_newsImgWrap__9DPNp");
+  var ceonothumb = window.parent.document.querySelector(".ceonothumb");
+
+  
+if (ceonothumb && elements) {
+  elements.style.display = "none";
+  }
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("infunction 1");
+  // create instance of ModuloBox
+
+  console.log("Initializing ModuloBox...");
+  
+  // Check if media elements exist
+  const mediaElements = document.querySelectorAll(".mobx");
+  if (mediaElements.length === 0) {
+    // console.error("No media elements found with the class '.mobx'");
+    return;
+  } else {
+    console.log('Trigger ModuloBox...');
+
+  var mobx = new ModuloBox({
+      // options
+      mediaSelector: ".mobx",
+      scrollToZoom: true,
+      controls: ['zoom', 'fullScreen', 'download', 'close'],
+      videoMaxWidth: 1440,
+      minZoom: 1,
+      zoomTo: 3.4,
+      maxZoom: 4,
+      videoAutoPlay: true,
+      videoThumbnail: true,
+      prevNextKey: true,
+      mouseWheel: true,
+      prevNextTouch: true,
+      contextMenu: true,
+      doubleTapToZoom: true,
+      scrollToZoom: true,
+      caption: true,
+      captionSmallDevice: false,
+      escapeToClose: true,
+      scrollToClose: true,
+      pinchToClose: true,
+      dragToClose: true,
+      tapToClose: false,
+      scrollToNav: true,
+      scrollBar: false,
+      mediaelement: true,
+      thumbnails: true,
+      thumbnailsNav: "centered",
+      thumbnailSizes: {
+        1920: {
+          width: 110,
+          height: 80,
+          gutter: 10,
+        },
+        1280: {
+          width: 90,
+          height: 65,
+          gutter: 10,
+        },
+        480: {
+          width: 60,
+          height: 44,
+          gutter: 5,
+        },
+      },
+    });
+
+    mobx.init();
+    console.log('ModuloBox Ready...');
+    return
+  }
+  
+  var mobx = new ModuloBox({
+    // options
+    mediaSelector: ".mobx",
+    scrollToZoom: true,
+    controls: ['zoom', 'fullScreen', 'download', 'close'],
+    videoMaxWidth: 1440,
+    minZoom: 1,
+    zoomTo: 3.4,
+    maxZoom: 4,
+    videoAutoPlay: true,
+    videoThumbnail: true,
+    prevNextKey: true,
+    mouseWheel: true,
+    prevNextTouch: true,
+    contextMenu: true,
+    doubleTapToZoom: true,
+    scrollToZoom: true,
+    caption: true,
+    captionSmallDevice: false,
+    escapeToClose: true,
+    scrollToClose: true,
+    pinchToClose: true,
+    dragToClose: true,
+    tapToClose: false,
+    scrollToNav: true,
+    scrollBar: false,
+    mediaelement: true,
+    thumbnails: true,
+    thumbnailsNav: "centered",
+    thumbnailSizes: {
+      1920: {
+        width: 110,
+        height: 80,
+        gutter: 10,
+      },
+      1280: {
+        width: 90,
+        height: 65,
+        gutter: 10,
+      },
+      480: {
+        width: 60,
+        height: 44,
+        gutter: 5,
+      },
+    },
+  });
+  // initialize the instance
+
+
+
+  mobx.init();
+  // console.log("ready", mobx.init());
+
+  // mobx.on('afterOpen.modulobox', function(event) {
+  //   console.log('Opened');
+  //   var downloadButton = document.querySelector('.mobx-download');
+
+  //   downloadButton.addEventListener('click', function(event) {
+  //     event.preventDefault();
+  //     var downloadLink = document.querySelector('.mobx-img').getAttribute('src');
+  //     console.log(`${downloadLink}`);
+
+  //   });
+
+  // });
+
+});

@@ -1,0 +1,282 @@
+/* To hide article thumbmnail and thumbnail caption if embed image is present (.ceonothumb) */
+.news-detail_newsImgWrap__wlXlR > a > img {
+  display: none;
+}
+.blockquote {
+  margin: 2.4rem;
+  color: gray;
+  font: 700 2rem/1.46 sans-serif;
+  border-left: 4px solid indianred;
+  padding: 0 0 0 20px !important;
+}
+.tem-subhead {
+  margin: 2.4rem 2.4rem 5.6rem 2.4rem;
+  color: black;
+  font: 700 2rem/1.46 sans-serif;
+  border-left: 5px solid cornflowerblue;
+  padding: 0 0 0 20px !important;
+  font-style: italic;
+}
+.thumb-cap {
+  font-size: 13px;
+  line-height: 1.5;
+  padding-top: 4px;
+  color: #494949;
+}
+h3 {
+  margin-top: 36px;
+  margin-bottom: 8px;
+  font: 700 1.9rem/1.46 sans-serif;
+}
+.embed-right {
+  float: right;
+  margin: 1rem;
+}
+.embed-left {
+  float: left;
+  margin: 1rem 2em 1rem 0;
+}
+
+.embed-center {
+  margin: 0 auto;
+}
+
+.embedimg-icon {
+  position:relative;
+  color: indianred !important;
+  border-bottom: none !important;
+  height: 100%;
+  display: inline-block;
+}
+.embedimg-icon:before {
+  content: "\f065";
+  font-family: FontAwesome;
+  position: absolute;
+  border: 2px solid indianred;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255,255,255,1);
+  font-size: 22px;
+  border-radius: 50%;
+  color: indianred;
+  right: -14px;
+  margin-top: -14px;
+}
+@-moz-document url-prefix() {
+  .embedimg-icon:before {
+    margin-top: -13px;
+  }
+}
+.embedimg-icon:hover {
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+.video_thumbnail {
+  position: relative;
+  width: 100%;
+}
+
+icon.fa.fa-play.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%,-84%);
+  font-size: 10rem;
+  opacity: 1;
+}
+
+.Ratecard_sliderComponent__d_g1V {
+  top: 50% !important;
+}
+
+
+/* i.fa.fa-play.play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  opacity: 0.6;
+} */
+
+/* 
+.play-btn {
+  position:relative;
+  color: rgba(234,46,73,1) !important;
+  border-bottom: none !important;
+}
+.play-btn:after {
+  content: "\f04b";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+}
+.play-btn:hover {
+  color: rgba(234,46,73,0.7) !important;
+  text-decoration: none;
+} */
+
+.center-cropped {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.displaynone-tem {
+  display: none !important;
+}
+
+.imgw-160, .imgw-160 img  {
+  width: 160px;
+}
+.imgw-180, .imgw-180 img {
+  width: 180px;
+}
+.imgw-200, .imgw-200 img {
+  width: 200px;
+}
+.imgw-220, .imgw-220 img {
+  width: 220px;
+}
+.imgw-240, .imgw-240 img {
+  width: 240px;
+}
+.imgw-260, .imgw-260 img {
+  width: 260px;
+}
+.imgw-280, .imgw-280 img {
+  width: 280px;
+}
+.imgw-300, .imgw-300 img {
+  width: 300px;
+}
+.imgw-320, .imgw-320 img {
+  width: 320px;
+}
+.imgw-340, .imgw-340 img {
+  width: 340px;
+}
+.imgw-360, .imgw-360 img {
+  width: 360px;
+}
+.imgw-380, .imgw-380 img {
+  width: 380px;
+}
+.imgw-400, .imgw-400 img {
+  width: 400px;
+}
+.imgw-500, .imgw-500 img {
+  max-width: 500px;
+  width: 100%;
+}
+.imgw-600, .imgw-600 img {
+  max-width: 600px;
+  width: 100%;
+}
+.imgw-700, .imgw-700 img {
+  max-width: 700px;
+  width: 100%;
+}
+.imgw-747, .imgw-747 img {
+	max-width: 747px;
+	width: 100%;
+}
+.imgw-800, .imgw-800 img {
+  max-width: 800px;
+  width: 100%;
+}
+.imgw-830, .imgw-830 img {
+  max-width: 830px;
+  width: 100%;
+}
+.imgw-840, .imgw-840 img {
+  max-width: 840px;
+  width: 100%;
+}
+.imgw-900, .imgw-900 img {
+  max-width: 900px;
+  width: 100%;
+}
+.imgh-200, .imgh-200 img {
+  height: 200px;
+}
+.imgh-250, .imgh-250 img {
+  height: 250px;
+}
+.imgh-300, .imgh-300 img {
+  height: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+  .embed-left, .embed-right {
+    float: none;
+    margin: 2rem auto;
+    text-align: center;
+    display: block;
+  }
+  .popup-gallery {
+    text-align: center;
+  }
+  .imgw-160, .imgw-160 img, .imgw-180, .imgw-180 img, .imgw-200, .imgw-200 img, .imgw-220, .imgw-220 img,
+  .imgw-240, .imgw-240 img, .imgw-260, .imgw-260 img, .imgw-280, .imgw-280 img, .imgw-300, .imgw-300 img,
+  .imgw-320, .imgw-320 img, .imgw-340, .imgw-340 img, .imgw-360, .imgw-360 img, .imgw-380, .imgw-380 img, 
+  .imgw-400, .imgw-400 img, .imgw-500, .imgw-500 img, .imgw-600, .imgw-600 img,
+  .imgw-700, .imgw-700 img, .imgw-747, .imgw-747 img,
+  .imgw-800, .imgw-800 img, .imgw-830, .imgw-830 img, .imgw-840, .imgw-840 img,
+  .imgw-900, .imgw-900 img {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .h3 {
+    font: 700 1.9rem/1.6 sans-serif;
+}
+}
+
+@media only screen and (max-width: 414px) {
+  .embed-chart-left, .embed-chart-right{
+    float: none;
+    margin: 0 0 20px 0;
+    display: block;
+    text-align: center;
+  }
+  blockquote {
+    margin-bottom: 3rem;
+    font: 700 1.8rem/1.4 sans-serif;
+  }
+}
+
+/* Place 2 div side by side  */
+.my-column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.my-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 500px) {
+  .my-column {
+    width: 100%;
+  }
+}
+
+/* ========== New CSS - 16/5/2023 ========*/
+
+.video_thumbnail img {
+    width: 100%;
+}
+
+.my-column img {
+    height: auto;
+    width: 100%;
+}

@@ -1,0 +1,142 @@
+// $( document ).ready(function() {
+// 	if jQuery('#Popup_MY') {
+// 		jQuery('body').addClass("freeze");
+// 	}
+// });
+
+// window.addEventListener("load",function() {
+//    var popup = document.querySelector('#Popup_MY');
+//    if (popup){
+//    		document.body.classList.add('freeze');
+//    }
+// });
+
+/* ========= Hide Mrec 2 When Extended Mrec Appear ========= */
+
+
+// Function to handle the presence of the .mrec-extended element
+function handleMRecExtended() {
+  var extended = document.querySelector(".mrec-extended");
+  var mrec2 = document.querySelector("#div-gpt-ad-mrec2-home-my");
+
+  try {
+    if (extended) {
+      mrec2.parentNode.removeChild(mrec2);
+    }
+  } catch (error) {
+    // Suppress specific errors silently
+    if (
+      !error.message.includes("Cannot read properties of null") &&
+      !error.message.includes("mrec2 is null")
+    ) {
+      // Log other errors (if any) to the console
+      console.error("An error occurred:", error);
+    }
+  }
+}
+
+// MutationObserver setup to monitor the DOM for changes
+var observer = new MutationObserver(function (mutationsList) {
+  for (var mutation of mutationsList) {
+    if (mutation.addedNodes.length > 0) {
+      // Check if the added nodes contain .mrec-extended
+      if (mutation.target.querySelector(".mrec-extended")) {
+        handleMRecExtended();
+        break; // Stop observing after handling the first appearance of .mrec-extended
+      }
+    }
+  }
+});
+
+// Start observing the entire document for changes
+observer.observe(document, { childList: true, subtree: true });
+
+// Additionally, call the handleMRecExtended function on window.onload event
+window.onload = handleMRecExtended;
+
+
+/* ========= Hide Mrec 4 When Extended Mrec 3 Appear ========= */
+
+// Function to handle the presence of the .mrec-extended element
+function handleMRec3Extended() {
+  var mrec3_extended = document.querySelector(".mrec3-extended");
+  var mrec4 = document.querySelector("#div-gpt-ad-mrec4-home-my");
+
+  try {
+    if (mrec3_extended) {
+      mrec4.parentNode.removeChild(mrec4);
+    }
+  } catch (error) {
+    // Suppress specific errors silently
+    if (
+      !error.message.includes("Cannot read properties of null") &&
+      !error.message.includes("mrec4 is null")
+    ) {
+      // Log other errors (if any) to the console
+      console.error("An error occurred:", error);
+    }
+  }
+}
+
+// MutationObserver setup to monitor the DOM for changes
+var observer = new MutationObserver(function (mutationsList) {
+  for (var mutation of mutationsList) {
+    if (mutation.addedNodes.length > 0) {
+      // Check if the added nodes contain .mrec3-extended
+      if (mutation.target.querySelector(".mrec3-extended")) {
+        handleMRec3Extended();
+        break; // Stop observing after handling the first appearance of .mrec-extended
+      }
+    }
+  }
+});
+
+// Start observing the entire document for changes
+observer.observe(document, { childList: true, subtree: true });
+
+// Additionally, call the handleMRec3Extended function on window.onload event
+window.onload = handleMRec3Extended;
+
+
+/* ========= Hide Mrec 4 When Extended Mrec 3 Video Appear ========= */
+
+// Function to handle the presence of the .mrec-extended element
+function handleMRec3ExtendedVideo() {
+  var mrec3_extendedVideo = document.querySelector(".MRec3_video_wrapper");
+  var mrec4ad = document.querySelector("#div-gpt-ad-mrec4-home-my");
+
+  try {
+    if (mrec3_extendedVideo) {
+      mrec4ad.parentNode.removeChild(mrec4ad);
+    }
+  } catch (error) {
+    // Suppress specific errors silently
+    if (
+      !error.message.includes("Cannot read properties of null") &&
+      !error.message.includes("mrec4 is null")
+    ) {
+      // Log other errors (if any) to the console
+      console.error("An error occurred:", error);
+    }
+  }
+}
+
+// MutationObserver setup to monitor the DOM for changes
+var observer = new MutationObserver(function (mutationsList) {
+  for (var mutation of mutationsList) {
+    if (mutation.addedNodes.length > 0) {
+      // Check if the added nodes contain .MRec3_video_wrapper
+      if (mutation.target.querySelector(".MRec3_video_wrapper")) {
+        handleMRec3ExtendedVideo();
+        break; // Stop observing after handling the first appearance of .mrec-extended
+      }
+    }
+  }
+});
+
+// Start observing the entire document for changes
+observer.observe(document, { childList: true, subtree: true });
+
+// Additionally, call the handleMRec3Extended function on window.onload event
+window.onload = handleMRec3ExtendedVideo;
+

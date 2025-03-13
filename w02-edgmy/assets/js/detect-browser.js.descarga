@@ -1,0 +1,36 @@
+var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+//var is_explorer= typeof document !== 'undefined' && !!document.documentMode && !is_Edge;
+var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+var is_Edge = navigator.userAgent.indexOf("Edge") > -1;
+var is_firefox = typeof window.InstallTrigger !== 'undefined';
+var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+//var is_opera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+if ((is_chrome)&&(is_safari)) { is_safari = false; }
+if ((is_firefox)&&(is_safari)) { is_safari = false; }
+if ((is_chrome)&&(is_opera)) { is_chrome = false; }
+
+if (is_chrome) {
+	jQuery( "body" ).addClass( "chrome" );
+	console.log("chrome")
+}
+if (is_safari) {
+	jQuery( "body" ).addClass( "safari" );
+	console.log("safari")
+}
+if (is_firefox) {
+	jQuery( "body" ).addClass( "firefox" );
+	console.log("firefox")
+}
+if (is_explorer) {
+	jQuery( "body" ).addClass( "explorer" );
+	console.log("explorer")
+}
+if (is_Edge) {
+	jQuery( "body" ).addClass( "edge" );
+	console.log("edge")
+}
+if (is_opera) {
+	jQuery( "body" ).addClass( "opera" );
+	console.log("opera")
+}

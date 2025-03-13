@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://www.instaforex.com/nodeposit-thr -->
+<html lang="en" class="  webp webp-alpha webp-animation webp-lossless">
+
+<head prefix="og: https://ogp.me/ns#">
+    <title>STARTUP bonus from InstaForex</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/flags33.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/myflex_ks_v2.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap5.0.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/nodeposit_v22.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick(1).css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
+
+    <script src="./assets/js/jquery-2.1.4.min.js"></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/lightweight-charts.js"></script>
+    <script src="./assets/js/graphics.js"></script>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./assets/css/form.css"> <!-- Form -->
+    <link rel="stylesheet" href="./assets/css/modal-loading.css"> <!-- Modal -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css">
+    <!-- Flags -->
+  
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- Flags -->
+    <script src="./assets/js/request.js"></script> <!-- Request -->
+    <script src="./assets/js/takingparams.js"></script> <!-- Params -->
+</head>
+
+<body>
+    <div id="modal" class="modal-p">
+      <div>
+        <img src="./assets/img/error.webp" alt="Error" class="modal-image">
+        <p id="modal-message">...</p>
+      </div>
+    </div>
+    <div id="modal2" class="modal-p">
+      <div>
+        <img src="./assets/img/loading.gif" alt="Loading" class="modal-image">
+        <p id="modal2-message">...</p>
+      </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 d-flex justify-content-center justify-content-md-start">
+
+                    <a href="#form-request"><img style="max-width: 220px"
+                            src="./assets/img/instaforex-logo.png" alt="" class="mb-3 mb-md-0"></a>
+
+                    <div class="d-none d-sm-block ms-3 logo-text">
+                        <p>Top Forex broker in Europe*</p>
+                        <p>More than 7,000,000 traders worldwide choose InstaForex</p>
+                        <p>*over 35 international awards</p>
+
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-4 text-end support-text">
+                    <p>We will answer all your questions:</p>
+                    <p><a href="#form-request"
+                            class="support-email">support@mail.instaforex.com</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section-1 thanks-hidden">
+        <div class="container sec1-container">
+            <div class="row sec1-main">
+                <div class="col-12 col-md-7 align-self-center sec1-left">
+                    <div class="d-xl-inline-block col-12 ">
+                        <div class="sec1-bonus">$1000</div>
+                        <div class="sec1-title">receive an instant StartUp Bonus after opening an account with
+                            InstaForex.</div>
+                        <button class="sec1-btn"> - embark on Forex with confidence!</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="row open-account-form">
+                        <h2 class="text-uppercase mb-4 text-md-left text-center">Register a trading account</h2>
+                        <form id="open-account-form"></form> <!-- keep it for graphic works -->
+                        <form id="form-request">
+                            <div class="form-group group-fio">
+                                <input id="firstName" name="firstName" type="text" class="form-control form-controlmy"
+                                    placeholder="Enter first name">
+                                <span class="invalid-feedback"></span>
+                            </div>
+                            <div class="form-group group-email">
+                                <input id="lastName" name="lastName" type="text" class="form-control form-controlmy"
+                                placeholder="Enter last name">
+                                <span class="invalid-feedback email-feedback"></span>
+                            </div>
+                            <div class="form-group group-email">
+                                <input id="email" name="email" type="text" class="form-control form-controlmy"
+                                    placeholder="Enter email">
+                                <span class="invalid-feedback email-feedback"></span>
+                            </div>
+                            <div class="form-group group-email">
+                                <input id="phone" name="phone" type="text" class="form-control form-controlmy"
+                                    placeholder="Enter phone">
+                                <span class="invalid-feedback email-feedback"></span>
+                            </div>
+                            <div class="custom-control custom-checkbox group-iagree">
+                                <input name="iagree" type="checkbox" checked="checked"
+                                    class="custom-control-input reg-checkbox me-2 form-control" id="customCheck1"
+                                    style="width: 0;">
+                                <label class="custom-control-label" for="customCheck1">
+                                    I accept the <a class="offer_link"
+                                        href="./terms.html"
+                                        target="_blank">terms and conditions</a> and <a class="offer_link"
+                                        href="./privacy.html"
+                                        target="_blank">the privacy policy</a> </label>
+                                <span class="invalid-feedback"></span>
+                            </div>
+
+                            <div class="form-group group-button text-center">
+                                <button class="section-1_button user-button w-100 text-uppercase">Open account</button>
+                                <span class="invalid-feedback"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-2 thanks-hidden">
+        <div class="container sec2-container">
+            <div class="row mb-4">
+                <div class="d-lg-inline-block col-lg-6 col-xl-6 sec2-img">
+                    <img src="./assets/img/img1.png" class="section-2_img" alt="">
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6 box d-flex justify-content-center">
+                    <div class="d-flex flex-column">
+                        <p class="section-2-block1-title">What is No Deposit bonus?</p>
+                        <p class="section-2-block1-desc">No Deposit STARTUP bonus from InstaForex provides you with a
+                            $3,500 bonus to begin your trading career. Use it well: test strategies, broaden your
+                            experience, upgrade your trading skills, invest, and make money. $1000 </p>
+                        <p class="section-2-block1-more"> - embark on Forex with confidence!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-4 mb-3">
+                    <h2>Benefits</h2>
+                </div>
+                <div class="d-flex sec2-items">
+                    <div class="item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/img/icon.png" alt="">
+                            <p class="section-2-block2-title">No deposit</p>
+                        </div>
+                        <p class="section-2-block2-desc">Earn real money without any investments</p>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/img/icon(1).png" alt=" ">
+                            <p class="section-2-block2-title">No verification</p>
+                        </div>
+                        <p class="section-2-block2-desc">Register in seconds and start trading</p>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/img/icon(2).png" alt=" ">
+                            <p class="section-2-block2-title">Funds are credited automatically</p>
+                        </div>
+                        <p class="section-2-block2-desc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-3 thanks-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>How to trade with No Deposit bonus?</h2>
+                    <span class="section3-head-desc">Take a few simple steps to achieve your goal :)</span>
+                </div>
+                <div class="col-12">
+                    <div class="slider slick-initialized slick-slider slick-dotted" role="toolbar">
+                        <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 2592px;" role="listbox">
+                                <div class="slick-slide" data-slick-index="0" aria-hidden="true"
+                                    style="width: 648px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 1000ms linear;"
+                                    tabindex="-1" role="option" aria-describedby="slick-slide00"><img
+                                        src="./assets/img/slider1.webp"></div>
+                                <div class="slick-slide slick-current slick-active" data-slick-index="1"
+                                    aria-hidden="false"
+                                    style="width: 648px; position: relative; left: -648px; top: 0px; z-index: 999; opacity: 1;"
+                                    tabindex="-1" role="option" aria-describedby="slick-slide01"><img
+                                        src="./assets/img/slider2.webp"></div>
+                                <div class="slick-slide" data-slick-index="2" aria-hidden="true"
+                                    style="width: 648px; position: relative; left: -1296px; top: 0px; z-index: 998; opacity: 0; transition: opacity 1000ms linear;"
+                                    tabindex="-1" role="option" aria-describedby="slick-slide02"><img
+                                        src="./assets/img/slider3.webp"></div>
+                                <div class="slick-slide" data-slick-index="3" aria-hidden="true"
+                                    style="width: 648px; position: relative; left: -1944px; top: 0px; z-index: 998; opacity: 0; transition: opacity 1000ms linear;"
+                                    tabindex="-1" role="option" aria-describedby="slick-slide03"><img
+                                        src="./assets/img/slider4.webp"></div>
+                            </div>
+                        </div>
+
+
+
+                        <ul class="slick-dots" style="display: block;" role="tablist">
+                            <li class="" aria-hidden="true" role="presentation" aria-selected="true"
+                                aria-controls="navigation00" id="slick-slide00">
+                                <div class="slider_num">01</div>
+                                <div class="slider-right"><span class="slider_title">Fill out the form below</span><br>
+                                    <span class="slider_description">A trading account with a credited bonus will be
+                                        registered</span></div>
+                            </li>
+                            <li aria-hidden="false" role="presentation" aria-selected="false"
+                                aria-controls="navigation01" id="slick-slide01" class="slick-active">
+                                <div class="slider_num">02</div>
+                                <div class="slider-right"><span class="slider_title">Install a trading
+                                        platform</span><br> <span class="slider_description">Try MT4 from InstaForex for
+                                        free</span>
+                                    <div></div>
+                                </div>
+                            </li>
+                            <li aria-hidden="true" role="presentation" aria-selected="false"
+                                aria-controls="navigation02" id="slick-slide02" class="">
+                                <div class="slider_num">03</div>
+                                <div class="slider-right"><span class="slider_title">Open trades</span><br> <span
+                                        class="slider_description">Monitor live quotes</span>
+                                    <div></div>
+                                </div>
+                            </li>
+                            <li aria-hidden="true" role="presentation" aria-selected="false"
+                                aria-controls="navigation03" id="slick-slide03" class="">
+                                <div class="slider_num">04</div>
+                                <div class="slider-right"><span class="slider_title">Gain trading experience</span><br>
+                                    <span class="slider_description">Together with InstaForex</span>
+                                    <div></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button id="open-account-header"
+                        class="d-inline-block user-button section-5_button mb-5 text-uppercase text-white">Open
+                        account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-4 thanks-hidden">
+        <div class="container sec4-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="sec4-title">Benefit from trading with us, using 7 asset classes</h2>
+                </div>
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-trading" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-index-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-index" type="button" role="tab" aria-controls="pills-index"
+                                aria-selected="true">
+                                <img src="./assets/img/tab1.png" alt="">Indices</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-stock-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-stock" type="button" role="tab" aria-controls="pills-stock"
+                                aria-selected="false">
+                                <img src="./assets/img/tab2.png" alt="">Shares</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-crypto-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-crypto" type="button" role="tab" aria-controls="pills-crypto"
+                                aria-selected="false">
+                                <img src="./assets/img/tab3.png" alt="">Cryptocurrencies</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-currency-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-currency" type="button" role="tab" aria-controls="pills-currency"
+                                aria-selected="true">
+                                <img src="./assets/img/tab4.png" alt="">Currencies</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-metal-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-metal" type="button" role="tab" aria-controls="pills-metal"
+                                aria-selected="false">
+                                <img src="./assets/img/tab5.png" alt="">Precious metals</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-comfutures-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-comfutures" type="button" role="tab"
+                                aria-controls="pills-comfutures" aria-selected="false">
+                                <img src="./assets/img/tab6.png" alt="">Commodities</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-oilandgas-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-oilandgas" type="button" role="tab"
+                                aria-controls="pills-oilandgas" aria-selected="false">
+                                <img src="./assets/img/tab7.png" alt="">Energy</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-index" role="tabpanel"
+                            aria-labelledby="pills-index-tab">
+                            <span class="tab-title mt-3 mt-sm-0">Indices</span>
+                            <span class="tab-series">
+                                <img src="./assets/img/index1.png" class="me-1 me-md-2" alt="">Nikkei 225 <img
+                                    src="./assets/img/index2.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2"
+                                    alt="">Nasdaq-100 <img src="./assets/img/index3.png"
+                                    class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2" alt="">Hang Seng Index </span>
+                            <div id="chartElementIndex" class="text-center">
+                                <div class="chartElement first">
+                                    <div class="tv-lightweight-charts"
+                                        style="overflow: hidden; width: 1000px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;">
+                                        <table cellspacing="0" style="height: 500px; width: 1000px;">
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td
+                                                    style="padding: 0px; position: relative; width: 938px; height: 474px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="938" height="474"
+                                                            style="width: 938px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="938" height="474"
+                                                            style="width: 938px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="height: 474px; overflow: hidden; width: 62px; left: 0px; position: relative; min-width: 62px;">
+                                                        <canvas width="62" height="474"
+                                                            style="width: 62px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="62" height="474"
+                                                            style="width: 62px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td style="height: 26px; padding: 0px; width: 938px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="938" height="26"
+                                                            style="width: 938px; height: 26px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="938" height="26"
+                                                            style="width: 938px; height: 26px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="width: 62px; height: 26px; overflow: hidden; min-width: 62px;">
+                                                        <canvas width="62" height="26"
+                                                            style="width: 62px; height: 26px;"></canvas></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-stock" role="tabpanel" aria-labelledby="pills-stock-tab">
+                            <span class="tab-title mt-3 mt-sm-0">Shares</span>
+                            <span class="tab-series">
+                                <img src="./assets/img/index1.png" class="me-1 me-md-2" alt="">Tesla Motors, Inc. <img
+                                    src="./assets/img/index2.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2" alt="">Apple
+                                Inc. <img src="./assets/img/index3.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2"
+                                    alt="">Amazon.com, Inc. </span>
+                            <div id="chartElementStock" class="text-center">
+                                <div class="chartElement">
+                                    <div class="tv-lightweight-charts"
+                                        style="overflow: hidden; width: 1000px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;">
+                                        <table cellspacing="0" style="height: 500px; width: 1000px;">
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td
+                                                    style="padding: 0px; position: relative; width: 950px; height: 474px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="950" height="474"
+                                                            style="width: 950px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="950" height="474"
+                                                            style="width: 950px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="height: 474px; overflow: hidden; width: 50px; left: 0px; position: relative; min-width: 50px;">
+                                                        <canvas width="50" height="474"
+                                                            style="width: 50px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="50" height="474"
+                                                            style="width: 50px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td style="height: 26px; padding: 0px; width: 950px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="950" height="26"
+                                                            style="width: 950px; height: 26px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="950" height="26"
+                                                            style="width: 950px; height: 26px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="width: 50px; height: 26px; overflow: hidden; min-width: 50px;">
+                                                        <canvas width="50" height="26"
+                                                            style="width: 50px; height: 26px;"></canvas></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab">
+                            <span class="tab-title mt-3 mt-sm-0">Cryptocurrencies</span>
+                            <span class="tab-series">
+                                <img src="./assets/img/index1.png" class="me-1 me-md-2" alt="">Ripple <img
+                                    src="./assets/img/index2.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2"
+                                    alt="">Bitcoin <img src="./assets/img/index3.png"
+                                    class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2" alt="">Ethereum </span>
+                            <div id="chartElementCrypto" class="text-center">
+                                <div class="chartElement">
+                                    <div class="tv-lightweight-charts"
+                                        style="overflow: hidden; width: 1000px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;">
+                                        <table cellspacing="0" style="height: 500px; width: 1000px;">
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td
+                                                    style="padding: 0px; position: relative; width: 932px; height: 474px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="932" height="474"
+                                                            style="width: 932px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="932" height="474"
+                                                            style="width: 932px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="height: 474px; overflow: hidden; width: 68px; left: 0px; position: relative; min-width: 68px;">
+                                                        <canvas width="68" height="474"
+                                                            style="width: 68px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="68" height="474"
+                                                            style="width: 68px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td style="height: 26px; padding: 0px; width: 932px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="932" height="26"
+                                                            style="width: 932px; height: 26px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="932" height="26"
+                                                            style="width: 932px; height: 26px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="width: 68px; height: 26px; overflow: hidden; min-width: 68px;">
+                                                        <canvas width="68" height="26"
+                                                            style="width: 68px; height: 26px;"></canvas></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-currency" role="tabpanel"
+                            aria-labelledby="pills-currency-tab">
+                            <span class="tab-title mt-3 mt-sm-0">Currencies</span>
+                            <span class="tab-series">
+                                <img src="./assets/img/index1.png" class="me-1 me-md-2" alt="">EUR/USD <img
+                                    src="./assets/img/index2.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2"
+                                    alt="">USD/CHF <img src="./assets/img/index3.png"
+                                    class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2" alt="">EUR/GBP </span>
+                            <div id="chartElementCurrency" class="text-center">
+                                <div class="chartElement">
+                                    <div class="tv-lightweight-charts"
+                                        style="overflow: hidden; width: 1000px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;">
+                                        <table cellspacing="0" style="height: 500px; width: 1000px;">
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td
+                                                    style="padding: 0px; position: relative; width: 960px; height: 474px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="960" height="474"
+                                                            style="width: 960px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="960" height="474"
+                                                            style="width: 960px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="height: 474px; overflow: hidden; width: 40px; left: 0px; position: relative; min-width: 40px;">
+                                                        <canvas width="40" height="474"
+                                                            style="width: 40px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="40" height="474"
+                                                            style="width: 40px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td style="height: 26px; padding: 0px; width: 960px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="960" height="26"
+                                                            style="width: 960px; height: 26px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="960" height="26"
+                                                            style="width: 960px; height: 26px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="width: 40px; height: 26px; overflow: hidden; min-width: 40px;">
+                                                        <canvas width="40" height="26"
+                                                            style="width: 40px; height: 26px;"></canvas></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-metal" role="tabpanel" aria-labelledby="pills-metal-tab">
+                            <span class="tab-title mt-3 mt-sm-0">Precious metals</span>
+                            <span class="tab-series">
+                                <img src="./assets/img/index1.png" class="me-1 me-md-2" alt="">Palladium Spot <img
+                                    src="./assets/img/index2.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2" alt="">Gold
+                                Spot <img src="./assets/img/index3.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2"
+                                    alt="">Silver Spot </span>
+                            <div id="chartElementMetal" class="text-center">
+                                <div class="chartElement">
+                                    <div class="tv-lightweight-charts"
+                                        style="overflow: hidden; width: 1000px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;">
+                                        <table cellspacing="0" style="height: 500px; width: 1000px;">
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td
+                                                    style="padding: 0px; position: relative; width: 944px; height: 474px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="944" height="474"
+                                                            style="width: 944px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="944" height="474"
+                                                            style="width: 944px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="height: 474px; overflow: hidden; width: 56px; left: 0px; position: relative; min-width: 56px;">
+                                                        <canvas width="56" height="474"
+                                                            style="width: 56px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="56" height="474"
+                                                            style="width: 56px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td style="height: 26px; padding: 0px; width: 944px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="944" height="26"
+                                                            style="width: 944px; height: 26px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="944" height="26"
+                                                            style="width: 944px; height: 26px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="width: 56px; height: 26px; overflow: hidden; min-width: 56px;">
+                                                        <canvas width="56" height="26"
+                                                            style="width: 56px; height: 26px;"></canvas></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-comfutures" role="tabpanel"
+                            aria-labelledby="pills-comfutures-tab">
+                            <span class="tab-title mt-3 mt-sm-0">Commodities</span>
+                            <span class="tab-series">
+                                <img src="./assets/img/index1.png" class="me-1 me-md-2" alt="">Futures Wheat <img
+                                    src="./assets/img/index2.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2"
+                                    alt="">Coffee <img src="./assets/img/index3.png"
+                                    class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2" alt="">Cotton </span>
+                            <div id="chartElementComfutures" class="text-center">
+                                <div class="chartElement">
+                                    <div class="tv-lightweight-charts"
+                                        style="overflow: hidden; width: 1000px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;">
+                                        <table cellspacing="0" style="height: 500px; width: 1000px;">
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td
+                                                    style="padding: 0px; position: relative; width: 950px; height: 474px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="950" height="474"
+                                                            style="width: 950px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="950" height="474"
+                                                            style="width: 950px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="height: 474px; overflow: hidden; width: 50px; left: 0px; position: relative; min-width: 50px;">
+                                                        <canvas width="50" height="474"
+                                                            style="width: 50px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="50" height="474"
+                                                            style="width: 50px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td style="height: 26px; padding: 0px; width: 950px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="950" height="26"
+                                                            style="width: 950px; height: 26px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="950" height="26"
+                                                            style="width: 950px; height: 26px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="width: 50px; height: 26px; overflow: hidden; min-width: 50px;">
+                                                        <canvas width="50" height="26"
+                                                            style="width: 50px; height: 26px;"></canvas></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-oilandgas" role="tabpanel"
+                            aria-labelledby="pills-oilandgas-tab">
+                            <span class="tab-title mt-3 mt-sm-0">Energy</span>
+                            <span class="tab-series">
+                                <img src="./assets/img/index1.png" class="me-1 me-md-2" alt="">Natural Gas <img
+                                    src="./assets/img/index2.png" class="ms-1 ms-sm-2 me-1 ms-md-3 me-md-2" alt="">Crude
+                                Light Sweet Oil
+                            </span>
+                            <div id="chartElementOilandgas" class="text-center">
+                                <div class="chartElement">
+                                    <div class="tv-lightweight-charts"
+                                        style="overflow: hidden; width: 1000px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;">
+                                        <table cellspacing="0" style="height: 500px; width: 1000px;">
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td
+                                                    style="padding: 0px; position: relative; width: 954px; height: 474px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="954" height="474"
+                                                            style="width: 954px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="954" height="474"
+                                                            style="width: 954px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="height: 474px; overflow: hidden; width: 46px; left: 0px; position: relative; min-width: 46px;">
+                                                        <canvas width="46" height="474"
+                                                            style="width: 46px; height: 474px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="46" height="474"
+                                                            style="width: 46px; height: 474px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px;"></td>
+                                                <td style="height: 26px; padding: 0px; width: 954px;">
+                                                    <div
+                                                        style="width: 100%; height: 100%; position: relative; overflow: hidden;">
+                                                        <canvas width="954" height="26"
+                                                            style="width: 954px; height: 26px; position: absolute; z-index: 1; left: 0px; top: 0px;"></canvas><canvas
+                                                            width="954" height="26"
+                                                            style="width: 954px; height: 26px; position: absolute; z-index: 2; left: 0px; top: 0px;"></canvas>
+                                                    </div>
+                                                </td>
+                                                <td style="padding: 0px;">
+                                                    <div
+                                                        style="width: 46px; height: 26px; overflow: hidden; min-width: 46px;">
+                                                        <canvas width="46" height="26"
+                                                            style="width: 46px; height: 26px;"></canvas></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section-5 thanks-hidden">
+        <div class="container">
+            <div class="row mx-xl-auto">
+                <div class="col-12 text-center mb-5 sec-5">
+                    <h2>InstaForex is a favourable environment for trading</h2>
+                    <span>Our achievements and advantages</span>
+                </div>
+                <div class="col-12 col-xl-8 mx-xl-auto">
+                    <div>
+                        <div class="row sprite-flex">
+                            <div class="col-12 pl-3 pl-md-3 m-0 col-md-6 text-left sprite-left">
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">15 years of experience in the forex market</span>
+                                </div>
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">7,000,000+ clients choose us</span>
+                                </div>
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">Simple and fast deposit/withdrawal of funds</span>
+                                </div>
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">Over 400 trading instruments</span>
+                                </div>
+                            </div>
+                            <div class="col-12 pl-3 m-0 col-md-6 text-left pl-md-5 sprite-right">
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">Execution of orders from 0.05 seconds</span>
+                                </div>
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">Spreads with no hidden costs</span>
+                                </div>
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">Leverage from 1:1 to 1:1,000</span>
+                                </div>
+                                <div class="mb-4 d-flex">
+                                    <div class="spritesheet-5"></div>
+                                    <span class="sprite-text">24/7 Customer support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-6 thanks-hidden">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 text-center section-6-qr-code">
+                    <div class="row qr-code-row">
+                        <div class="col-md-6" style="padding-top:70px;">
+                            <img class="img-fluid" style="max-width: 300px;" src="./assets/img/adbanner.png">
+                        </div>
+                        <div class="col-md-6 text-start" style="padding-top:30px;">
+                            <h2 class="qr_title">MobileTrader</h2>
+                            <p class="qr_text_1">InstaForex App — The market is in your pocket!</p>
+                            <p class="qr_text_2">Follow the market, analyze, and always be aware of global economic
+                                events. Anytime, anywhere!
+                                Access the Forex anywhere — business trip, vacation, meeting with friends — it doesn't
+                                matter where you are.</p>
+                            <div class="qr_btn_container">
+                                <button class="btnQR" id="qrBtn" style="display: inline-block;">
+                                    <img class="qr_img" src="./assets/img/qr.svg">
+                                </button>
+                                <a id="app_store"
+                                href="#form-request"
+                                    style="display: contents;">
+                                    <img class="mobile_img" style="margin-right: 10px;"
+                                        src="./assets/img/apple_store_en.png">
+                                </a>
+                                <a id="google_play"
+                                    href="#form-request">
+                                    <img class="mobile_img" src="./assets/img/google_play_en.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 new_part">
+                    <div class="flex">
+                        <div>
+                            <div class="np-text1">It's your turn to earn. Now is the time for action!</div>
+                            <div class="np-text2">Get $1000 to a live trading account</div>
+                        </div>
+                        <div class="text-center">
+                            <button id="open-account-header"
+                                class="go-to-form d-inline-block user-button section-5_button mb-5 text-uppercase text-white">Open
+                                account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-7 thanks thanks-visible">
+        <div class="radial-gradient-right"></div>
+        <div class="radial-gradient-left"></div>
+        <div class="container">
+            <div class="row text-center section-7-text">
+                <div class="col-12 col-md-12">
+                    <img src="./assets/img/t1.png" alt="">
+                    <div class="section-7_congradulations-1">Your application for the StartUp bonus is processing. You
+                        will receive an email notification when the bonus is credited to your account. <span
+                            class="font-weight-normal email-data">XXXXXX</span></div>
+                    <a class="login-link text-uppercase mb-5" href="#form-request"
+                        target="_blank">Login to Client Area</a>
+                    <div style="padding-bottom: 40px;">
+                        <div class="row qr-code-row">
+                            <div class="col-md-6" style="padding:30px 0px;">
+                                <img class="img-fluid" style="max-width: 300px;" src="./assets/img/adbanner.png">
+                            </div>
+
+                            <div class="col-md-6 text-start">
+                                <h2 class="qr_title">MobileTrader</h2>
+                                <p class="qr_text_1">InstaForex App — The market is in your pocket!</p>
+                                <p class="qr_text_2">Follow the market, analyze, and always be aware of global economic
+                                    events. Anytime, anywhere!
+                                    Access the Forex anywhere — business trip, vacation, meeting with friends — it
+                                    doesn't matter where you are.</p>
+                                <div class="qr_btn_container">
+                                    <button class="btnQR" id="qrBtn2" style="display: inline-block;">
+                                        <img class="qr_img" src="./assets/img/qr.svg">
+                                    </button>
+                                    <a id="app_store_2"
+                                    href="#form-request"
+                                        style="display: contents;">
+                                        <img class="mobile_img" style="margin-right: 10px;"
+                                            src="./assets/img/apple_store_en.png">
+                                    </a>
+                                    <a id="google_play_2"
+                                        href="#form-request">
+                                        <img class="mobile_img" src="./assets/img/google_play_en.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="inbox">
+                            <div class="section-7_text-1 mb-4">МetaТrader 4 is the industry standard in the world of
+                                online trading.</div>
+                            <div class="section-7_text-2 mb-4">This powerful trading platform allows you to employ
+                                strategies of any complexity. Millions of traders with a wide range of needs choose
+                                MetaTrader. This platform is all you need for effective and comfortable trading in the
+                                market: advanced technical analysis, flexible trading system, instant order execution,
+                                algorithmic trading, and Expert Advisors.</div>
+                            <div class="section-7_text-3">Download MetaTrader 4 and join the community of professional
+                                traders with InstaForex.</div>
+                            <div class="row">
+                                <div class="col-0 col-xl-3"></div>
+                                <div class="col-6 col-xl-3 d-flex flex-row justify-content-center p-4"><img
+                                        src="./assets/img/win.png" alt="">
+                                    <p class="ms-3" style="align-self: center;">MT4 for Windows</p>
+                                </div>
+                                <div class="col-6 col-xl-3 d-flex flex-row justify-content-center p-4"><img
+                                        src="./assets/img/web.png" alt="">
+                                    <p class="ms-3" style="align-self: center;">MT4 for WebTrader</p>
+                                </div>
+                                <div class="col-0 col-xl-3"></div>
+                            </div>
+                            <a class="user-button section-5_button" style="color:#FFF"
+                                href="#form-request"
+                                target="_blank" download="">Download</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__sliders">
+                    <div class="footer__awards">
+                        <div
+                            class="swiper footer-slider-part swiper-creative swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+                            <div class="swiper-wrapper"
+                                style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+                                id="swiper-wrapper-3b822162b78c4d2c" aria-live="off">
+
+
+
+
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 5; transform: translate3d(calc(0px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="5 / 13" data-swiper-slide-index="4">
+                                    <img src="./assets/img/6.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 6; transform: translate3d(calc(-428px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="6 / 13" data-swiper-slide-index="5">
+                                    <img src="./assets/img/5.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 7; transform: translate3d(calc(-856px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="7 / 13" data-swiper-slide-index="6">
+                                    <img src="./assets/img/2.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 8; transform: translate3d(calc(-1284px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="8 / 13" data-swiper-slide-index="7">
+                                    <img src="./assets/img/4.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 9; transform: translate3d(calc(-1712px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="9 / 13" data-swiper-slide-index="8">
+                                    <img src="./assets/img/3.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 10; transform: translate3d(calc(-2140px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="10 / 13" data-swiper-slide-index="9">
+                                    <img src="./assets/img/3(1).jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 11; transform: translate3d(calc(-2568px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="11 / 13" data-swiper-slide-index="10">
+                                    <img src="./assets/img/4(1).jpg">
+                                </div>
+                                <div class="swiper-slide award swiper-slide-prev" dir="ltr"
+                                    style="width: 428px; z-index: 12; transform: translate3d(calc(-2996px), calc(0px), calc(-400px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.7); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="12 / 13" data-swiper-slide-index="11">
+                                    <img src="./assets/img/2(1).jpg">
+                                </div>
+                                <div class="swiper-slide award swiper-slide-visible swiper-slide-fully-visible swiper-slide-active"
+                                    dir="ltr" role="group" aria-label="13 / 13"
+                                    style="width: 428px; z-index: 13; transform: translate3d(calc(-3424px), calc(0px), calc(0px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); opacity: 1; transition-duration: 0ms;"
+                                    data-swiper-slide-index="12">
+                                    <img src="./assets/img/1.jpg">
+                                </div>
+                                <div class="swiper-slide award swiper-slide-next" dir="ltr"
+                                    style="width: 428px; z-index: 12; transform: translate3d(calc(30% - 3852px), calc(5% + 0px), calc(0px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.65); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="1 / 13" data-swiper-slide-index="0">
+                                    <img src="./assets/img/9.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 11; transform: translate3d(calc(30% - 4280px), calc(5% + 0px), calc(0px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.65); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="2 / 13" data-swiper-slide-index="1">
+                                    <img src="./assets/img/8.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 10; transform: translate3d(calc(30% - 4708px), calc(5% + 0px), calc(0px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.65); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="3 / 13" data-swiper-slide-index="2">
+                                    <img src="./assets/img/7.jpg">
+                                </div>
+                                <div class="swiper-slide award" dir="ltr"
+                                    style="width: 428px; z-index: 9; transform: translate3d(calc(30% - 5136px), calc(5% + 0px), calc(0px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.65); opacity: 1; transition-duration: 0ms;"
+                                    role="group" aria-label="4 / 13" data-swiper-slide-index="3">
+                                    <img src="./assets/img/1(1).jpg">
+                                </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <div
+                            class="swiper footer-slider-part-text swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress">
+                            <div class="swiper-wrapper" id="swiper-wrapper-1fccf547871e8f66" aria-live="polite"
+                                style="transition-duration: 0ms; transition-delay: 0ms;">
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="1 / 13">
+                                    The Best broker in Asia 2024 </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-428px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="2 / 13">
+                                    Best Trading Technology at Forex Expo Dubai 2024 </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-856px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="3 / 13">
+                                    Best Mobile App </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-1284px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="4 / 13">
+                                    InstaForex Loprais Team </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-1712px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="5 / 13">
+                                    Best Forex Broker 2023 </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-2140px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="6 / 13">
+                                    Best Broker 2022 in Latin America </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-2568px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="7 / 13">
+                                    HKM Zvolen </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-2996px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="8 / 13">
+                                    Best Affiliate Program 2022 </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-3424px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="9 / 13">
+                                    Dragon Racing Formula E Team </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-3852px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="10 / 13">
+                                    Most Active Broker in Asia 2020 </div>
+                                <div class="swiper-slide"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-4280px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="11 / 13">
+                                    Viswanathan Anand </div>
+                                <div class="swiper-slide swiper-slide-prev"
+                                    style="width: 428px; opacity: 0; transform: translate3d(-4708px, 0px, 0px); transition-duration: 0ms;"
+                                    role="group" aria-label="12 / 13">
+                                    Most Innovative Forex Broker 2021 </div>
+                                <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active"
+                                    role="group" aria-label="13 / 13"
+                                    style="width: 428px; opacity: 1; transform: translate3d(-5136px, 0px, 0px); transition-duration: 0ms;">
+                                    Best Affiliate Program 2020 </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                    <div class="footer__awards-mobile">
+                        <div
+                            class="swiper footer-slider-award swiper-creative swiper-3d swiper-initialized swiper-vertical swiper-watch-progress">
+                            <div class="swiper-wrapper" id="swiper-wrapper-501054c42bc280567" aria-live="off"
+                                style="cursor: grab; transition-duration: 1500ms;">
+                                <div class="swiper-slide swiper-slide-prev" dir="ltr" data-swiper-slide-index="0"
+                                    role="group" aria-label="1 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/9.jpg">
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" dir="ltr" data-swiper-slide-index="1"
+                                    role="group" aria-label="2 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/8.jpg">
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" dir="ltr" data-swiper-slide-index="2"
+                                    role="group" aria-label="3 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/7.jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="3" role="group"
+                                    aria-label="4 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/1(1).jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="4" role="group"
+                                    aria-label="5 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/6.jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="5" role="group"
+                                    aria-label="6 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/5.jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="6" role="group"
+                                    aria-label="7 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/2.jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="7" role="group"
+                                    aria-label="8 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/4.jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="8" role="group"
+                                    aria-label="9 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/3.jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="9" role="group"
+                                    aria-label="10 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/3(1).jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="10" role="group"
+                                    aria-label="11 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/4(1).jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="11" role="group"
+                                    aria-label="12 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/2(1).jpg">
+                                </div>
+                                <div class="swiper-slide" dir="ltr" data-swiper-slide-index="12" role="group"
+                                    aria-label="13 / 13" style="transition-duration: 1500ms;">
+                                    <img src="./assets/img/1.jpg">
+                                </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <div
+                            class="swiper footer-slider-award-text swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress">
+                            <div class="swiper-wrapper" id="swiper-wrapper-a5a7a8e166e9db38" aria-live="polite"
+                                style="transition-duration: 1000ms;">
+                                <div class="swiper-slide">
+                                    The Best broker in Asia 2024 </div>
+                                <div class="swiper-slide">
+                                    Best Trading Technology at Forex Expo Dubai 2024 </div>
+                                <div class="swiper-slide">
+                                    Best Mobile App </div>
+                                <div class="swiper-slide">
+                                    InstaForex Loprais Team </div>
+                                <div class="swiper-slide">
+                                    Best Forex Broker 2023 </div>
+                                <div class="swiper-slide">
+                                    Best Broker 2022 in Latin America </div>
+                                <div class="swiper-slide">
+                                    HKM Zvolen </div>
+                                <div class="swiper-slide">
+                                    Best Affiliate Program 2022 </div>
+                                <div class="swiper-slide">
+                                    Dragon Racing Formula E Team </div>
+                                <div class="swiper-slide">
+                                    Most Active Broker in Asia 2020 </div>
+                                <div class="swiper-slide">
+                                    Viswanathan Anand </div>
+                                <div class="swiper-slide">
+                                    Most Innovative Forex Broker 2021 </div>
+                                <div class="swiper-slide">
+                                    Best Affiliate Program 2020 </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__logo">
+                    <a href="https://www.instaforex.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179 40" fill="none">
+                            <path
+                                d="M50.5405 4.81959H48.019V2.39508H50.5872L50.5405 4.81959ZM50.4238 26.2606H47.9412V8.82429H50.4238V26.2606ZM56.0351 10.9312C56.3308 10.2263 56.8289 9.69959 57.5215 9.35102C58.2142 9.00245 58.9924 8.82429 59.8641 8.82429H63.1172C64.6659 8.82429 65.8022 9.25806 66.5338 10.1179C67.2653 10.9854 67.6311 12.3023 67.6311 14.0838V26.2606H65.2341V14.4866C65.2341 12.4649 64.269 11.4502 62.3467 11.4502H59.5372C57.3114 11.4502 56.1985 12.6431 56.1985 15.0134V26.2606H53.8015V8.82429H55.9961L56.0351 10.9312ZM71.25 26.2606V23.627H79.3906C80.2311 23.627 80.9316 23.441 81.4841 23.0615C82.0445 22.6819 82.3246 22.1087 82.3246 21.3264C82.3246 20.544 82.0834 19.9476 81.6086 19.5448C81.1339 19.142 80.4646 18.9406 79.593 18.9406H75.6083C72.324 18.9406 70.6819 17.2132 70.6819 13.7585C70.6819 12.1396 71.1411 10.9157 72.0438 10.0791C72.9544 9.24257 74.1685 8.82429 75.6861 8.82429H83.8267V11.4967H75.367C73.8728 11.4967 73.1256 12.2248 73.1256 13.681C73.1256 14.5718 73.3202 15.2303 73.7171 15.664C74.1062 16.0901 74.7833 16.307 75.7328 16.307H79.5151C81.3829 16.307 82.7293 16.7252 83.5387 17.5618C84.3559 18.3984 84.7606 19.6532 84.7606 21.3264C84.7606 22.9685 84.2781 24.2002 83.2975 25.0212C82.3246 25.8501 81.0639 26.2606 79.5151 26.2606H71.25ZM94.162 26.2606H93.7573C91.6949 26.2606 90.1851 25.7649 89.22 24.7811C88.255 23.7974 87.7725 22.3179 87.7725 20.3504V2.63521H90.4185V8.86302H94.2398V11.2953H90.3407V20.5131C90.3407 22.589 91.6093 23.627 94.162 23.627V26.2606ZM109.587 26.2606H100.793C99.3296 26.2606 98.1466 25.8268 97.2517 24.967C96.3567 24.0995 95.913 22.8601 95.913 21.2412C95.913 19.6223 96.3722 18.3829 97.2983 17.5231C98.2167 16.6555 99.4775 16.2295 101.081 16.2295H107.104V14.6493C107.104 13.5958 106.879 12.798 106.427 12.2635C105.984 11.7213 105.244 11.4502 104.209 11.4502H97.1738V8.82429H104.17C106.124 8.82429 107.525 9.36651 108.365 10.4432C109.206 11.5199 109.626 12.9917 109.626 14.8507L109.587 26.2606ZM107.104 23.627V18.8554H100.59C99.9133 18.8554 99.3763 19.049 98.9872 19.4441C98.5903 19.8314 98.3957 20.4433 98.3957 21.2799C98.3957 22.1165 98.6136 22.7207 99.0416 23.0847C99.4775 23.4488 99.9911 23.627 100.59 23.627H107.104ZM119.269 11.0861H115.362V26.2606H112.918V9.35102C112.918 4.71114 114.98 2.39508 119.105 2.39508H119.346V5.05972C116.802 5.05972 115.494 6.2526 115.44 8.62289H119.269V11.0861ZM129.767 8.82429C132.943 8.82429 134.53 10.6059 134.53 14.1613V20.7997C134.53 22.6277 134.11 23.9988 133.285 24.9051C132.46 25.8036 131.246 26.2606 129.643 26.2606H125.37C123.744 26.2606 122.545 25.8036 121.767 24.9051C120.996 23.9988 120.607 22.6277 120.607 20.7997V14.1613C120.607 10.6059 122.242 8.82429 125.495 8.82429H129.767ZM126.024 11.4502C124.07 11.4502 123.09 12.5734 123.09 14.812V20.3504C123.09 21.4581 123.316 22.2791 123.767 22.8214C124.211 23.3558 124.934 23.627 125.938 23.627H129.114C131.098 23.627 132.087 22.4805 132.087 20.1877V14.688C132.087 12.5346 131.137 11.4502 129.238 11.4502H126.024ZM147.138 11.4502H143.683C142.57 11.4502 141.721 11.7678 141.138 12.403C140.554 13.0381 140.266 13.9754 140.266 15.2148V26.2606H137.861V8.82429H140.064L140.142 11.0474C140.328 10.296 140.803 9.73832 141.566 9.36651C142.328 9.01019 143.317 8.82429 144.539 8.82429H147.138V11.4502ZM158.983 8.82429C160.579 8.82429 161.746 9.25806 162.478 10.1179C163.209 10.9854 163.583 12.279 163.583 13.9986V18.6927H152.594V20.9623C152.726 21.8454 152.944 22.5115 153.247 22.9453C153.543 23.3713 154.127 23.5882 154.991 23.5882H162.968V26.2606H155.076C153.504 26.2606 152.282 25.8578 151.411 25.0677C150.547 24.2699 150.111 23.0615 150.111 21.4426V14.1226C150.111 10.5904 151.878 8.82429 155.403 8.82429H158.983ZM161.178 14.1226C161.178 13.2628 161.007 12.6044 160.672 12.1628C160.33 11.7136 159.769 11.4967 158.983 11.4967H155.24C153.473 11.4967 152.594 12.372 152.594 14.1226V16.3844H161.178V14.1226ZM179 8.82429L174.323 17.5231L178.837 26.2606H175.91L172.735 19.5835L169.645 26.2606H166.633L171.272 17.8484L166.672 8.82429H169.521L172.774 15.8654L176.152 8.82429H179Z"
+                                fill="var(--brand-color)"></path>
+                            <path
+                                d="M47.9412 37.4771V29.212H49.0152V37.4771H47.9412ZM50.7818 37.4771V31.4894H51.6768V32.3414C52.1048 31.683 52.7352 31.3577 53.5446 31.3577C53.9026 31.3577 54.2295 31.4197 54.5252 31.5513C54.821 31.6753 55.0467 31.8457 55.1945 32.0626C55.3424 32.2717 55.4436 32.5196 55.5058 32.8062C55.537 32.9998 55.5603 33.3252 55.5603 33.7977V37.4771H54.5564V33.8364C54.5564 33.4259 54.5252 33.116 54.4474 32.9069C54.3696 32.7055 54.2295 32.5428 54.0349 32.4189C53.8326 32.295 53.6069 32.233 53.3345 32.233C52.9142 32.233 52.5485 32.3724 52.2372 32.6435C51.9258 32.9224 51.778 33.4414 51.778 34.2082V37.4771H50.7818ZM56.6888 35.6877L57.6772 35.5328C57.7239 35.9356 57.8795 36.2454 58.1364 36.4546C58.3854 36.6715 58.7434 36.7799 59.1948 36.7799C59.654 36.7799 59.9964 36.6792 60.2143 36.4933C60.44 36.2997 60.549 36.0828 60.549 35.8271C60.549 35.5948 60.4478 35.4166 60.2532 35.2849C60.1131 35.192 59.7785 35.0835 59.2337 34.9441C58.5021 34.7504 57.9963 34.5878 57.7161 34.4484C57.4359 34.3167 57.218 34.123 57.0701 33.8829C56.9223 33.6428 56.8522 33.3717 56.8522 33.0773C56.8522 32.8139 56.9145 32.5661 57.0312 32.3414C57.1557 32.1091 57.3192 31.9231 57.5215 31.776C57.6772 31.6598 57.8873 31.5591 58.1597 31.4739C58.4243 31.3964 58.7123 31.3577 59.0158 31.3577C59.4827 31.3577 59.8874 31.4274 60.2377 31.5591C60.5801 31.6908 60.8447 31.8767 61.0081 32.1091C61.1716 32.3414 61.2883 32.6435 61.3506 33.0308L60.3777 33.1703C60.331 32.8604 60.1987 32.6203 59.9886 32.4499C59.7785 32.2717 59.475 32.1865 59.0936 32.1865C58.6344 32.1865 58.3076 32.264 58.113 32.4189C57.9184 32.5738 57.8173 32.752 57.8173 32.9611C57.8173 33.0928 57.8562 33.209 57.9418 33.3174C58.0196 33.4259 58.1441 33.5188 58.3231 33.5885C58.4243 33.6273 58.7123 33.7125 59.2026 33.8442C59.9108 34.0378 60.4011 34.1927 60.6735 34.3167C60.9537 34.4406 61.1793 34.6188 61.335 34.8511C61.4907 35.0835 61.5763 35.3701 61.5763 35.7187C61.5763 36.0595 61.4751 36.3771 61.2805 36.6715C61.086 36.9736 60.8058 37.2059 60.44 37.3686C60.0742 37.5313 59.6617 37.6087 59.2026 37.6087C58.4399 37.6087 57.8562 37.4461 57.4515 37.1285C57.0546 36.8031 56.7978 36.3229 56.6888 35.6877ZM64.9306 36.5708L65.0784 37.4616C64.7983 37.5235 64.5492 37.5545 64.3235 37.5545C63.9655 37.5545 63.6853 37.5003 63.483 37.3841C63.2806 37.2679 63.1406 37.113 63.0627 36.9193C62.9771 36.7334 62.9382 36.3306 62.9382 35.7264V32.2795H62.2067V31.4894H62.9382V30.0099L63.9344 29.3979V31.4894H64.9306V32.2795H63.9344V35.7807C63.9344 36.0673 63.95 36.2532 63.9811 36.3384C64.02 36.4236 64.0745 36.4856 64.1523 36.532C64.2301 36.5863 64.3469 36.6095 64.4947 36.6095C64.6037 36.6095 64.7516 36.594 64.9306 36.5708ZM69.748 36.7412C69.3744 37.0588 69.0164 37.2834 68.6818 37.4151C68.3393 37.5468 67.9736 37.6087 67.5766 37.6087C66.9307 37.6087 66.4404 37.4538 66.0902 37.1285C65.7477 36.8109 65.5687 36.4004 65.5687 35.8969C65.5687 35.6025 65.631 35.3391 65.7633 35.0913C65.8956 34.8511 66.0668 34.6575 66.2847 34.5103C66.4949 34.3631 66.7361 34.2547 67.0007 34.1772C67.1953 34.1308 67.491 34.0765 67.8879 34.0301C68.6895 33.9294 69.281 33.8132 69.6624 33.6737C69.6702 33.5343 69.6702 33.4491 69.6702 33.4104C69.6702 32.9998 69.5768 32.7055 69.3822 32.5428C69.1332 32.3104 68.7518 32.1943 68.2537 32.1943C67.779 32.1943 67.4366 32.2795 67.2109 32.4421C66.9852 32.6125 66.8217 32.9069 66.7128 33.3329L65.7399 33.2012C65.8333 32.7752 65.9734 32.4266 66.1758 32.171C66.3781 31.9077 66.6739 31.7063 67.063 31.5668C67.4443 31.4274 67.8879 31.3577 68.3938 31.3577C68.8997 31.3577 69.3044 31.4119 69.6157 31.5358C69.9348 31.6598 70.1605 31.807 70.3083 31.9929C70.4562 32.171 70.5574 32.4034 70.6196 32.6823C70.6508 32.8527 70.6663 33.1625 70.6663 33.6118V34.9673C70.6663 35.9124 70.6897 36.5088 70.7364 36.7567C70.7753 37.0045 70.8609 37.2447 70.9854 37.4771H69.9425C69.8414 37.2679 69.7713 37.02 69.748 36.7412ZM69.6624 34.4716C69.2966 34.6265 68.7596 34.7504 68.0358 34.8589C67.6233 34.9131 67.3354 34.9828 67.1642 35.0603C66.9929 35.13 66.8606 35.2462 66.775 35.3856C66.6816 35.5328 66.6349 35.6955 66.6349 35.8736C66.6349 36.1447 66.7361 36.3694 66.9307 36.5475C67.133 36.7257 67.4288 36.8186 67.8179 36.8186C68.1992 36.8186 68.5417 36.7334 68.8452 36.563C69.1409 36.3926 69.3589 36.1525 69.4989 35.8581C69.6079 35.6257 69.6624 35.2927 69.6624 34.8434V34.4716ZM72.2151 37.4771V31.4894H73.1101V32.3414C73.5459 31.683 74.1685 31.3577 74.9857 31.3577C75.3359 31.3577 75.6628 31.4197 75.9585 31.5513C76.262 31.6753 76.4799 31.8457 76.6278 32.0626C76.7757 32.2717 76.8768 32.5196 76.9391 32.8062C76.978 32.9998 76.9936 33.3252 76.9936 33.7977V37.4771H75.9974V33.8364C75.9974 33.4259 75.9585 33.116 75.8807 32.9069C75.8028 32.7055 75.6628 32.5428 75.4682 32.4189C75.2736 32.295 75.0401 32.233 74.7755 32.233C74.3475 32.233 73.9817 32.3724 73.6704 32.6435C73.3669 32.9224 73.2112 33.4414 73.2112 34.2082V37.4771H72.2151ZM80.6981 36.5708L80.846 37.4616C80.5658 37.5235 80.309 37.5545 80.091 37.5545C79.7253 37.5545 79.4451 37.5003 79.2505 37.3841C79.0482 37.2679 78.9081 37.113 78.8303 36.9193C78.7447 36.7334 78.7057 36.3306 78.7057 35.7264V32.2795H77.9742V31.4894H78.7057V30.0099L79.6941 29.3979V31.4894H80.6981V32.2795H79.6941V35.7807C79.6941 36.0673 79.7175 36.2532 79.7486 36.3384C79.7875 36.4236 79.842 36.4856 79.9198 36.532C79.9977 36.5863 80.1144 36.6095 80.2623 36.6095C80.3712 36.6095 80.5191 36.594 80.6981 36.5708ZM85.0096 37.4771V29.212H90.4808V30.188H86.0836V32.7442H89.8893V33.7202H86.0836V37.4771H85.0096ZM91.3836 34.4793C91.3836 33.3717 91.6871 32.5506 92.2864 32.0238C92.7922 31.5746 93.4071 31.3577 94.1386 31.3577C94.948 31.3577 95.6095 31.6211 96.1232 32.1633C96.6368 32.7055 96.8937 33.4491 96.8937 34.4019C96.8937 35.1687 96.7769 35.7729 96.5512 36.2144C96.3255 36.656 95.9909 37.0045 95.5628 37.2447C95.127 37.4925 94.6523 37.6087 94.1386 37.6087C93.3137 37.6087 92.6521 37.3454 92.1385 36.8031C91.6326 36.2687 91.3836 35.4941 91.3836 34.4793ZM92.4031 34.4793C92.4031 35.2539 92.5665 35.8271 92.9012 36.2067C93.2281 36.5863 93.6405 36.7799 94.1386 36.7799C94.6367 36.7799 95.0492 36.5863 95.3761 36.2067C95.7029 35.8194 95.8664 35.2384 95.8664 34.4484C95.8664 33.7125 95.7029 33.147 95.3683 32.7675C95.0414 32.3879 94.6289 32.1943 94.1386 32.1943C93.6405 32.1943 93.2281 32.3879 92.9012 32.7675C92.5665 33.147 92.4031 33.7202 92.4031 34.4793ZM98.0455 37.4771V31.4894H98.9483V32.3957C99.174 31.9774 99.3841 31.6908 99.5787 31.5591C99.7732 31.4274 99.9833 31.3577 100.217 31.3577C100.559 31.3577 100.894 31.4661 101.244 31.683L100.902 32.6203C100.66 32.4731 100.411 32.4034 100.17 32.4034C99.9522 32.4034 99.7576 32.4731 99.5787 32.6048C99.4074 32.7365 99.2829 32.9224 99.2129 33.1625C99.1039 33.5188 99.0417 33.9139 99.0417 34.3399V37.4771H98.0455ZM105.859 35.5483L106.894 35.68C106.731 36.2919 106.427 36.7644 105.992 37.1052C105.548 37.4383 104.988 37.6087 104.303 37.6087C103.447 37.6087 102.762 37.3454 102.264 36.8031C101.758 36.2609 101.501 35.5096 101.501 34.5336C101.501 33.5266 101.758 32.7442 102.271 32.1865C102.777 31.6365 103.439 31.3577 104.248 31.3577C105.034 31.3577 105.68 31.6288 106.178 32.171C106.676 32.7132 106.925 33.4878 106.925 34.4716C106.925 34.5336 106.925 34.6265 106.918 34.7427H102.536C102.567 35.4011 102.754 35.9046 103.081 36.2532C103.408 36.6017 103.82 36.7799 104.31 36.7799C104.676 36.7799 104.988 36.6792 105.244 36.4856C105.509 36.2919 105.711 35.9743 105.859 35.5483ZM102.591 33.9061H105.875C105.828 33.4026 105.704 33.0231 105.493 32.7752C105.182 32.3879 104.77 32.1865 104.264 32.1865C103.805 32.1865 103.415 32.3414 103.104 32.659C102.793 32.9689 102.622 33.3871 102.591 33.9061ZM107.478 37.4771L109.626 34.3631L107.641 31.4894H108.887L109.789 32.8914C109.961 33.1625 110.093 33.3871 110.194 33.5653C110.358 33.3174 110.513 33.1005 110.645 32.9069L111.634 31.4894H112.825L110.793 34.3089L112.98 37.4771H111.758L110.552 35.618L110.233 35.1145L108.684 37.4771H107.478ZM118.957 37.4771V30.188H116.28V29.212H122.716V30.188H120.031V37.4771H118.957ZM123.253 37.4771V31.4894H124.156V32.3957C124.382 31.9774 124.592 31.6908 124.786 31.5591C124.981 31.4274 125.191 31.3577 125.425 31.3577C125.759 31.3577 126.102 31.4661 126.452 31.683L126.11 32.6203C125.868 32.4731 125.619 32.4034 125.378 32.4034C125.16 32.4034 124.965 32.4731 124.786 32.6048C124.615 32.7365 124.491 32.9224 124.421 33.1625C124.312 33.5188 124.249 33.9139 124.249 34.3399V37.4771H123.253ZM130.88 36.7412C130.514 37.0588 130.156 37.2834 129.814 37.4151C129.472 37.5468 129.106 37.6087 128.717 37.6087C128.071 37.6087 127.573 37.4538 127.23 37.1285C126.88 36.8109 126.709 36.4004 126.709 35.8969C126.709 35.6025 126.771 35.3391 126.903 35.0913C127.036 34.8511 127.207 34.6575 127.417 34.5103C127.627 34.3631 127.868 34.2547 128.133 34.1772C128.328 34.1308 128.623 34.0765 129.02 34.0301C129.822 33.9294 130.421 33.8132 130.795 33.6737C130.802 33.5343 130.802 33.4491 130.802 33.4104C130.802 32.9998 130.709 32.7055 130.522 32.5428C130.265 32.3104 129.884 32.1943 129.386 32.1943C128.919 32.1943 128.569 32.2795 128.343 32.4421C128.125 32.6125 127.962 32.9069 127.853 33.3329L126.88 33.2012C126.966 32.7752 127.113 32.4266 127.316 32.171C127.518 31.9077 127.814 31.7063 128.195 31.5668C128.577 31.4274 129.02 31.3577 129.526 31.3577C130.032 31.3577 130.437 31.4119 130.756 31.5358C131.067 31.6598 131.3 31.807 131.448 31.9929C131.596 32.171 131.697 32.4034 131.76 32.6823C131.791 32.8527 131.806 33.1625 131.806 33.6118V34.9673C131.806 35.9124 131.83 36.5088 131.869 36.7567C131.915 37.0045 132.001 37.2447 132.118 37.4771H131.083C130.981 37.2679 130.911 37.02 130.88 36.7412ZM130.795 34.4716C130.437 34.6265 129.892 34.7504 129.168 34.8589C128.763 34.9131 128.468 34.9828 128.304 35.0603C128.133 35.13 128.001 35.2462 127.907 35.3856C127.814 35.5328 127.767 35.6955 127.767 35.8736C127.767 36.1447 127.868 36.3694 128.071 36.5475C128.273 36.7257 128.569 36.8186 128.95 36.8186C129.339 36.8186 129.682 36.7334 129.977 36.563C130.273 36.3926 130.499 36.1525 130.639 35.8581C130.748 35.6257 130.795 35.2927 130.795 34.8434V34.4716ZM137.169 37.4771V36.7179C136.795 37.3144 136.242 37.6087 135.519 37.6087C135.052 37.6087 134.624 37.4771 134.227 37.2137C133.838 36.9581 133.534 36.5863 133.316 36.1137C133.098 35.6412 132.989 35.099 132.989 34.4871C132.989 33.8906 133.09 33.3484 133.285 32.8604C133.48 32.3724 133.775 32.0006 134.164 31.745C134.554 31.4816 134.997 31.3577 135.48 31.3577C135.83 31.3577 136.149 31.4274 136.421 31.5823C136.702 31.7372 136.927 31.9309 137.099 32.1788V29.212H138.087V37.4771H137.169ZM134.017 34.4871C134.017 35.2539 134.172 35.8271 134.491 36.2067C134.81 36.5863 135.184 36.7799 135.62 36.7799C136.048 36.7799 136.421 36.594 136.725 36.2299C137.028 35.8736 137.184 35.3159 137.184 34.5723C137.184 33.7512 137.028 33.1548 136.717 32.7675C136.406 32.3879 136.025 32.1943 135.573 32.1943C135.13 32.1943 134.756 32.3802 134.46 32.7442C134.164 33.116 134.017 33.697 134.017 34.4871ZM139.667 30.3817V29.212H140.663V30.3817H139.667ZM139.667 37.4771V31.4894H140.663V37.4771H139.667ZM142.181 37.4771V31.4894H143.076V32.3414C143.511 31.683 144.134 31.3577 144.943 31.3577C145.301 31.3577 145.628 31.4197 145.924 31.5513C146.22 31.6753 146.445 31.8457 146.593 32.0626C146.741 32.2717 146.842 32.5196 146.905 32.8062C146.936 32.9998 146.959 33.3252 146.959 33.7977V37.4771H145.955V33.8364C145.955 33.4259 145.924 33.116 145.846 32.9069C145.768 32.7055 145.628 32.5428 145.434 32.4189C145.231 32.295 145.006 32.233 144.733 32.233C144.313 32.233 143.947 32.3724 143.636 32.6435C143.325 32.9224 143.177 33.4414 143.177 34.2082V37.4771H142.181ZM148.305 37.9728L149.27 38.12C149.309 38.4221 149.426 38.6467 149.613 38.7861C149.854 38.972 150.197 39.065 150.625 39.065C151.084 39.065 151.442 38.972 151.691 38.7861C151.948 38.6002 152.111 38.3291 152.197 37.996C152.251 37.7869 152.275 37.3531 152.275 36.6947C151.839 37.2137 151.294 37.4771 150.648 37.4771C149.839 37.4771 149.208 37.1827 148.765 36.5863C148.329 35.9898 148.103 35.2772 148.103 34.4484C148.103 33.8751 148.204 33.3484 148.407 32.8682C148.609 32.3879 148.905 32.0084 149.294 31.745C149.675 31.4894 150.134 31.3577 150.648 31.3577C151.348 31.3577 151.917 31.6443 152.368 32.2097V31.4894H153.286V36.6637C153.286 37.5932 153.193 38.2594 153.006 38.6467C152.819 39.034 152.524 39.3438 152.119 39.5685C151.714 39.7931 151.224 39.9093 150.632 39.9093C149.924 39.9093 149.364 39.7466 148.928 39.4213C148.492 39.1037 148.29 38.6157 148.305 37.9728ZM149.13 34.3786C149.13 35.161 149.278 35.7342 149.59 36.0983C149.893 36.4546 150.282 36.6327 150.741 36.6327C151.201 36.6327 151.582 36.4546 151.893 36.0983C152.197 35.7419 152.352 35.1765 152.352 34.4096C152.352 33.6737 152.197 33.1238 151.878 32.752C151.559 32.3802 151.169 32.1943 150.726 32.1943C150.282 32.1943 149.901 32.3802 149.59 32.7442C149.286 33.1083 149.13 33.6583 149.13 34.3786Z"
+                                fill="var(--brand)"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.145 0.078125H21.8846V3.4399C23.1532 3.61806 24.3751 3.95114 25.5347 4.40816L27.2157 1.50339L31.3249 3.85819L29.6361 6.76295C30.6245 7.5453 31.5195 8.43609 32.3055 9.41984L35.2318 7.73895L37.5977 11.8211L34.6792 13.4943C35.1384 14.6484 35.4653 15.8645 35.6521 17.1194H39.0297V21.8367H35.6521C35.4653 23.0916 35.1306 24.3077 34.6714 25.4619L37.5977 27.135L35.2318 31.2172L32.2978 29.5363C31.5195 30.52 30.6245 31.4108 29.6361 32.1932L31.3249 35.0979L27.169 37.4837L25.4724 34.5712V20.5819L29.7762 18.1186V12.8746L22.1026 17.2821H21.9625V17.3595L21.9469 17.3673L21.9625 17.3905V38.878H17.0906V17.3905L17.1061 17.3673L17.0906 17.3595V17.2821H16.9505L9.26907 12.8746V18.1186L13.5728 20.5819V34.579L11.8762 37.4992L7.70477 35.0979L9.39359 32.1932C8.4052 31.4108 7.5102 30.52 6.72416 29.5363L3.7979 31.2172L1.432 27.135L4.35047 25.4619C3.8913 24.3077 3.56443 23.0916 3.37764 21.8367H0V17.1194H3.37764C3.56443 15.8645 3.8913 14.6484 4.35047 13.4943L1.432 11.8211L3.7979 7.73895L6.72416 9.41984C7.5102 8.43609 8.4052 7.5453 9.39359 6.76295L7.70477 3.85819L11.8062 1.50339L13.495 4.40816C14.6546 3.95114 15.8765 3.61806 17.145 3.4399V0.078125ZM19.511 8.04105C21.4021 8.04105 22.9353 9.56701 22.9353 11.4416C22.9353 13.3238 21.4021 14.8421 19.511 14.8421C17.6276 14.8421 16.0944 13.3238 16.0944 11.4416C16.0944 9.56701 17.6276 8.04105 19.511 8.04105Z"
+                                fill="var(--brand)"></path>
+                        </svg>
+                    </a>
+                    <div class="footer__hero">
+                        Your guide to successful investment since 2007 </div>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__brand">
+                        <p>
+                            InstaForex is a registered brand of InstaFintech Group </p>
+                        <p>
+                            Financial services are provided by InstaFintech Group </p>
+                        <div class="footer__policy">
+                            <a href="./privacy.html" target="_blank">
+                                Privacy Policy </a>
+                            <div class="footer__links-divider"></div>
+                            <a href="./terms.html"
+                                target="_blank">
+                                Terms and condition </a>
+                        </div>
+                    </div>
+                    <div class="footer__license">
+                        InstaFinance Ltd (BVI) is licensed by BVI FSC, License Number SIBA/L/14/1082. Insta Service Ltd
+                        is registered with FSC Saint Vincent, Reg. Number IBC22945. Insta Global Ltd. registered in
+                        Saint Vincent, IBC24321. Insta Global Ltd. registered by FSC St. Vincent, with address at
+                        Shamrock Lodge, Nurray Road, Kingstown, St. Vincent, company number 24321 IBC 2017 </div>
+                </div>
+            </div>
+            <div class="footer__risk">
+                <b>Risk Disclosure:</b> All investments involve a degree of risk of some kind. Trading financial
+                derivative products comes with a high risk of losing money rapidly due to leverage. You should not
+                engage in trading these instruments unless you fully understand the nature of the transactions you are
+                entering into, and the true extent of your exposure. These types of investments may be suitable for some
+                investors, but they are not for everyone.
+            </div>
+            <div class="footer__copyright">
+                Copyright © 2007-
+                2025 All rights reserved. Financial services are provided by InstaFintech Group. </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/footer-slider.js"></script>
+    <script src="./assets/js/bootstrap5.0.min.js"></script>
+</body>
+
+</html>
