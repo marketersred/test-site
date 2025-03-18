@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047) -->
+<html lang="en-US">
+
+<head>
+	<title>DarkTerra - ultimate trading bot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href="./assets/img/favicon.png">
+	
+	<link rel="stylesheet" id="twentysixteen-fonts-css" href="./assets/css/css.css" media="all">
+	<link rel="stylesheet" id="genericons-css" href="./assets/css/genericons.css" media="all">
+	<link rel="stylesheet" id="twentysixteen-style-css" href="./assets/css/style.css" media="all">
+	<link rel="stylesheet" id="twentysixteen-block-style-css" href="./assets/css/blocks.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-css" href="./assets/css/elementor-icons.min.css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="./assets/css/frontend.min.css" media="all">
+	<link rel="stylesheet" id="swiper-css" href="./assets/css/swiper.min.css" media="all">
+	<link rel="stylesheet" id="e-swiper-css" href="./assets/css/e-swiper.min.css" media="all">
+	<link rel="stylesheet" id="powerpack-frontend-css" href="./assets/css/frontend(1).min.css" media="all">
+	<link rel="stylesheet" id="elementor-pro-css" href="./assets/css/frontend(2).min.css" media="all">
+	<link rel="stylesheet" id="font-awesome-5-all-css" href="./assets/css/all.min.css" media="all">
+	<link rel="stylesheet" id="font-awesome-4-shim-css" href="./assets/css/v4-shims.min.css" media="all">
+	<link rel="stylesheet" id="widget-heading-css" href="./assets/css/widget-heading.min.css" media="all">
+	<link rel="stylesheet" id="widget-image-css" href="./assets/css/widget-image.min.css" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="./assets/css/css(1)" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="./assets/css/p-style.css" media="all">
+	<link rel="stylesheet" id="twentysixteen-fonts-css" href="./assets/css/css.css" media="all">
+	<link rel="stylesheet" id="genericons-css" href="./assets/css/genericons.css" media="all">
+	<link rel="stylesheet" id="twentysixteen-style-css" href="./assets/css/style.css" media="all">
+	<link rel="stylesheet" id="twentysixteen-block-style-css" href="./assets/css/blocks.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-css" href="./assets/css/elementor-icons.min.css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="./assets/css/frontend.min.css" media="all">
+	<link rel="stylesheet" id="swiper-css" href="./assets/css/swiper.min.css" media="all">
+	<link rel="stylesheet" id="e-swiper-css" href="./assets/css/e-swiper.min.css" media="all">
+	<link rel="stylesheet" id="powerpack-frontend-css" href="./assets/css/frontend(1).min.css" media="all">
+	<link rel="stylesheet" id="elementor-pro-css" href="./assets/css/frontend(2).min.css" media="all">
+	<link rel="stylesheet" id="font-awesome-5-all-css" href="./assets/css/all.min.css" media="all">
+	<link rel="stylesheet" id="font-awesome-4-shim-css" href="./assets/css/v4-shims.min.css" media="all">
+	<link rel="stylesheet" id="widget-heading-css" href="./assets/css/widget-heading.min.css" media="all">
+	<link rel="stylesheet" id="widget-image-css" href="./assets/css/widget-image.min.css" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="./assets/css/css(1)" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="./assets/css/p-style.css" media="all">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="./assets/css/form.css"> <!-- Form -->
+	<link rel="stylesheet" href="./assets/css/modal-loading.css"> <!-- Modal -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css">
+	<!-- Flags -->
+  
+	<!-- SCRIPTS -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+	<!-- Flags -->
+	<script src="./assets/js/request.js"></script> <!-- Request -->
+	<script src="./assets/js/takingparams.js"></script> <!-- Params -->
+</head>
+
+<body class="page-template page-template-elementor_canvas page page-id-9453 wp-custom-logo wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-9453 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
+	<div id="modal" class="modal">
+	  <div>
+		<img src="./assets/img/error.webp" alt="Error" class="modal-image">
+		<p id="modal-message">...</p>
+	  </div>
+	</div>
+	<div id="modal2" class="modal">
+	  <div>
+		<img src="./assets/img/loading.gif" alt="Loading" class="modal-image">
+		<p id="modal2-message">...</p>
+	  </div>
+	</div>
+
+	<div data-elementor-type="wp-page" data-elementor-id="9453" class="elementor elementor-9453"
+		data-elementor-post-type="page">
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-c3d3a5a elementor-section-height-full elementor-reverse-mobile elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="c3d3a5a" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8d7fd60"
+					data-id="8d7fd60" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bbb189e elementor-widget elementor-widget-heading"
+							data-id="bbb189e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">the ultimate new era AI
+									trading bot </h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-13c39e4 elementor-widget elementor-widget-heading"
+							data-id="13c39e4" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;"> Secure, Reliable, and Always Working to Grow Your
+										Wealth! </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d50050f elementor-widget elementor-widget-heading"
+							data-id="d50050f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra is an AI-powered
+									trading bot built to optimize your trading strategy by making precise, data-driven
+									decisions 24/7.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-76ca176 elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"
+							data-id="76ca176" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-md"
+										onclick="scrollToSection()">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">Get your Free Access now while it's
+												still FREE</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5c8725f"
+					data-id="5c8725f" data-element_type="column">
+					<div class="elementor-widget-wrap">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-6e33a12 elementor-section-height-full elementor-reverse-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="6e33a12" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7d9ad28"
+					data-id="7d9ad28" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-32f2a24 elementor-widget elementor-widget-heading"
+							data-id="32f2a24" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">the ultimate new era AI
+									trading bot </h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f3392b7 elementor-widget elementor-widget-heading"
+							data-id="f3392b7" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;"> Secure, Reliable, and Always Working to Grow Your
+										Wealth! </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f429506 elementor-widget elementor-widget-heading"
+							data-id="f429506" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra is an AI-powered
+									trading bot built to optimize your trading strategy by making precise, data-driven
+									decisions 24/7.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5f8c3eb elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"
+							data-id="5f8c3eb" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-md"
+										onclick="scrollToSection()">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">Get your Free Access now while it's
+												still FREE</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f0d904b"
+					data-id="f0d904b" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-69e2164 elementor-widget elementor-widget-image"
+							data-id="69e2164" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img fetchpriority="high" decoding="async" width="840" height="840"
+									src="./assets/img/QUANTUMTERRA-LOGO-1024x1024_cleanup.jpg"
+									class="attachment-large size-large wp-image-8122">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-924e0ea elementor-section-height-full elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="924e0ea" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-117c6c7"
+					data-id="117c6c7" data-element_type="column">
+					<div class="elementor-widget-wrap">
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e413b23"
+					data-id="e413b23" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b631e8f elementor-widget elementor-widget-heading"
+							data-id="b631e8f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Whether you’re asleep, at
+									work, or enjoying your free time</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-99d051e elementor-widget elementor-widget-heading"
+							data-id="99d051e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;"> QuantumTerra Continuously Scans The Markets And
+										Executes Trades That Maximize Your Returns.​ </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c926cb3 elementor-widget elementor-widget-heading"
+							data-id="c926cb3" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">The QuantumTerra trading bot
+									allows you to take advantage of market opportunities 24/7 without the need for
+									constant monitoring. It’s like having a tireless, highly skilled trader working for
+									you around the clock. Imagine being able to capture profits even when you’re asleep
+									or busy with other things!</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-a179a9a elementor-section-height-full elementor-reverse-mobile elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="a179a9a" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1ac914e"
+					data-id="1ac914e" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f61e313 elementor-widget elementor-widget-image"
+							data-id="f61e313" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img decoding="async" width="840" height="840"
+									src="./assets/img/Untitled-design-51.webp"
+									class="attachment-large size-large wp-image-5585"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ff6d548"
+					data-id="ff6d548" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7c019f3 elementor-widget elementor-widget-heading"
+							data-id="7c019f3" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Whether you’re asleep, at
+									work, or enjoying your free time</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d86524b elementor-widget elementor-widget-heading"
+							data-id="d86524b" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;"> QuantumTerra Continuously Scans The Markets And
+										Executes Trades That Maximize Your Returns.​ </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-82266e4 elementor-widget elementor-widget-heading"
+							data-id="82266e4" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">The DarkTerra trading bot
+									allows you to take advantage of market opportunities 24/7 without the need for
+									constant monitoring. It’s like having a tireless, highly skilled trader working for
+									you around the clock. Imagine being able to capture profits even when you’re asleep
+									or busy with other things!</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-319ed4c elementor-section-height-full elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="319ed4c" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a7bcbfc"
+					data-id="a7bcbfc" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2c88fd7 elementor-widget elementor-widget-heading"
+							data-id="2c88fd7" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;"> With its Advanced Algorithms And Continuous
+										Monitoring, You’ll Never Miss A Profitable Opportunity.​ </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5c2b0fa elementor-widget elementor-widget-heading"
+							data-id="5c2b0fa" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">And the best part? You don’t
+									need any trading experience – QuantumTerra handles everything for you!</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-943f19c elementor-widget elementor-widget-heading"
+							data-id="943f19c" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">From Analysis To Execution,
+									Ensuring You Achieve Consistent And <b>Reliable Profits</b> With Zero Effort.
+								</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-9d1718a elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"
+							data-id="9d1718a" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-md"
+										onclick="scrollToSection()">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">Start Maximizing your returns using
+												QuantumTerra now!</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bffaeb6"
+					data-id="bffaeb6" data-element_type="column">
+					<div class="elementor-widget-wrap">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-f2e35cf elementor-section-height-full elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="f2e35cf" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cf342a9"
+					data-id="cf342a9" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d7fffbd elementor-widget elementor-widget-heading"
+							data-id="d7fffbd" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;"> With its Advanced Algorithms And Continuous
+										Monitoring, You’ll Never Miss A Profitable Opportunity.​ </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-23c5767 elementor-widget elementor-widget-heading"
+							data-id="23c5767" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">And the best part? You don’t
+									need any trading experience – QuantumTerra handles everything for you!</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-b4ddcc8 elementor-widget elementor-widget-heading"
+							data-id="b4ddcc8" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">From Analysis To Execution,
+									Ensuring You Achieve Consistent And <b>Reliable Profits</b> With Zero Effort.
+								</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-0eb44d3 elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"
+							data-id="0eb44d3" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-md"
+										onclick="scrollToSection()">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">Start Maximizing your returns using
+												QuantumTerra now!</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-38db330"
+					data-id="38db330" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ee149d3 elementor-widget elementor-widget-image"
+							data-id="ee149d3" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img decoding="async" width="840" height="840" src="./assets/img/DARKTERRA-1_cleanup.jpg"
+									class="attachment-large size-large wp-image-5586"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-0288712 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="0288712" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5845c68"
+					data-id="5845c68" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-94d80a7 elementor-widget elementor-widget-heading"
+							data-id="94d80a7" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Traders Meet Your New Secret
+									Weapon Stress Free Profits on Autopilot!
+								</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-2daa149 elementor-widget elementor-widget-heading"
+							data-id="2daa149" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Most trading tools out there
+									talk big but don't really deliver. Our AI trading bot is different. It's built by
+									people who know what they're doing - top money guys who've handled millions of
+									dollars for years.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-274313f elementor-widget elementor-widget-heading"
+							data-id="274313f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">This isn't a
+									one-size-fits-all thing. It's smart and it has the ability to make changes with the
+									market as things happen, so your portfolio is always protected from substantial
+									losses.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-260a20f elementor-widget elementor-widget-heading"
+							data-id="260a20f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra doesn't just buy
+									and sell randomly, it makes smart choices based on loads of data and advanced
+									algorithms combined with real-world expertise.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5f5ec4e elementor-widget elementor-widget-heading"
+							data-id="5f5ec4e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;"> We've mixed the latest tech with real know-how
+										from people who've been in the industry for decades.​ </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5863d55 elementor-widget elementor-widget-image"
+							data-id="5863d55" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="840"
+									src="./assets/img/DARKTERRA-6.webp"
+									class="attachment-large size-large wp-image-5589"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-0331175 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="0331175" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c046c62"
+					data-id="c046c62" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-143bc5a elementor-widget elementor-widget-heading"
+							data-id="143bc5a" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">The goal? To make you money,
+									steadily and reliably, every single day! </h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-aee8eaf elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
+							data-id="aee8eaf" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-md"
+										onclick="scrollToSection()">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">Get access now! </span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-b198d20 elementor-section-height-full elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="b198d20" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-af5cea4"
+					data-id="af5cea4" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-375ab9c elementor-widget elementor-widget-heading"
+							data-id="375ab9c" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Trading Strategies Customized
+									To Fit Your Goals!</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7a33bac elementor-widget elementor-widget-heading"
+							data-id="7a33bac" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;">Quick Trades or Long-Term Moves - QuantumTerra Got
+										You Covered.​ </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-83cd119 elementor-widget elementor-widget-heading"
+							data-id="83cd119" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Whether you want fast profits
+									or steady growth, our trading bot has different strategies you can tweak to match
+									your trading style and how much risk you’re comfortable with. You can adjust your
+									strategy as the market changes</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5ac6d19"
+					data-id="5ac6d19" data-element_type="column">
+					<div class="elementor-widget-wrap">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-71fa040 elementor-section-height-full elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="71fa040" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f6d1637"
+					data-id="f6d1637" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-adb7565 elementor-widget elementor-widget-heading"
+							data-id="adb7565" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Trading Strategies Customized
+									To Fit Your Goals!</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-060d08b elementor-widget elementor-widget-heading"
+							data-id="060d08b" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><span
+										style="font-weight: normal;">Quick Trades or Long-Term Moves - QuantumTerra Got
+										You Covered.​ </span></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-9316447 elementor-widget elementor-widget-heading"
+							data-id="9316447" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Whether you want fast profits
+									or steady growth, our trading bot has different strategies you can tweak to match
+									your trading style and how much risk you’re comfortable with. You can adjust your
+									strategy as the market changes</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-198b891"
+					data-id="198b891" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1e274d3 elementor-widget elementor-widget-image"
+							data-id="1e274d3" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="840"
+									src="./assets/img/DARKTERRA-7.webp"
+									class="attachment-large size-large wp-image-5592"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-d2cb1ea elementor-reverse-mobile elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="d2cb1ea" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-233f0b0"
+					data-id="233f0b0" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7523291 elementor-widget elementor-widget-image"
+							data-id="7523291" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="790" height="506"
+									src="./assets/img/fibonachi.png" class="attachment-large size-large wp-image-5598"
+									sizes="(max-width: 790px) 85vw, 790px">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e68c6a9"
+					data-id="e68c6a9" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c2f295b elementor-widget elementor-widget-heading"
+							data-id="c2f295b" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 1 - fIBONACHI</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7a0ad0b elementor-widget elementor-widget-heading"
+							data-id="7a0ad0b" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you saw, it
+									used Fibonacci retracements to pinpoint key support and resistance levels. It then
+									executed trades at these levels, aiming to capture profits from potential price
+									reversals</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-4ff0e5e elementor-widget elementor-widget-heading"
+							data-id="4ff0e5e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying potential reversal points using Fibonacci
+									retracement levels. After determining the overall trend direction, It calculated
+									Fibonacci retracement levels based on recent price movements. When the price reached
+									or approached these levels, the bot generated buy or sell signals, depending on the
+									trend direction.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-babf5d1 elementor-widget elementor-widget-heading"
+							data-id="babf5d1" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To manage risk, the bot
+									implemented stop-loss orders below recent support levels and take-profit orders at
+									predetermined price targets. This approach aimed to capture profits while minimizing
+									losses in case the market's momentum shifted unexpectedly.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-f3d827d elementor-reverse-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="f3d827d" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ea0309d"
+					data-id="ea0309d" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2cefda3 elementor-widget elementor-widget-heading"
+							data-id="2cefda3" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 1 - fIBONACHI</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c9b7236 elementor-widget elementor-widget-heading"
+							data-id="c9b7236" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you saw, it
+									used Fibonacci retracements to pinpoint key support and resistance levels. It then
+									executed trades at these levels, aiming to capture profits from potential price
+									reversals</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-6082a2f elementor-widget elementor-widget-image"
+							data-id="6082a2f" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="790" height="506"
+									src="./assets/img/fibonachi.png" class="attachment-large size-large wp-image-5598"
+									sizes="(max-width: 790px) 85vw, 790px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-62defb0 elementor-widget elementor-widget-heading"
+							data-id="62defb0" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying potential reversal points using Fibonacci
+									retracement levels. After determining the overall trend direction, It calculated
+									Fibonacci retracement levels based on recent price movements. When the price reached
+									or approached these levels, the bot generated buy or sell signals, depending on the
+									trend direction.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-ea8e6c8 elementor-widget elementor-widget-heading"
+							data-id="ea8e6c8" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To manage risk, the bot
+									implemented stop-loss orders below recent support levels and take-profit orders at
+									predetermined price targets. This approach aimed to capture profits while minimizing
+									losses in case the market's momentum shifted unexpectedly.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-f0e94dd elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="f0e94dd" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b6b431f"
+					data-id="b6b431f" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4693e2e elementor-widget elementor-widget-heading"
+							data-id="4693e2e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 2 - MOVING AVERAGES
+								</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-84231c9 elementor-widget elementor-widget-heading"
+							data-id="84231c9" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you see it
+									used moving averages to pinpoint the direction of the market and then executed
+									trades at the optimal times. This strategy helps to capture profits while minimizing
+									risk.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-213663c elementor-widget elementor-widget-heading"
+							data-id="213663c" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying trends using the 50-day and 200-day moving
+									averages. When the 50-day moving average crossed above the 200-day moving average,
+									it signaled a potential uptrend, and It initiated buy orders. Conversely, when the
+									50-day moving average crossed below the 200-day moving average, it signaled a
+									potential downtrend, and I initiated sell orders.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-b63cd02 elementor-widget elementor-widget-heading"
+							data-id="b63cd02" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To manage risk, QuantumTerra
+									implemented stop-loss orders below recent support levels and take-profit orders at
+									predetermined price targets. This approach aimed to capture profits while minimizing
+									losses in case the market's momentum shifted unexpectedly.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-638067d"
+					data-id="638067d" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d4c245b elementor-widget elementor-widget-image"
+							data-id="d4c245b" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="253"
+									src="./assets/img/moving-avarege-1024x309.webp"
+									class="attachment-large size-large wp-image-5596"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-00db9ba elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="00db9ba" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6181227"
+					data-id="6181227" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a9b6e99 elementor-widget elementor-widget-heading"
+							data-id="a9b6e99" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 2 - MOVING AVERAGES
+								</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-dba1862 elementor-widget elementor-widget-heading"
+							data-id="dba1862" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you see it
+									used moving averages to pinpoint the direction of the market and then executed
+									trades at the optimal times. This strategy helps to capture profits while minimizing
+									risk.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5d3ea44 elementor-widget elementor-widget-image"
+							data-id="5d3ea44" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="253"
+									src="./assets/img/moving-avarege-1024x309.webp"
+									class="attachment-large size-large wp-image-5596"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-a4790da elementor-widget elementor-widget-heading"
+							data-id="a4790da" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying trends using the 50-day and 200-day moving
+									averages. When the 50-day moving average crossed above the 200-day moving average,
+									it signaled a potential uptrend, and I initiated buy orders. Conversely, when the
+									50-day moving average crossed below the 200-day moving average, it signaled a
+									potential downtrend, and I initiated sell orders.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-0bc27df elementor-widget elementor-widget-heading"
+							data-id="0bc27df" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To manage risk, I implemented
+									stop-loss orders below recent support levels and take-profit orders at predetermined
+									price targets. This approach aimed to capture profits while minimizing losses in
+									case the market's momentum shifted unexpectedly.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-49a968f elementor-reverse-mobile elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="49a968f" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-229d940"
+					data-id="229d940" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cf80d5c elementor-widget elementor-widget-image"
+							data-id="cf80d5c" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="277"
+									src="./assets/img/RSI-INDICATOR-1024x338.webp"
+									class="attachment-large size-large wp-image-5594"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-aae811c"
+					data-id="aae811c" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-defaa07 elementor-widget elementor-widget-heading"
+							data-id="defaa07" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 3 - rSI</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-eceef73 elementor-widget elementor-widget-heading"
+							data-id="eceef73" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you see, it
+									identified a potential buying opportunity when the market was oversold. It
+									recognized that the price was likely to rebound, and it acted swiftly to capitalize
+									on that opportunity. This kind of intelligent, automated trading can help you
+									maximize your profits and minimize your losses.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-34c5da0 elementor-widget elementor-widget-heading"
+							data-id="34c5da0" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying overbought conditions using the RSI. When the
+									RSI was in the overbought zone, It initiated sell orders, anticipating a potential
+									price reversal.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-11249b9 elementor-widget elementor-widget-heading"
+							data-id="11249b9" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To manage risk, The bot
+									implemented stop-loss orders below recent support levels and take-profit orders at
+									predetermined price targets. This approach aimed to capture potential profits while
+									minimizing losses in case the market's momentum shifted unexpectedly.
+
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-e5b35bd elementor-section-full_width elementor-reverse-mobile elementor-hidden-desktop elementor-section-height-default elementor-section-height-default"
+			data-id="e5b35bd" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5e6d99e"
+					data-id="5e6d99e" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-51b3b2c elementor-widget elementor-widget-heading"
+							data-id="51b3b2c" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 3 - rSI</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-abfe7d4 elementor-widget elementor-widget-heading"
+							data-id="abfe7d4" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you see, it
+									identified a potential buying opportunity when the market was oversold. It
+									recognized that the price was likely to rebound, and it acted swiftly to capitalize
+									on that opportunity. This kind of intelligent, automated trading can help you
+									maximize your profits and minimize your losses.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-6aa6c69 elementor-widget elementor-widget-image"
+							data-id="6aa6c69" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="277"
+									src="./assets/img/RSI-INDICATOR-1024x338.webp"
+									class="attachment-large size-large wp-image-5594"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-92d938d elementor-widget elementor-widget-heading"
+							data-id="92d938d" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying overbought conditions using the RSI. When the
+									RSI was in the overbought zone, It initiated sell orders, anticipating a potential
+									price reversal.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-0cadae6 elementor-widget elementor-widget-heading"
+							data-id="0cadae6" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To manage risk, The bot
+									implemented stop-loss orders below recent support levels and take-profit orders at
+									predetermined price targets. This approach aimed to capture potential profits while
+									minimizing losses in case the market's momentum shifted unexpectedly.
+
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-f1243fe elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="f1243fe" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f95c466"
+					data-id="f95c466" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-694416b elementor-widget elementor-widget-heading"
+							data-id="694416b" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 4 - MACD</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-ce66fab elementor-widget elementor-widget-heading"
+							data-id="ce66fab" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you saw, it
+									used advanced technical analysis to pinpoint moments when the market was reaching
+									unsustainable highs. It then executed sell orders at the right time, helping to
+									secure profits and minimize losses.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-50ba4be elementor-widget elementor-widget-heading"
+							data-id="50ba4be" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying trends using the MACD indicator. When the MACD
+									line crossed above the signal line, it signaled a potential uptrend, and It
+									initiated buy orders. Conversely, when the MACD line crossed below the signal line,
+									it signaled a potential downtrend, and It initiated sell orders.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-1daaab0 elementor-widget elementor-widget-heading"
+							data-id="1daaab0" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To balance risk and reward,
+									the bot implemented stop-loss orders at calculated support levels and take-profit
+									orders at targeted price levels. This strategy aimed to optimize profits while
+									minimizing losses in the event of market reversals.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1c7d8bd"
+					data-id="1c7d8bd" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f7a5357 elementor-widget elementor-widget-image"
+							data-id="f7a5357" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="351"
+									src="./assets/img/MACD-INDICATOR-1024x428.webp"
+									class="attachment-large size-large wp-image-5595"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-7711d91 elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="7711d91" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-82fda83"
+					data-id="82fda83" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cbd71c7 elementor-widget elementor-widget-heading"
+							data-id="cbd71c7" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Strategy 4 - MACD</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-ffb5116 elementor-widget elementor-widget-heading"
+							data-id="ffb5116" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">In the scenario you saw, it
+									used advanced technical analysis to pinpoint moments when the market was reaching
+									unsustainable highs. It then executed sell orders at the right time, helping to
+									secure profits and minimize losses.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-b8cf60a elementor-widget elementor-widget-image"
+							data-id="b8cf60a" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="840" height="351"
+									src="./assets/img/MACD-INDICATOR-1024x428.webp"
+									class="attachment-large size-large wp-image-5595"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-586764d elementor-widget elementor-widget-heading"
+							data-id="586764d" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">QuantumTerra employed a
+									strategy that focused on identifying trends using the MACD indicator. When the MACD
+									line crossed above the signal line, it signaled a potential uptrend, and It
+									initiated buy orders. Conversely, when the MACD line crossed below the signal line,
+									it signaled a potential downtrend, and It initiated sell orders.</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-aa662a1 elementor-widget elementor-widget-heading"
+							data-id="aa662a1" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">To balance risk and reward,
+									the bot implemented stop-loss orders at calculated support levels and take-profit
+									orders at targeted price levels. This strategy aimed to optimize profits while
+									minimizing losses in the event of market reversals.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-9f1255e elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="9f1255e" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-07e0156"
+					data-id="07e0156" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f57406e elementor-widget elementor-widget-heading"
+							data-id="f57406e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">So Why Are We Giving You Free
+									Access To This Insane Trading tool?</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-6f89a7a elementor-widget elementor-widget-heading"
+							data-id="6f89a7a" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">We have partnered with a
+									secure, reliable and trustworthy broker and he is willing to pay us a generous
+									commission for every deal that has been made using QuantumTerra's bot. You see we
+									make money on volume, not wins or losses. That means we are invested in keeping you
+									active and profitable because… when you profit your portfolio grows and accordingly
+									our commission grows so there is a straight correlation between your portfolio size
+									and our commission. </h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-141b579 elementor-widget elementor-widget-heading"
+							data-id="141b579" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><b>Which means we will do the
+										absolute best in order to help you make smart moves, and increase your portfolio
+										size.</b></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-5654560 elementor-section-full_width elementor-section-height-min-height elementor-hidden-tablet elementor-hidden-mobile elementor-section-height-default elementor-section-items-middle"
+			data-id="5654560" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7408336"
+					data-id="7408336" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c675cbd elementor-widget elementor-widget-heading"
+							data-id="c675cbd" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">How can you start using the
+									QuantumTerra’s ai powered trading bot?</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f9a52fc elementor-widget elementor-widget-heading"
+							data-id="f9a52fc" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">It's Very Simple!</h3>
+							</div>
+						</div>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-6c05d70 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="6c05d70" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a0aa901"
+									data-id="a0aa901" data-element_type="column"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-3191482 elementor-widget elementor-widget-heading"
+											data-id="3191482" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">First step
+												</h3>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-b2ef0fe elementor-widget elementor-widget-heading"
+											data-id="b2ef0fe" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">You
+													registering via the form below.</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-17cce9a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="17cce9a" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c4c85b9"
+									data-id="c4c85b9" data-element_type="column"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-f1c488a elementor-widget elementor-widget-heading"
+											data-id="f1c488a" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">Second step
+												</h3>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-a2e42b2 elementor-widget elementor-widget-heading"
+											data-id="a2e42b2" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">An account
+													manager from the brokerage we partnered with will contact you and
+													you’ll have to open an account there and make your first deposit to
+													activate the QuantumTerra’s bot.</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-3dea227 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="3dea227" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-123dd6e"
+									data-id="123dd6e" data-element_type="column"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-016d8e7 elementor-widget elementor-widget-heading"
+											data-id="016d8e7" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">Third step
+												</h3>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-6b2462f elementor-widget elementor-widget-heading"
+											data-id="6b2462f" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">Watch as your
+													trading bot automatically identifies opportunities and starts
+													generating profits</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e9c0663 elementor-hidden-desktop elementor-hidden-tablet"
+					data-id="e9c0663" data-element_type="column"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-widget-wrap">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-269de45 elementor-section-full_width elementor-section-height-min-height elementor-hidden-desktop elementor-section-height-default elementor-section-items-middle"
+			data-id="269de45" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bd9c464"
+					data-id="bd9c464" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f49a5ed elementor-widget elementor-widget-heading"
+							data-id="f49a5ed" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">How can you start using the
+									DarkTerra’s ai powered trading bot?</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d7e5d73 elementor-widget elementor-widget-heading"
+							data-id="d7e5d73" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">It's Very Simple!</h3>
+							</div>
+						</div>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-4700a2c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="4700a2c" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-62011de"
+									data-id="62011de" data-element_type="column"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-e432398 elementor-widget elementor-widget-heading"
+											data-id="e432398" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">First step
+												</h3>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-7dc1c5f elementor-widget elementor-widget-heading"
+											data-id="7dc1c5f" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">You
+													registering via the form below.</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-a9ab1a6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="a9ab1a6" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9b66fc9"
+									data-id="9b66fc9" data-element_type="column"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-076cac6 elementor-widget elementor-widget-heading"
+											data-id="076cac6" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">Second step
+												</h3>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-c394cba elementor-widget elementor-widget-heading"
+											data-id="c394cba" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">An account
+													manager from the brokerage we partnered with will contact you and
+													you’ll have to open an account there and make your first deposit to
+													activate the QuantumTerra’s bot.</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-b37e6c0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="b37e6c0" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-8ce9e1f"
+									data-id="8ce9e1f" data-element_type="column"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-625670b elementor-widget elementor-widget-heading"
+											data-id="625670b" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">Third step
+												</h3>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-2ad2358 elementor-widget elementor-widget-heading"
+											data-id="2ad2358" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">Watch as your
+													trading bot automatically identifies opportunities and starts
+													generating profits</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-40c9881 elementor-hidden-desktop"
+					data-id="40c9881" data-element_type="column"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d7f30e4 elementor-widget elementor-widget-image"
+							data-id="d7f30e4" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img fetchpriority="high" decoding="async" width="840" height="840"
+									src="./assets/img/QUANTUMTERRA-LOGO-1024x1024.webp"
+									class="attachment-large size-large wp-image-8122"
+									sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-acd95e4 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="acd95e4" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-385cc5e"
+					data-id="385cc5e" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5e94f59 elementor-widget elementor-widget-heading"
+							data-id="5e94f59" data-element_type="widget" id="Form" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Start Maximizing your returns
+									using QuantumTerra now!</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-b35ebca elementor-widget elementor-widget-heading"
+							data-id="b35ebca" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Get you Free Access now while
+									it's still FREE</h3>
+							</div>
+						</div>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-a02b848 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="a02b848" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1b7a64a"
+									data-id="1b7a64a" data-element_type="column">
+									<div class="elementor-widget-wrap">
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4126b4f"
+									data-id="4126b4f" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-33c10a9 elementor-widget elementor-widget-shortcode"
+											data-id="33c10a9" data-element_type="widget"
+											data-widget_type="shortcode.default">
+											<div class="elementor-widget-container" style="display: flex; justify-content: center;">
+												<form id="form-request">
+													<input class="input" required type="text" id="firstName" placeholder="Isim" />
+													<input class="input" required type="text" id="lastName" placeholder="Soyad" />
+													<input class="input" required type="email" id="email" placeholder="E-posta" />
+													<input class="input" required type="tel" id="phone" placeholder="Posta" />
+													<div class="form-group input-wrapper">
+													<div class="terms-div">
+														<input type="checkbox" id="termsCheckbox" checked required />
+														<p>Application <a href="./terms.html" target="_blank"><u>terms and conditions</u></a>
+														and <a href="./privacy.html" target="_blank"><u>privacy policy</u></a>
+														ave been read and accepted by me.</p>
+													</div>
+													</div>
+													<button type="submit" id="submit-request">Submit</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c0b3a95"
+									data-id="c0b3a95" data-element_type="column">
+									<div class="elementor-widget-wrap">
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-9ae54e4 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="9ae54e4" data-element_type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-no">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1256598"
+					data-id="1256598" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0d8590c elementor-widget elementor-widget-heading"
+							data-id="0d8590c" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">And the best part is that
+									after you get access to QuantumTerra on your new account with us,</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d10a7eb elementor-widget elementor-widget-heading"
+							data-id="d10a7eb" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">You will get a personalized
+									call with a top tier analyst to guide you through how to implement each strategy and
+									choose the right one for your financial goals and risk tolerance !
+									​</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-f18b67f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="f18b67f" data-element_type="section">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25f5c0c"
+					data-id="25f5c0c" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f0399c4 elementor-widget elementor-widget-html"
+							data-id="f0399c4" data-element_type="widget" data-widget_type="html.default">
+							<div class="elementor-widget-container">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-38c976f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="38c976f" data-element_type="section">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-74d2873"
+					data-id="74d2873" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
