@@ -1,6 +1,6 @@
 let SCRIPT_CONFIG = {
-  campaignId: 'DARKTERRA || DT 1',
-  language: 'EN',
+  campaignId: 'ALGOTERRA || 2 - algoterra.pro',
+  language: 'MS',
   defaultCountry: 'US',
   successMessage: 'Thank you for subscribing!',
   loadingMessage: 'Loading...',
@@ -148,8 +148,7 @@ function submitForm (requestData) {
 
   // handleRedirect(requestData)
 
-  const url = 'https://post-tb-us.developer76543.workers.dev'
-  // const url1 = 'https://post-tb-ownggl.devmaltay01.workers.dev'
+  const url = 'https://post-tb-mly.developer76543.workers.dev'
 
   fetch(url, {
     method: 'POST',
@@ -160,8 +159,11 @@ function submitForm (requestData) {
     .then(data => {
       setLoadingModal(false)
       console.log('API Response:', data)
-      if (data.status !== 'success') {
+      if (data.result.status !== 'success') {
+        console.log("DONE");
+        
         finalMessage(data.message)
+        handleRedirect(requestData)
       }
       enableSubmit()
     })
@@ -180,7 +182,7 @@ function submitForm (requestData) {
   function handleRedirect (requestData) {
     const defaultUrl =
       redirectMap[requestData?.country] ||
-      'https://smartfollow.site/riservasetta.html'
+      'thanks.html'
 
     console.log(`✅ Redirecting immediately to: ${defaultUrl}`)
     setTimeout(() => {
@@ -214,6 +216,7 @@ function finalMessage (responseText) {
   let label = SCRIPT_CONFIG.errorMessage + `  (${responseText})`
   if (responseText === undefined) {
     label = SCRIPT_CONFIG.successMessage
+    modal.find('.modal-image').css('display', 'none');
   } else if (responseText.toLowerCase().includes('account already exists')) {
     label = SCRIPT_CONFIG.existingAccountMessage + ' (' + responseText + ')'
   } else {
@@ -227,6 +230,7 @@ function finalMessage (responseText) {
   setTimeout(function () {
     modal.css('display', 'none')
     body.removeClass('modal-message')
+    modal.find('.modal-image').css('display', '');
   }, 1500)
 }
 

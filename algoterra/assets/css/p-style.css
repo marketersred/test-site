@@ -5647,3 +5647,8 @@ body .is-layout-grid {
             background-image: none !important;
         }
     }
+
+
+	.iti__country-list * {
+		color: black;
+	}

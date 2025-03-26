@@ -53,3 +53,15 @@ a, #submit-request, #termsCheckbox {
     gap: 10px;
     color: white;
 }
+
+
+
+/* FONT FIX */
+* {
+    font-size: 18px!important;
+}
+
+.title,
+.title * {
+    font-size: 36px!important;
+}
