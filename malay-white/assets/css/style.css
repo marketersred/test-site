@@ -558,6 +558,7 @@ button {
      font-size: 24px;
      color: #ffffff;
      text-transform: uppercase;
+     min-height: 85px;
 }
 
 .lorem_dolar_text {
