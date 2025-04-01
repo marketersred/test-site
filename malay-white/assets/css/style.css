@@ -254,7 +254,13 @@ button {
      padding-top: 200px;
 }
 
+.body_text.hero {
+     margin: 10px 0;
+     line-height: 1;
+ }
+ 
 .yoga_text {
+     line-height: 1;
      width: 100%;
      float: left;
      font-size: 60px;
@@ -329,6 +335,7 @@ button {
      color: #353336;
      text-align: center;
      margin-left: 0px;
+     margin: 0;
 }
 
 #myCarousel .carousel-inner,
@@ -817,4 +824,8 @@ textarea {
      }.about-img {
        margin: 40px auto;
      }
+}
+
+.logo img{
+     height: 80px;
 }
