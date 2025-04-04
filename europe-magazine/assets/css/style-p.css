@@ -787,3 +787,7 @@ font font {
         width: 100% !important;
     }
 }
+
+.wp-block-image img {
+    margin-bottom: 30px;
+}
